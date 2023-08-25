@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap);
+
+body {
+    font-family: 'MuseoModerno';
+}
+
+.main-container {
+    margin: 100px;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+.balance-section {
+    text-align: right;
+    margin: 30px;
+}
+
+.case-open-window-holder {
+
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.case-open-window {
+    /* position: relative; */
+    border: 2px solid black;
+    width: 700px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.case-open-marker {
+    position: absolute;
+    background-color: rgba(212, 176, 13, 0.801);
+    height: 100px;
+    width: 2px
+}
+
+.button-section {
+    margin: 100px;
+    justify-content: center;
+    display: flex;
+}
+
+.open-button {
+    width: 100px;
+    height: 50px;
+    border-radius: 5%;
+}
+
+.item-holder {
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+.item {
+
+    justify-content: center;
+    border: 1px solid rgb(158, 158, 158);
+    width: 150px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animatedItem {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+
+@keyframes bounceOut {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(.95);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(.3);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-3000px);
+    }
+}
+
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+.flipInX {
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+}
+
+.bounceOut {
+    -webkit-animation-name: bounceOut;
+    animation-name: bounceOut;
+}
+
+.moveLeft {
+    -webkit-animation-name: moveLeft;
+    animation-name: moveLeft;
+}
