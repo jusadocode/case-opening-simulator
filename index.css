@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap);
 
+:root {
+    --random-translateX: -2500px;
+}
+
 body {
     font-family: 'MuseoModerno';
 }
@@ -116,7 +120,7 @@ p {
     }
 
     100% {
-        transform: translateX(-5000px);
+        transform: translateX(var(--random-translateX));
     }
 }
 
