@@ -51,7 +51,8 @@ const cases = [
                         "name": "CS:GO Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_hy_skulls_light_large.3e38912bdbea8a2b03b149e619f9f141e54facfd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_hy_skulls_light_large.3e38912bdbea8a2b03b149e619f9f141e54facfd.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-524580",
@@ -76,7 +77,8 @@ const cases = [
                         "name": "CS:GO Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_hy_feathers_aug_light_large.e1419b52a3ddd4bed5328f438ea5dea07b0ba248.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_hy_feathers_aug_light_large.e1419b52a3ddd4bed5328f438ea5dea07b0ba248.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2556296",
@@ -104,7 +106,8 @@ const cases = [
                         "name": "CS:GO Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_so_purple_light_large.44483356b334466acb6e781057d8f96a73cb376f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_so_purple_light_large.44483356b334466acb6e781057d8f96a73cb376f.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-262336",
@@ -129,7 +132,8 @@ const cases = [
                         "name": "CS:GO Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_am_dragon_glock_light_large.e42a72a19a2239c992573b88179897af37c7f849.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_am_dragon_glock_light_large.e42a72a19a2239c992573b88179897af37c7f849.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-3997936",
@@ -154,7 +158,8 @@ const cases = [
                         "name": "CS:GO Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_am_zebra_dark_light_large.add709b2eb683853f9508ddf9c22503d7efb9925.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_am_zebra_dark_light_large.add709b2eb683853f9508ddf9c22503d7efb9925.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-3932400",
@@ -179,7 +184,8 @@ const cases = [
                         "name": "CS:GO Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_am_zebra_dark_light_large.f484368a478f5e02d1b9d5e2816354fe705503f3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_am_zebra_dark_light_large.f484368a478f5e02d1b9d5e2816354fe705503f3.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-458928",
@@ -207,7 +213,8 @@ const cases = [
                         "name": "CS:GO Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_aq_oiled_light_large.92c8d125e4e54758d37e946496030e9a18833b58.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_aq_oiled_light_large.92c8d125e4e54758d37e946496030e9a18833b58.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-65780",
@@ -232,7 +239,8 @@ const cases = [
                         "name": "CS:GO Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aa_vertigo_light_large.85a16e4bfb8b1cc6393ca5d0c6d3a1e6e6023323.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aa_vertigo_light_large.85a16e4bfb8b1cc6393ca5d0c6d3a1e6e6023323.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-590028",
@@ -257,7 +265,8 @@ const cases = [
                         "name": "CS:GO Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_am_lightning_awp_light_large.3761894103ee0fec90af459928635933ba27e36d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_am_lightning_awp_light_large.3761894103ee0fec90af459928635933ba27e36d.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -622,7 +631,8 @@ const cases = [
                         "name": "eSports 2013 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_sp_zebracam_bw_light_large.de08ef2a6d7524e682118cef5d12124c5156dfa8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_sp_zebracam_bw_light_large.de08ef2a6d7524e682118cef5d12124c5156dfa8.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1770180",
@@ -648,7 +658,8 @@ const cases = [
                         "name": "eSports 2013 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_hy_icosahedron_light_large.f7ea8cca0b48a0463d0877af9c94e7f54d0f1d79.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_hy_icosahedron_light_large.f7ea8cca0b48a0463d0877af9c94e7f54d0f1d79.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-656072",
@@ -673,7 +684,8 @@ const cases = [
                         "name": "eSports 2013 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_hy_doomkitty_light_large.c9dd7b8fb1a44d5691684aae406d360433550468.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_hy_doomkitty_light_large.c9dd7b8fb1a44d5691684aae406d360433550468.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-852300",
@@ -701,7 +713,8 @@ const cases = [
                         "name": "eSports 2013 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_hy_ddpat_orange_light_large.8499a023e61f6d3f7d03012521422bedaedd6c2b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_hy_ddpat_orange_light_large.8499a023e61f6d3f7d03012521422bedaedd6c2b.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1900876",
@@ -729,7 +742,8 @@ const cases = [
                         "name": "eSports 2013 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_hy_ddpat_orange_light_large.04fe163870ad65e17d8e4dd9403180ed3c5a218d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_hy_ddpat_orange_light_large.04fe163870ad65e17d8e4dd9403180ed3c5a218d.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2359944",
@@ -755,7 +769,8 @@ const cases = [
                         "name": "eSports 2013 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_sp_splash_p250_light_large.9270d8d14c39aef83407ea50e51f0eb89c17263d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_sp_splash_p250_light_large.9270d8d14c39aef83407ea50e51f0eb89c17263d.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-458808",
@@ -783,7 +798,8 @@ const cases = [
                         "name": "eSports 2013 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_hy_ak47lam_light_large.199620e808579639264cf753d0650721b4bc1f37.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_hy_ak47lam_light_large.199620e808579639264cf753d0650721b4bc1f37.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-590520",
@@ -809,7 +825,8 @@ const cases = [
                         "name": "eSports 2013 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_hy_blam_simple_light_large.ed114947481e0366b2cde092a8ddac4d7250775b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_hy_blam_simple_light_large.ed114947481e0366b2cde092a8ddac4d7250775b.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1245808",
@@ -834,7 +851,8 @@ const cases = [
                         "name": "eSports 2013 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_catskulls_p90_light_large.0ff2c5c53a691e28de02cd7b40e395d53d8c6826.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_catskulls_p90_light_large.0ff2c5c53a691e28de02cd7b40e395d53d8c6826.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -1199,7 +1217,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_sp_spray_waves_bravo_light_large.5d4e0e3977bf9f1fa8dd1576b5576b429546f98d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_sp_spray_waves_bravo_light_large.5d4e0e3977bf9f1fa8dd1576b5576b429546f98d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-131832",
@@ -1227,7 +1246,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_cu_season_elites_bravo_light_large.03b5f4afcbffb80f73ce009da240f4aa1455c15f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_cu_season_elites_bravo_light_large.03b5f4afcbffb80f73ce009da240f4aa1455c15f.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2294524",
@@ -1253,7 +1273,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_hy_seaside_bravo_light_large.bad13bb67e67ee02b782a574376df5e7e4ff766d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_hy_seaside_bravo_light_large.bad13bb67e67ee02b782a574376df5e7e4ff766d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-852736",
@@ -1281,7 +1302,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_hy_crumple_bravo_light_large.fcf25827c0ef88bac7e5b0567ecd5a7dbee01791.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_hy_crumple_bravo_light_large.fcf25827c0ef88bac7e5b0567ecd5a7dbee01791.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1573636",
@@ -1307,7 +1329,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_sp_skull_diagram_bravo_light_large.f3bf563f6e0274f55377e4fe0422905586a3d19b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_sp_skull_diagram_bravo_light_large.f3bf563f6e0274f55377e4fe0422905586a3d19b.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-721676",
@@ -1335,7 +1358,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_hy_bluepolygon_bravo_light_large.6638623a4979512bb048fa22f9ec06a5c1172c7e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_hy_bluepolygon_bravo_light_large.6638623a4979512bb048fa22f9ec06a5c1172c7e.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-3998428",
@@ -1363,7 +1387,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_hy_siege_bravo_light_large.517b89e78bfe8bad7ca1aab7edf1d02a56b2da26.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_hy_siege_bravo_light_large.517b89e78bfe8bad7ca1aab7edf1d02a56b2da26.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1049324",
@@ -1390,7 +1415,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_sp_star_bravo_light_large.d4a56abe885a1a03ea173a6aaeb4f10bcec6a0c2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_sp_star_bravo_light_large.d4a56abe885a1a03ea173a6aaeb4f10bcec6a0c2.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1114864",
@@ -1418,7 +1444,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_aq_etched_mac10_bravo_light_large.ec4cf2f7748ac5318292630c8c7e3c2d016723e3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_aq_etched_mac10_bravo_light_large.ec4cf2f7748ac5318292630c8c7e3c2d016723e3.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-3932916",
@@ -1443,7 +1470,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_hy_ocean_bravo_light_large.7a942449926153575269af174733edc7bed5faeb.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_hy_ocean_bravo_light_large.7a942449926153575269af174733edc7bed5faeb.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1245912",
@@ -1471,7 +1499,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_dragon_p90_bravo_light_large.200ef513ae29ae7651ad3f31e68b5b186279572f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_dragon_p90_bravo_light_large.200ef513ae29ae7651ad3f31e68b5b186279572f.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2097996",
@@ -1496,7 +1525,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_am_ossify_blue_p2000_bravo_light_large.91f225635f7e4a986b51e09bba106ca6a4bf7dbb.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_am_ossify_blue_p2000_bravo_light_large.91f225635f7e4a986b51e09bba106ca6a4bf7dbb.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-590672",
@@ -1521,7 +1551,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_am_crumple_bravo_light_large.5f59de227d280f3c3b39fae7e49ac143338ca5b2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_am_crumple_bravo_light_large.5f59de227d280f3c3b39fae7e49ac143338ca5b2.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-459472",
@@ -1549,7 +1580,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_fireserpent_ak47_bravo_light_large.9390e7fd091ea8a0434fd2143e0acf0d5d1bbc97.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_fireserpent_ak47_bravo_light_large.9390e7fd091ea8a0434fd2143e0acf0d5d1bbc97.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-66276",
@@ -1574,7 +1606,8 @@ const cases = [
                         "name": "Operation Bravo Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_am_scales_bravo_light_large.6cba46695e74a8bee932ea90cea24e146cbef5e7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_am_scales_bravo_light_large.6cba46695e74a8bee932ea90cea24e146cbef5e7.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -1935,7 +1968,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_an_titanium30v_light_large.76078065235a996df8184b684159dfee7efcd530.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_an_titanium30v_light_large.76078065235a996df8184b684159dfee7efcd530.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-3933028",
@@ -1961,7 +1995,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_hy_redtiger_light_large.0b40a51b0020fa1781ddb7368e3b39c03263b2dd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_hy_redtiger_light_large.0b40a51b0020fa1781ddb7368e3b39c03263b2dd.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-656232",
@@ -1988,7 +2023,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_hy_bluehex_light_large.fe87763b33ea8963cf87e9b8fd7b9bfc9014d747.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_hy_bluehex_light_large.fe87763b33ea8963cf87e9b8fd7b9bfc9014d747.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2360172",
@@ -2014,7 +2050,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_hy_redhex_light_large.099092ccf56439b922b51569ce87f2f908abcc19.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_hy_redhex_light_large.099092ccf56439b922b51569ce87f2f908abcc19.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2491296",
@@ -2042,7 +2079,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_hy_webs_darker_light_large.8e06e878c22b82c6bb1045f26e1bbc1926faecf2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_hy_webs_darker_light_large.8e06e878c22b82c6bb1045f26e1bbc1926faecf2.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-196784",
@@ -2070,7 +2108,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_aq_oiled_light_large.fdaa095453965b2be93f8aa90ae469d926fac4e7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_aq_oiled_light_large.fdaa095453965b2be93f8aa90ae469d926fac4e7.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2228468",
@@ -2095,7 +2134,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_aa_vertigo_light_large.41a7195e0a6ba44c2fc64d64bee0635444b0c569.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_aa_vertigo_light_large.41a7195e0a6ba44c2fc64d64bee0635444b0c569.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2294616",
@@ -2120,7 +2160,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_am_crumple_light_large.e46bab0dc8f8fe10b83c18ed9f9d9945352781af.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_am_crumple_light_large.e46bab0dc8f8fe10b83c18ed9f9d9945352781af.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-131952",
@@ -2146,7 +2187,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_am_ossify_red_light_large.9da21d3dc7b64952d853818075f524a9e4c1dfd3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_am_ossify_red_light_large.9da21d3dc7b64952d853818075f524a9e4c1dfd3.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1245452",
@@ -2171,7 +2213,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_am_slither_p90_light_large.583a90c66858cf0cc20253d2f4a0be1168eadbca.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_am_slither_p90_light_large.583a90c66858cf0cc20253d2f4a0be1168eadbca.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-3998580",
@@ -2197,7 +2240,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_am_electric_red_light_large.ef8005beba74458fabbe8f664e0b210b2ef3a007.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_am_electric_red_light_large.ef8005beba74458fabbe8f664e0b210b2ef3a007.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2622328",
@@ -2223,7 +2267,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 2"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_shark_light_large.00812c20a896847013b0a2913a166f6ba220a258.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_shark_light_large.00812c20a896847013b0a2913a166f6ba220a258.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -2584,7 +2629,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_an_titanium30v_light_large.4264e8ec1cedb3bce31a89c934c630bd56d480c1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_an_titanium30v_light_large.4264e8ec1cedb3bce31a89c934c630bd56d480c1.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-197500",
@@ -2612,7 +2658,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_hy_flowers_light_large.4f94edf6ac032c15fedafa6ba1f2425a4ca8bded.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_hy_flowers_light_large.4f94edf6ac032c15fedafa6ba1f2425a4ca8bded.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1704832",
@@ -2640,7 +2687,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_hy_water_crest_light_large.c4d0aad9cb87870f84f3709ff3b8ecc9fe489d89.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_hy_water_crest_light_large.c4d0aad9cb87870f84f3709ff3b8ecc9fe489d89.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2294660",
@@ -2667,7 +2715,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_sp_camo_wood_blue_light_large.d63e06a38ef396a945defd7c1ad9da9ba79fe60d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_sp_camo_wood_blue_light_large.d63e06a38ef396a945defd7c1ad9da9ba79fe60d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-721812",
@@ -2693,7 +2742,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_sp_zebracam_blue_light_large.42199f9c4c0bd1ff9f569d6e7348c5cedf4630f5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_sp_zebracam_blue_light_large.42199f9c4c0bd1ff9f569d6e7348c5cedf4630f5.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2360216",
@@ -2719,7 +2769,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_am_ddpatdense_silver_light_large.36220b384099ed61c2b9ba64af899b892e4a4c58.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_am_ddpatdense_silver_light_large.36220b384099ed61c2b9ba64af899b892e4a4c58.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-459656",
@@ -2746,7 +2797,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_hy_ak47lam_blue_light_large.9f8ec5103efa5b7a0b3919a13b4de78e1bd612a0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_hy_ak47lam_blue_light_large.9f8ec5103efa5b7a0b3919a13b4de78e1bd612a0.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1246096",
@@ -2774,7 +2826,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_hy_modspots_light_large.a702b8feaf0e2568e60efb2ab722819b0521ea4b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_hy_modspots_light_large.a702b8feaf0e2568e60efb2ab722819b0521ea4b.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-655976",
@@ -2801,7 +2854,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_broken_path_famas_light_large.5d45539735d838ffefd26467a8c767b71807c785.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_broken_path_famas_light_large.5d45539735d838ffefd26467a8c767b71807c785.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-590732",
@@ -2828,7 +2882,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_hy_hive_light_large.2189958e2afa2c69cfcdd807124c279a0e645625.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_hy_hive_light_large.2189958e2afa2c69cfcdd807124c279a0e645625.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-66460",
@@ -2854,7 +2909,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_am_ddpatdense_peacock_light_large.a486db3160bcdcf6bc5a1d8179c450b02f620151.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_am_ddpatdense_peacock_light_large.a486db3160bcdcf6bc5a1d8179c450b02f620151.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1049436",
@@ -2880,7 +2936,8 @@ const cases = [
                         "name": "eSports 2013 Winter Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_xray_m4_light_large.e929bb3998df4902c2bd6f6fbb775cec071558ba.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_xray_m4_light_large.e929bb3998df4902c2bd6f6fbb775cec071558ba.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -3244,7 +3301,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_sandstorm_light_large.008937727e75bf840d2b511d3d8493a12b5ed2ac.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_sandstorm_light_large.008937727e75bf840d2b511d3d8493a12b5ed2ac.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-197668",
@@ -3270,7 +3328,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_hy_kami_light_large.ce4939fe41b30c6143f487879a57e4f5f227e811.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_hy_kami_light_large.ce4939fe41b30c6143f487879a57e4f5f227e811.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-918568",
@@ -3298,7 +3357,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_aq_obsidian_light_large.c8a38c9354c2f4531f0802eaa49caa9878bbf9ed.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_aq_obsidian_light_large.c8a38c9354c2f4531f0802eaa49caa9878bbf9ed.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1705004",
@@ -3326,7 +3386,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_am_turqoise_halftone_light_large.e34dc4bab2f1da66b04bd2d3cadb51339ce81f4d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_am_turqoise_halftone_light_large.e34dc4bab2f1da66b04bd2d3cadb51339ce81f4d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-656400",
@@ -3353,7 +3414,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_pulse_light_large.fad5dfcd7b0ccfe655c7c3903d091140904959ec.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_pulse_light_large.fad5dfcd7b0ccfe655c7c3903d091140904959ec.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-132116",
@@ -3381,7 +3443,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_hy_marina_sunrise_light_large.bcdf31f5af4a5b9bef2bb0d5336715a3a0407b92.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_hy_marina_sunrise_light_large.bcdf31f5af4a5b9bef2bb0d5336715a3a0407b92.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2229272",
@@ -3407,7 +3470,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_am_thorny_rose_mp9_light_large.a187f13404eba96de622f4c94e85078fb18d8d7c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_am_thorny_rose_mp9_light_large.a187f13404eba96de622f4c94e85078fb18d8d7c.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2294812",
@@ -3435,7 +3499,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_skull_nova_light_large.558d42424adda8cc3383b05d5388f75837b07efa.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_skull_nova_light_large.558d42424adda8cc3383b05d5388f75837b07efa.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-3933188",
@@ -3463,7 +3528,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1-s_elegant_light_large.1acbb0060648091ac532de68cfd720b7ad980564.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1-s_elegant_light_large.1acbb0060648091ac532de68cfd720b7ad980564.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2360328",
@@ -3491,7 +3557,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_refined_light_large.9da38bc561b6576555b1700e9e10ddbc52994c67.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_refined_light_large.9da38bc561b6576555b1700e9e10ddbc52994c67.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-590860",
@@ -3517,7 +3584,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_cobra_light_large.cf20ce6ac1151b4a30d8a84081ec4373cbfad4a4.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_cobra_light_large.cf20ce6ac1151b4a30d8a84081ec4373cbfad4a4.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1049596",
@@ -3543,7 +3611,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4_asimov_light_large.af03179f3d43ff55b0c3d114c537eac77abdb6cf.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4_asimov_light_large.af03179f3d43ff55b0c3d114c537eac77abdb6cf.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-1901568",
@@ -3570,7 +3639,8 @@ const cases = [
                         "name": "Winter Offensive Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_octopump_light_large.761df5911efc6a96061c7b34e41a2ff6ec61e58b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_octopump_light_large.761df5911efc6a96061c7b34e41a2ff6ec61e58b.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -3935,7 +4005,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_hy_webs_light_large.2093b43aefa82ee6713c472384ea283fdd44f023.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_hy_webs_light_large.2093b43aefa82ee6713c472384ea283fdd44f023.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2098252",
@@ -3963,7 +4034,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_hy_poly_camo_light_large.e4c6576e012974ba60e6dbc70fe5cd1cacc30011.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_hy_poly_camo_light_large.e4c6576e012974ba60e6dbc70fe5cd1cacc30011.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-132176",
@@ -3991,7 +4063,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_so_panther_light_large.019431b3fca18b027d07fe29d0ee7bf88df75576.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_so_panther_light_large.019431b3fca18b027d07fe29d0ee7bf88df75576.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-3998804",
@@ -4019,7 +4092,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_aq_usp_stainless_light_large.3f6edb8ebd4138742504859e0d3e7c51a23c39db.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_aq_usp_stainless_light_large.3f6edb8ebd4138742504859e0d3e7c51a23c39db.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-263256",
@@ -4047,7 +4121,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_hy_craquelure_light_large.8e97eb17a01e73c47a8987685d740b344aeb2cb8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_hy_craquelure_light_large.8e97eb17a01e73c47a8987685d740b344aeb2cb8.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4129840",
@@ -4073,7 +4148,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_am_diamond_plate_light_large.ef425c82bae5d971bd5e1e9c54b9cd2f992e4e16.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_am_diamond_plate_light_large.ef425c82bae5d971bd5e1e9c54b9cd2f992e4e16.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1967168",
@@ -4099,7 +4175,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_am_fluted_tec9_light_large.bfb4506150a675b24d3178f457507db2903364d6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_am_fluted_tec9_light_large.bfb4506150a675b24d3178f457507db2903364d6.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-66628",
@@ -4127,7 +4204,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aq_engraved_deagle_light_large.804a1a01a29bf80673b739f3eb220272a6838193.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aq_engraved_deagle_light_large.804a1a01a29bf80673b739f3eb220272a6838193.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-197704",
@@ -4153,7 +4231,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_am_copper_flecks_light_large.d2af814b76763880470bc7039d5569eb74b26978.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_am_copper_flecks_light_large.d2af814b76763880470bc7039d5569eb74b26978.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-4129844",
@@ -4180,7 +4259,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_am_fuschia_light_large.9ca4218835426c791482a3d7cc3b00d00c958d40.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_am_fuschia_light_large.9ca4218835426c791482a3d7cc3b00d00c958d40.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2360380",
@@ -4206,7 +4286,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_am_p250_beaded_paint_light_large.2ddd1d4b6dd6fa2082001802a60acfa9daba722d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_am_p250_beaded_paint_light_large.2ddd1d4b6dd6fa2082001802a60acfa9daba722d.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-4129848",
@@ -4234,7 +4315,8 @@ const cases = [
                         "name": "CS:GO Weapon Case 3"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_aq_etched_cz75_light_large.5fa7e4f56600efeaceb99a948c6fa5dc3648a3b9.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_aq_etched_cz75_light_large.5fa7e4f56600efeaceb99a948c6fa5dc3648a3b9.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -4599,7 +4681,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump_corporal_light_large.ae233b4fabc9ff5fef6d25a87175ce5ad8f2ee6e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump_corporal_light_large.ae233b4fabc9ff5fef6d25a87175ce5ad8f2ee6e.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1836148",
@@ -4627,7 +4710,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_sp_negev_turq_terrain_light_large.9c6c678b0e6bc949c0688f3e1cf39ca73e0a44ae.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_sp_negev_turq_terrain_light_large.9c6c678b0e6bc949c0688f3e1cf39ca73e0a44ae.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1967236",
@@ -4654,7 +4738,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_sandstorm_light_large.e38b0daacb3aa5d8f692a5ee05ad4bc0885808cd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_sandstorm_light_large.e38b0daacb3aa5d8f692a5ee05ad4bc0885808cd.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1770636",
@@ -4681,7 +4766,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_heaven_light_large.ea002eaa1f984e278f59a934ca9016f038d06120.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_heaven_light_large.ea002eaa1f984e278f59a934ca9016f038d06120.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1115248",
@@ -4709,7 +4795,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_redhot_light_large.d5e1e0b433e3340266635970ca45cbbf810216f2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_redhot_light_large.d5e1e0b433e3340266635970ca45cbbf810216f2.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2557052",
@@ -4736,7 +4823,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_pulse_light_large.d564900d05df0ee1da737cde6144eb55fa36684f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_pulse_light_large.d564900d05df0ee1da737cde6144eb55fa36684f.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-656512",
@@ -4763,7 +4851,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_an_famas_sgt_light_large.5a9241d41a3c35a3fbb20aebcd22253a6a85f72f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_an_famas_sgt_light_large.5a9241d41a3c35a3fbb20aebcd22253a6a85f72f.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-3998856",
@@ -4790,7 +4879,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_elegant_light_large.416f607cc5faeb52be0f22e1b98450391f452ac2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_elegant_light_large.416f607cc5faeb52be0f22e1b98450391f452ac2.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-459880",
@@ -4817,7 +4907,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_cobra_light_large.7494bfdf4855fd4e6a2dbd983ed0a243c80ef830.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_cobra_light_large.7494bfdf4855fd4e6a2dbd983ed0a243c80ef830.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1246316",
@@ -4844,7 +4935,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_trigon_light_large.9f93f859fe1d03dfced62e52c4cab39ae2f8a9f3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_trigon_light_large.9f93f859fe1d03dfced62e52c4cab39ae2f8a9f3.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2294904",
@@ -4870,7 +4962,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_antique_light_large.3391e20bf69d1a630ab0551fd0c2fa196d028e44.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_antique_light_large.3391e20bf69d1a630ab0551fd0c2fa196d028e44.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-590940",
@@ -4896,7 +4989,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_asimov_light_large.32d9045f8a2bcd13ca18390cc9fd82026e7195ab.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_asimov_light_large.32d9045f8a2bcd13ca18390cc9fd82026e7195ab.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-525408",
@@ -4924,7 +5018,8 @@ const cases = [
                         "name": "Operation Phoenix Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_chameleonaire_light_large.ad1d2f62d1481931d8e23e0ab0fbd4e7a61135f7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_chameleonaire_light_large.ad1d2f62d1481931d8e23e0ab0fbd4e7a61135f7.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -5289,7 +5384,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_asiimov_light_large.9a4fb9bbf6f01209b8fd3effeda1eecfc1e5a9a3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_asiimov_light_large.9a4fb9bbf6f01209b8fd3effeda1eecfc1e5a9a3.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2622656",
@@ -5316,7 +5412,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_immortal_light_large.294156dbab19f645942fe9cbafed88165aa70044.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_immortal_light_large.294156dbab19f645942fe9cbafed88165aa70044.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-853200",
@@ -5344,7 +5441,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_hy_galil_kami_light_large.f1783721b5318ea51bcb7890bf9cd0084afcd3e3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_hy_galil_kami_light_large.f1783721b5318ea51bcb7890bf9cd0084afcd3e3.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4130104",
@@ -5372,7 +5470,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_am_gyrate_light_large.90f97369a79695a7fdcb633a9c9a9e56f29a05d5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_am_gyrate_light_large.90f97369a79695a7fdcb633a9c9a9e56f29a05d5.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1246524",
@@ -5398,7 +5497,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_an_royalbleed_light_large.58dfb4851908d78c31e205477793a620923737db.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_an_royalbleed_light_large.58dfb4851908d78c31e205477793a620923737db.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2098504",
@@ -5426,7 +5526,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_pulse_light_large.a79fcfcd59202495573abfddc1e7627be62b4e1c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_pulse_light_large.a79fcfcd59202495573abfddc1e7627be62b4e1c.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-525508",
@@ -5454,7 +5555,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_progressiv_light_large.f712baf9253bd357c71a1525dac51e30298c9535.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_progressiv_light_large.f712baf9253bd357c71a1525dac51e30298c9535.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1705160",
@@ -5482,7 +5584,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_antique_light_large.06467175511976dae4219e9cb2fc8ab20df0e653.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_antique_light_large.06467175511976dae4219e9cb2fc8ab20df0e653.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1639656",
@@ -5510,7 +5613,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_heaven_guard_light_large.c7f3f8815f9caa92daa5ffe4390880c1606f4a81.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_heaven_guard_light_large.c7f3f8815f9caa92daa5ffe4390880c1606f4a81.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1115460",
@@ -5538,7 +5642,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_korupt_light_large.e1efdcab099278a147fe2f07405214218e74e705.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_korupt_light_large.e1efdcab099278a147fe2f07405214218e74e705.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-3933364",
@@ -5566,7 +5671,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_am_m4a1-s_alloy_orange_light_large.82bd272d0256f17eb86029a8d1411c4e5bf2bc9c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_am_m4a1-s_alloy_orange_light_large.82bd272d0256f17eb86029a8d1411c4e5bf2bc9c.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2491616",
@@ -5594,7 +5700,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_cu_scar_cyrex_light_large.ee4da13e2d74d0fd1fdbaa8f2ca49eb1c7f0acca.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_cu_scar_cyrex_light_large.ee4da13e2d74d0fd1fdbaa8f2ca49eb1c7f0acca.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-3999052",
@@ -5621,7 +5728,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_kaiman_light_large.8ed168478e306bd382a90afb1b71ad9f7551b342.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_kaiman_light_large.8ed168478e306bd382a90afb1b71ad9f7551b342.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-459960",
@@ -5649,7 +5757,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_rubber_light_large.5836c38d3037a5a1f90ffdc8c9d0b94367ca8efd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_rubber_light_large.5836c38d3037a5a1f90ffdc8c9d0b94367ca8efd.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-1049920",
@@ -5677,7 +5786,8 @@ const cases = [
                         "name": "Huntsman Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_titanstorm_light_large.a161ff6ea23af2d9bbdc0a757f5163fa1ad87a30.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_titanstorm_light_large.a161ff6ea23af2d9bbdc0a757f5163fa1ad87a30.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -5788,7 +5898,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7-commander_light_large.260d3f2765c83f75eadac5abd6ef4187ea2c2089.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7-commander_light_large.260d3f2765c83f75eadac5abd6ef4187ea2c2089.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1836428",
@@ -5816,7 +5927,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_titanstorm_light_large.eb7badc75ecbb1b4cdf35bfb53088731bbe11cb0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_titanstorm_light_large.eb7badc75ecbb1b4cdf35bfb53088731bbe11cb0.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2098580",
@@ -5844,7 +5956,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_ivory_light_large.2a47b14b59ce796956958ce13cb60617148f7711.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_ivory_light_large.2a47b14b59ce796956958ce13cb60617148f7711.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2622884",
@@ -5872,7 +5985,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_aq_leviathan_light_large.0d0ce425b5374642d0d1fbfd0c0ec634eb8570fb.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_aq_leviathan_light_large.0d0ce425b5374642d0d1fbfd0c0ec634eb8570fb.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1574312",
@@ -5899,7 +6013,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_hy_lines_orange_light_large.d004ea389236e6fa5da2f0555ab5b3723bdf36d1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_hy_lines_orange_light_large.d004ea389236e6fa5da2f0555ab5b3723bdf36d1.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1705332",
@@ -5927,7 +6042,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon-osiris_light_large.269e03e1ad598b76adb884704c4f48d725beb5fc.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon-osiris_light_large.269e03e1ad598b76adb884704c4f48d725beb5fc.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-4130168",
@@ -5955,7 +6071,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_c75a-tiger_light_large.b754b5a73c8f2b207942eb046efdbd4cade04513.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_c75a-tiger_light_large.b754b5a73c8f2b207942eb046efdbd4cade04513.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2295184",
@@ -5981,7 +6098,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_koi_light_large.28c3fe03f736b48dee10e1e88e77ac02132dcba6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_koi_light_large.28c3fe03f736b48dee10e1e88e77ac02132dcba6.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2360728",
@@ -6008,7 +6126,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_bittersweet_light_large.83cd48968d79412e0cf2233b8e18602ff2790ad4.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_bittersweet_light_large.83cd48968d79412e0cf2233b8e18602ff2790ad4.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-66940",
@@ -6034,7 +6153,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_deagle_aureus_light_large.7fa76057cb05f2cab829be448f120ae540715d0e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_deagle_aureus_light_large.7fa76057cb05f2cab829be448f120ae540715d0e.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-198016",
@@ -6062,7 +6182,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_aq_57_feathers_light_large.aa942f28d5fd868643b54ba0c317703d8b615754.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_aq_57_feathers_light_large.aa942f28d5fd868643b54ba0c317703d8b615754.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-263556",
@@ -6090,7 +6211,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock-liquescent_light_large.151e954ed4aef28ccc55d0ca4b43a7d9644f36ac.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock-liquescent_light_large.151e954ed4aef28ccc55d0ca4b43a7d9644f36ac.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1246620",
@@ -6118,7 +6240,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90-asiimov_light_large.0ca7f7fc032c98c5cc506ccde92b33e5836a8a88.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90-asiimov_light_large.0ca7f7fc032c98c5cc506ccde92b33e5836a8a88.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-3933600",
@@ -6146,7 +6269,8 @@ const cases = [
                         "name": "Operation Breakout Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_cyrex_light_large.144b4053eb73b4a47f8128ebb0e808d8e28f5b9c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_cyrex_light_large.144b4053eb73b4a47f8128ebb0e808d8e28f5b9c.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -6248,7 +6372,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_am_zebra_dark_light_large.5636371696eee32d9a3e588ff3b42f6b33776d99.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_am_zebra_dark_light_large.5636371696eee32d9a3e588ff3b42f6b33776d99.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1114504",
@@ -6276,7 +6401,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_so_purple_light_large.c4e2252fe50aab42b6dcd871f33786f68e6261ea.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_so_purple_light_large.c4e2252fe50aab42b6dcd871f33786f68e6261ea.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-3998564",
@@ -6302,7 +6428,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_hy_redtiger_light_large.5d778f6030de49296f349081781d84ef215a9b90.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_hy_redtiger_light_large.5d778f6030de49296f349081781d84ef215a9b90.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4129640",
@@ -6329,7 +6456,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_hy_bluehex_light_large.032e4b0999830a45d7439d07faef66b8299a105f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_hy_bluehex_light_large.032e4b0999830a45d7439d07faef66b8299a105f.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1836276",
@@ -6357,7 +6485,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_bratatat_negev_light_large.b7589c335fb7066d53b1897e000f031d316641e6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_bratatat_negev_light_large.b7589c335fb7066d53b1897e000f031d316641e6.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1639680",
@@ -6384,7 +6513,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_hy_snakeskin_red_light_large.d019a25e10fe53f2edf2958fb322c59621abc4de.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_hy_snakeskin_red_light_large.d019a25e10fe53f2edf2958fb322c59621abc4de.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1703988",
@@ -6412,7 +6542,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_hy_splatter_light_large.7a7417d95485ceb2148bdd3d228219307082ea8a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_hy_splatter_light_large.7a7417d95485ceb2148bdd3d228219307082ea8a.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1245264",
@@ -6440,7 +6571,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_hy_zombie_light_large.7f66b30e6902ae7722b7951fd7446ae7e9b3880e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_hy_zombie_light_large.7f66b30e6902ae7722b7951fd7446ae7e9b3880e.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2163540",
@@ -6465,7 +6597,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_am_ossify_blue_light_large.b2c077afc23ddb48381629155713816dbf09fb84.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_am_ossify_blue_light_large.b2c077afc23ddb48381629155713816dbf09fb84.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-263064",
@@ -6491,7 +6624,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_am_ddpatdense_silver_light_large.4d83c0a0b958bb15f694c7047996ece59f4be05a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_am_ddpatdense_silver_light_large.4d83c0a0b958bb15f694c7047996ece59f4be05a.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-66464",
@@ -6519,7 +6653,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_hy_webs_darker_light_large.7b9cb19bac52ebe7c49e3abdfb0c400ea252fef8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_hy_webs_darker_light_large.7b9cb19bac52ebe7c49e3abdfb0c400ea252fef8.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-524324",
@@ -6547,7 +6682,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_hy_tiger_light_large.d2fe957d3903dc5779403ed1c95947e18fa7e6fd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_hy_tiger_light_large.d2fe957d3903dc5779403ed1c95947e18fa7e6fd.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2294008",
@@ -6575,7 +6711,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_spring_nova_light_large.0be95a01dd54b579186464d0533c5195ffb14a8f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_spring_nova_light_large.0be95a01dd54b579186464d0533c5195ffb14a8f.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-590548",
@@ -6601,7 +6738,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_favela_awp_light_large.4329c047ea1899f3846a1a81539ba2a27665a54e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_favela_awp_light_large.4329c047ea1899f3846a1a81539ba2a27665a54e.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2097888",
@@ -6627,7 +6765,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_favela_p2000_light_large.cc40db4d5048c7ddcfb52642d954e91400e59290.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_favela_p2000_light_large.cc40db4d5048c7ddcfb52642d954e91400e59290.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1049196",
@@ -6655,7 +6794,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_bullet_rain_m4a1_light_large.4b359387b8abcdb0ae92134ba0f2106c405d9222.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_bullet_rain_m4a1_light_large.4b359387b8abcdb0ae92134ba0f2106c405d9222.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-460016",
@@ -6683,7 +6823,8 @@ const cases = [
                         "name": "eSports 2014 Summer Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_panther_ak47_light_large.6b7c82083b5fbb71631ad7961ac1543d1fc2a5cd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_panther_ak47_light_large.6b7c82083b5fbb71631ad7961ac1543d1fc2a5cd.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -7046,7 +7187,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_am_g3sg1_murky_light_large.bc4e8d0e70d2952576d5c9653da71f21bc02b810.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_am_g3sg1_murky_light_large.bc4e8d0e70d2952576d5c9653da71f21bc02b810.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1771012",
@@ -7074,7 +7216,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_sp_mag7_firebitten_light_large.640af2edb52a7f170620e175ddaa5f5cf763325b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_sp_mag7_firebitten_light_large.640af2edb52a7f170620e175ddaa5f5cf763325b.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2229768",
@@ -7102,7 +7245,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_chevron_light_large.698ab583537e3ed4b7661d3fcf75be62f0cdfab9.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_chevron_light_large.698ab583537e3ed4b7661d3fcf75be62f0cdfab9.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-198156",
@@ -7128,7 +7272,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_urban_hazard_light_large.456966d23faf1034c51b8130b7a70294af087026.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_urban_hazard_light_large.456966d23faf1034c51b8130b7a70294af087026.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1574432",
@@ -7154,7 +7299,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_sp_ump45_d-visions_light_large.33ae7e9e8bf24ee97f4f3d3ee113e51782a756fa.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_sp_ump45_d-visions_light_large.33ae7e9e8bf24ee97f4f3d3ee113e51782a756fa.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-263668",
@@ -7180,7 +7326,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_aq_glock_coiled_light_large.d4dcbf0d27479b95a4ad43c36f3b3f3dc87bbd84.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_aq_glock_coiled_light_large.d4dcbf0d27479b95a4ad43c36f3b3f3dc87bbd84.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-3933692",
@@ -7208,7 +7355,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_aq_m4a1s_basilisk_light_large.18370d6557500376e137c7f6b07c7ed46c9dccf2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_aq_m4a1s_basilisk_light_large.18370d6557500376e137c7f6b07c7ed46c9dccf2.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1050112",
@@ -7236,7 +7384,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_griffin_light_large.255bd83fd343ea8e8d84a1d5c94959d0b26cafae.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_griffin_light_large.255bd83fd343ea8e8d84a1d5c94959d0b26cafae.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1902104",
@@ -7264,7 +7413,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_aq_sawedoff_blackgold_light_large.4a8c3a27c780c2a5ec3e4b6686498dce439d5a73.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_aq_sawedoff_blackgold_light_large.4a8c3a27c780c2a5ec3e4b6686498dce439d5a73.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2360848",
@@ -7292,7 +7442,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_aq_p250_cartel_light_large.d63ea117934ac8f9a40afe027fa4a1438dbb1777.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_aq_p250_cartel_light_large.d63ea117934ac8f9a40afe027fa4a1438dbb1777.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2491932",
@@ -7320,7 +7471,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_cu_scar20_intervention_light_large.96d9a26cca617207208a836d424d676bcb2ce3b9.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_cu_scar20_intervention_light_large.96d9a26cca617207208a836d424d676bcb2ce3b9.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1639972",
@@ -7348,7 +7500,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_caritas_light_large.060e6378f5b5ab6fc53a2db451f3d68b8033f304.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_caritas_light_large.060e6378f5b5ab6fc53a2db451f3d68b8033f304.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-460272",
@@ -7376,7 +7529,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_tribute_ak47_light_large.f0ccfeea8a432a82cf4fb7f0411a724dbb43459a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_tribute_ak47_light_large.f0ccfeea8a432a82cf4fb7f0411a724dbb43459a.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-2098708",
@@ -7404,7 +7558,8 @@ const cases = [
                         "name": "Operation Vanguard Weapon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_fire_elemental_light_large.1e57d4d9f1c51e613c1923377aa55fab4b0ab1bc.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_fire_elemental_light_large.1e57d4d9f1c51e613c1923377aa55fab4b0ab1bc.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -7769,7 +7924,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_deathtoll_light_large.cfcc6a17037a33bbb524ca1856c07cf76dda449d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_deathtoll_light_large.cfcc6a17037a33bbb524ca1856c07cf76dda449d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-919108",
@@ -7797,7 +7953,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_cu_m249_sektor_light_large.c957e70c656024b2c062f7af2031a76cb3c83f1c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_cu_m249_sektor_light_large.c957e70c656024b2c062f7af2031a76cb3c83f1c.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2229836",
@@ -7825,7 +7982,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_deadly_poison_light_large.0776976e709ec7b503dd7e47b8c962338615b5da.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_deadly_poison_light_large.0776976e709ec7b503dd7e47b8c962338615b5da.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2491992",
@@ -7853,7 +8011,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_aq_scar20_leak_light_large.06b9231638ba347e91c671ecf2c1364754794893.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_aq_scar20_leak_light_large.06b9231638ba347e91c671ecf2c1364754794893.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1640028",
@@ -7881,7 +8040,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm1014_sigla_light_large.71c180cd3b8bdea7d0b119ab2b9d54792c51b3aa.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm1014_sigla_light_large.71c180cd3b8bdea7d0b119ab2b9d54792c51b3aa.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-132656",
@@ -7909,7 +8069,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_cu_elites_urbanstorm_light_large.d33c9dd65434d8b9f4e7b5092fcc2e07a874e625.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_cu_elites_urbanstorm_light_large.d33c9dd65434d8b9f4e7b5092fcc2e07a874e625.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-67124",
@@ -7937,7 +8098,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aq_deagle_naga_light_large.b410ad835b1894a448676ae0590586298af2cb33.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aq_deagle_naga_light_large.b410ad835b1894a448676ae0590586298af2cb33.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1115720",
@@ -7965,7 +8127,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_am_mac10_malachite_light_large.65b0eff12e655fb94ec9de545348178f1a5d60e0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_am_mac10_malachite_light_large.65b0eff12e655fb94ec9de545348178f1a5d60e0.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1902164",
@@ -7993,7 +8156,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_deva_light_large.9ffde04f2f082dce492b2fa6e250f69f538a50b5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_deva_light_large.9ffde04f2f082dce492b2fa6e250f69f538a50b5.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-460328",
@@ -8021,7 +8185,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_aq_ak47_cartel_light_large.2e7be9f4c7bda304f2a7c374260d95affca93f0b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_aq_ak47_cartel_light_large.2e7be9f4c7bda304f2a7c374260d95affca93f0b.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1050176",
@@ -8049,7 +8214,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_ancestral_light_large.cbd9732689f42b7aec91bdb9166b1ee414974cb7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_ancestral_light_large.cbd9732689f42b7aec91bdb9166b1ee414974cb7.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2360912",
@@ -8077,7 +8243,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_mandala_light_large.0acb51464cd72643c6a1fefaf8736288eb5d02f7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_mandala_light_large.0acb51464cd72643c6a1fefaf8736288eb5d02f7.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-591404",
@@ -8102,7 +8269,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_am_awp_glory_light_large.348eae0f5d4da8671886826648dd4197a9829090.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_am_awp_glory_light_large.348eae0f5d4da8671886826648dd4197a9829090.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-853560",
@@ -8128,7 +8296,8 @@ const cases = [
                         "name": "Chroma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_abrasion_light_large.8398e4836a0c26add3514a6af2262704d85fec07.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_abrasion_light_large.8398e4836a0c26add3514a6af2262704d85fec07.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -8468,7 +8637,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_mastery_light_large.4305c0ba4b02ce531fc08c275fa6a9d87da2cf7e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_mastery_light_large.4305c0ba4b02ce531fc08c275fa6a9d87da2cf7e.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2164380",
@@ -8496,7 +8666,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_aq_mp7_ultramodern_light_large.5351e1926e4a9599d149c4941a8603f4143ff999.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_aq_mp7_ultramodern_light_large.5351e1926e4a9599d149c4941a8603f4143ff999.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-67236",
@@ -8524,7 +8695,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_am_bronze_sparkle_light_large.42dc1d2bae9e586f75d6425f94a195014891533b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_am_bronze_sparkle_light_large.42dc1d2bae9e586f75d6425f94a195014891533b.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2361000",
@@ -8552,7 +8724,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_aq_p250_contour_light_large.faf5b305c68d8ea23814163b0a69dafa7318b818.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_aq_p250_contour_light_large.faf5b305c68d8ea23814163b0a69dafa7318b818.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1836736",
@@ -8577,7 +8750,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_am_negev_glory_light_large.11ebbe525e92bd0a56dd4d3a7795a31a01823ba7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_am_negev_glory_light_large.11ebbe525e92bd0a56dd4d3a7795a31a01823ba7.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1902280",
@@ -8605,7 +8779,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_origami_light_large.5f1b3cef6d518cda69daafddd9b2c240a29cf0cc.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_origami_light_large.5f1b3cef6d518cda69daafddd9b2c240a29cf0cc.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-591520",
@@ -8633,7 +8808,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_aq_awp_twine_light_large.f976c41b8f978d2b8d13734f14f6586982d859f1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_aq_awp_twine_light_large.f976c41b8f978d2b8d13734f14f6586982d859f1.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1771196",
@@ -8661,7 +8837,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_redhot_light_large.76087a836e8c98fd10765a4b56dca946ba5acb4d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_redhot_light_large.76087a836e8c98fd10765a4b56dca946ba5acb4d.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-4130508",
@@ -8689,7 +8866,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_cz75_precision_light_large.a0d0ea9d92ff9c535cbdaa9c07a1a95a5181a82b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_cz75_precision_light_large.a0d0ea9d92ff9c535cbdaa9c07a1a95a5181a82b.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1574608",
@@ -8713,7 +8891,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_am_ump_racer_light_large.6d935bf0d33ca90994b1dd9aec78a8938dcd94a2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_am_ump_racer_light_large.6d935bf0d33ca90994b1dd9aec78a8938dcd94a2.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-198316",
@@ -8740,7 +8919,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_banana_light_large.2d78a6614cb329ada893c8d028eb5c2b485f26f0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_banana_light_large.2d78a6614cb329ada893c8d028eb5c2b485f26f0.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-853680",
@@ -8767,7 +8947,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_eco_light_large.7f64e2d77423b3c4263a74caeda18383c2e487d5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_eco_light_large.7f64e2d77423b3c4263a74caeda18383c2e487d5.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-657076",
@@ -8795,7 +8976,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_aq_famas_jinn_light_large.a0e1b8e2a572c5e3d6472181d4a0d6ce7f51139f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_aq_famas_jinn_light_large.a0e1b8e2a572c5e3d6472181d4a0d6ce7f51139f.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-3933880",
@@ -8823,7 +9005,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1_hyper_beast_light_large.31850937661935a062d5f6faf5a1f02fdb90b861.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1_hyper_beast_light_large.31850937661935a062d5f6faf5a1f02fdb90b861.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-1115844",
@@ -8851,7 +9034,8 @@ const cases = [
                         "name": "Chroma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_neonrider_light_large.4ba82cf2ba2d9fdc694d707b563421bbcc20b174.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_neonrider_light_large.4ba82cf2ba2d9fdc694d707b563421bbcc20b174.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -9191,7 +9375,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galilar_particles_light_large.8732f64d53dbc9b0c732641655d4f99124d8cacc.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galilar_particles_light_large.8732f64d53dbc9b0c732641655d4f99124d8cacc.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-264060",
@@ -9219,7 +9404,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_aq_glock18_flames_blue_light_large.5fed23d5a32793c25914eeb99b45f1a2b0cb9d6c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_aq_glock18_flames_blue_light_large.5fed23d5a32793c25914eeb99b45f1a2b0cb9d6c.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2295696",
@@ -9247,7 +9433,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_ranger_light_large.e3e9d3d47d5707092223a268ef59adb53ce76278.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_ranger_light_large.e3e9d3d47d5707092223a268ef59adb53ce76278.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1247128",
@@ -9275,7 +9462,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_mastery_light_large.f58ff489c92ffa8c6e4c42814bad01c352df0ab6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_mastery_light_large.f58ff489c92ffa8c6e4c42814bad01c352df0ab6.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1574816",
@@ -9303,7 +9491,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_uproar_light_large.04cd84320c4370bced14a3989b0e141cff67ec88.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_uproar_light_large.04cd84320c4370bced14a3989b0e141cff67ec88.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-3999652",
@@ -9331,7 +9520,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_progressiv_light_large.91cde781cd0c8502bbbb66f37cc7f1baf2a10c05.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_progressiv_light_large.91cde781cd0c8502bbbb66f37cc7f1baf2a10c05.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-657268",
@@ -9359,7 +9549,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_am_famas_dots_light_large.dc6f19278bac52ea06b8e3576fa324624f2f82b4.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_am_famas_dots_light_large.dc6f19278bac52ea06b8e3576fa324624f2f82b4.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1050496",
@@ -9387,7 +9578,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_evil_daimyo_light_large.c208ba252c0d8902caa973a634cbfa945508a716.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_evil_daimyo_light_large.c208ba252c0d8902caa973a634cbfa945508a716.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2230152",
@@ -9415,7 +9607,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_am_mp9_nitrogen_light_large.3a0b5a7cd31a7cfd5f0d90b9a0a1dbfcdb642cca.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_am_mp9_nitrogen_light_large.3a0b5a7cd31a7cfd5f0d90b9a0a1dbfcdb642cca.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1836940",
@@ -9442,7 +9635,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_annihilator_light_large.421039357ccbbcb9ba1456caa1ed2ae4829b5495.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_annihilator_light_large.421039357ccbbcb9ba1456caa1ed2ae4829b5495.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2099092",
@@ -9470,7 +9664,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_aq_p2000_boom_light_large.39f01b0b86b795bea56300432fecfbf93415ee58.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_aq_p2000_boom_light_large.39f01b0b86b795bea56300432fecfbf93415ee58.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-4130672",
@@ -9498,7 +9693,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_cz75a_chastizer_light_large.d3234c712c3c068adbbfd5718c468c778f2351dd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_cz75a_chastizer_light_large.d3234c712c3c068adbbfd5718c468c778f2351dd.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2164612",
@@ -9524,7 +9720,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_nemsis_light_large.72074e71a27827f41dc5d6f511d2f003c1b60d8a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_nemsis_light_large.72074e71a27827f41dc5d6f511d2f003c1b60d8a.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2557852",
@@ -9552,7 +9749,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_cyrex_light_large.ef2fb1e4d88e8eb7c0efe12e231a773ca1792a4d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_cyrex_light_large.ef2fb1e4d88e8eb7c0efe12e231a773ca1792a4d.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-460648",
@@ -9580,7 +9778,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_courage_alt_light_large.27e4e7d38dc2ce36ffe86bd6ec65d6f525751eaa.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_courage_alt_light_large.27e4e7d38dc2ce36ffe86bd6ec65d6f525751eaa.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-591724",
@@ -9608,7 +9807,8 @@ const cases = [
                         "name": "Falchion Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_hyper_beast_light_large.55efa5e3094af71ca6a56b6eac96cb022f7ecd8b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_hyper_beast_light_large.55efa5e3094af71ca6a56b6eac96cb022f7ecd8b.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -9713,7 +9913,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_cu_dualberretta_dragons_light_large.2742674cbf237d1ba5fb6ed9f0d90e00a03570f9.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_cu_dualberretta_dragons_light_large.2742674cbf237d1ba5fb6ed9f0d90e00a03570f9.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-657328",
@@ -9741,7 +9942,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_lenta_light_large.7ab508a407e56ab541dae127ef5fc64f09f6ae08.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_lenta_light_large.7ab508a407e56ab541dae127ef5fc64f09f6ae08.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-264124",
@@ -9769,7 +9971,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_gs_glock18_wrathys_light_large.8cf4aba20d193a1646b378a3d04a6fee3f66724c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_gs_glock18_wrathys_light_large.8cf4aba20d193a1646b378a3d04a6fee3f66724c.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1116104",
@@ -9797,7 +10000,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_alekhya_duo_light_large.7173900a6b75cee250a55197483cba3c0204b955.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_alekhya_duo_light_large.7173900a6b75cee250a55197483cba3c0204b955.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1771468",
@@ -9825,7 +10029,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_myrcene_light_large.7cd0ed89db7accc44d3289f9f1529e0a75f4643e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_myrcene_light_large.7cd0ed89db7accc44d3289f9f1529e0a75f4643e.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2492376",
@@ -9853,7 +10058,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_gs_scar20_peacemaker03_light_large.061f9ac2ff0a040f6fcc296c451c09fe2e198f83.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_gs_scar20_peacemaker03_light_large.061f9ac2ff0a040f6fcc296c451c09fe2e198f83.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1640420",
@@ -9881,7 +10087,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm1014_scumbria_light_large.b8e79b3c4391784151d789edde360dbaaef7fd1f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm1014_scumbria_light_large.b8e79b3c4391784151d789edde360dbaaef7fd1f.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-853944",
@@ -9909,7 +10116,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_gs_galil_nightwing_light_large.bc71fb0b9102f22348f39015b7de5affd60829e0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_gs_galil_nightwing_light_large.bc71fb0b9102f22348f39015b7de5affd60829e0.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-919488",
@@ -9937,7 +10145,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_gs_m249_nebula_crusader_light_large.60f60c9e8203575e3e3f5574db51132e2b2fe7c7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_gs_m249_nebula_crusader_light_large.60f60c9e8203575e3e3f5574db51132e2b2fe7c7.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2164688",
@@ -9965,7 +10174,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_classified_light_large.231ba61751c2976258bf96b3d1db5ae6ecb03b95.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_classified_light_large.231ba61751c2976258bf96b3d1db5ae6ecb03b95.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2361300",
@@ -9993,7 +10203,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_hy_p250_crackshot_light_large.538a33bb8d7af894f965257c39f699168e125cdd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_hy_p250_crackshot_light_large.538a33bb8d7af894f965257c39f699168e125cdd.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-460712",
@@ -10021,7 +10232,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_winter_sport_light_large.785a08aecd996dcffc6f38373fdc73697e601a6a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_winter_sport_light_large.785a08aecd996dcffc6f38373fdc73697e601a6a.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-722868",
@@ -10049,7 +10261,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_flux_purple_light_large.6ed40e104625c9607e7df5ee60373a19d3dae634.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_flux_purple_light_large.6ed40e104625c9607e7df5ee60373a19d3dae634.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2623452",
@@ -10077,7 +10290,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_technicality_light_large.1a057a14ca191ce12629e06217cbe86097444b03.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_technicality_light_large.1a057a14ca191ce12629e06217cbe86097444b03.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-3934148",
@@ -10105,7 +10319,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_gs_m4a1s_snakebite_gold_light_large.574ace77e1044dbf3a387f200b2867332e974f70.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_gs_m4a1s_snakebite_gold_light_large.574ace77e1044dbf3a387f200b2867332e974f70.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-3999712",
@@ -10133,7 +10348,8 @@ const cases = [
                         "name": "Shadow Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_kill_confirmed_light_large.a3a7b8f19c9fb931b18c1edd7dd21d44e2c3c2e0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_kill_confirmed_light_large.a3a7b8f19c9fb931b18c1edd7dd21d44e2c3c2e0.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -10238,7 +10454,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_hy_webs_light_large.2a0bbba44388502060a910b5a18f5b64b5be0b3d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_hy_webs_light_large.2a0bbba44388502060a910b5a18f5b64b5be0b3d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-526316",
@@ -10266,7 +10483,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_am_aug_jumble_light_large.d86901a42f239ddc39cd645d2a17281881fe37d5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_am_aug_jumble_light_large.d86901a42f239ddc39cd645d2a17281881fe37d5.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-67572",
@@ -10293,7 +10511,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aq_deagle_corinthian_light_large.1a694892a1953a131775451d0542508b4b3d9e77.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aq_deagle_corinthian_light_large.1a694892a1953a131775451d0542508b4b3d9e77.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2099212",
@@ -10319,7 +10538,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_am_p2000_imperial_red_light_large.c47e207307725ed1f9e8cf6d1478dbfd3523c7a7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_am_p2000_imperial_red_light_large.c47e207307725ed1f9e8cf6d1478dbfd3523c7a7.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1902612",
@@ -10347,7 +10567,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_gs_sawedoff_necromancer_light_large.8cead257afdfaf5b852a61d2358aa3fb84def860.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_gs_sawedoff_necromancer_light_large.8cead257afdfaf5b852a61d2358aa3fb84def860.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2492440",
@@ -10375,7 +10596,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_hy_scar20_jungler_light_large.4f6402fac5ca041aae7db17b214e5cfd55149c44.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_hy_scar20_jungler_light_large.4f6402fac5ca041aae7db17b214e5cfd55149c44.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1705968",
@@ -10403,7 +10625,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_noxious_light_large.dc3af57fa024448b24e4ddb8838a0a339cee46ce.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_noxious_light_large.dc3af57fa024448b24e4ddb8838a0a339cee46ce.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-198648",
@@ -10431,7 +10654,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_retrobution_light_large.7ef4b20b8c9aed4d6461861c9d93b81630f6ac71.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_retrobution_light_large.7ef4b20b8c9aed4d6461861c9d93b81630f6ac71.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1837064",
@@ -10459,7 +10683,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_impact_light_large.3315f6272c9bb790f96731643232008b4b8c7296.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_impact_light_large.3315f6272c9bb790f96731643232008b4b8c7296.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2557980",
@@ -10487,7 +10712,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_gs_sg553_tiger_moth_light_large.18de0e5e029741a67330038e646fab1596fcfe88.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_gs_sg553_tiger_moth_light_large.18de0e5e029741a67330038e646fab1596fcfe88.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1968160",
@@ -10515,7 +10741,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_avalanche_light_large.eb6726a24084bf5f3c8c8c70cd8ea37425a708e3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_avalanche_light_large.eb6726a24084bf5f3c8c8c70cd8ea37425a708e3.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1640484",
@@ -10543,7 +10770,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm1014_hot_rod_light_large.f664b036e9b4ec638574f17a9b7ea0905e8c57e0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm1014_hot_rod_light_large.f664b036e9b4ec638574f17a9b7ea0905e8c57e0.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-460776",
@@ -10571,7 +10799,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_point_disarray_light_large.ba0f6ccdcb917aa2bde2ef0312c57d763a61d341.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_point_disarray_light_large.ba0f6ccdcb917aa2bde2ef0312c57d763a61d341.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-722940",
@@ -10598,7 +10827,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_cu_g3sg1_executioner_light_large.36071be17a266f28d8631b0fd73a9be6767ce399.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_cu_g3sg1_executioner_light_large.36071be17a266f28d8631b0fd73a9be6767ce399.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1247248",
@@ -10626,7 +10856,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_shapewood_light_large.e7744840c89b1b83be82d2f64beb5a6719c47bd3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_shapewood_light_large.e7744840c89b1b83be82d2f64beb5a6719c47bd3.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1050624",
@@ -10654,7 +10885,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_royal_squire_light_large.f802ec3cf9c1c6837d841384f6d112367340880b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_royal_squire_light_large.f802ec3cf9c1c6837d841384f6d112367340880b.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-4196392",
@@ -10681,7 +10913,8 @@ const cases = [
                         "name": "Revolver Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_aa_fade_revolver_light_large.af77aee9f82936e7510b89e7f0c1bbf6bfaaff45.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_aa_fade_revolver_light_large.af77aee9f82936e7510b89e7f0c1bbf6bfaaff45.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -11046,7 +11279,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_citizen_light_large.c33a99fe761fc52535224e73d2af91b92ac77637.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_citizen_light_large.c33a99fe761fc52535224e73d2af91b92ac77637.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-133184",
@@ -11074,7 +11308,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_aq_dualberettas_cartel_light_large.52ed24116db8a7254a366ea9f4f49b3ceff9eed3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_aq_dualberettas_cartel_light_large.52ed24116db8a7254a366ea9f4f49b3ceff9eed3.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1116248",
@@ -11102,7 +11337,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_am_mac10_electricity_light_large.88207515fce5ebad84df16d60ff2203a5d4a2702.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_am_mac10_electricity_light_large.88207515fce5ebad84df16d60ff2203a5d4a2702.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2623592",
@@ -11130,7 +11366,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_necropos_light_large.cd2f32aa0349edcad3aefae80b509fc5962a2b30.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_necropos_light_large.cd2f32aa0349edcad3aefae80b509fc5962a2b30.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1968236",
@@ -11158,7 +11395,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_gs_tec9_jambiya_light_large.d1f42521bb774564f80a512c3990e768179cf111.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_gs_tec9_jambiya_light_large.d1f42521bb774564f80a512c3990e768179cf111.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-3999856",
@@ -11186,7 +11424,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_gs_usp_voltage_light_large.11e40b4d4fc09043d4fa513f3913ca65ffcfbb41.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_gs_usp_voltage_light_large.11e40b4d4fc09043d4fa513f3913ca65ffcfbb41.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-657476",
@@ -11214,7 +11453,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_aq_famas_contour_light_large.65d515ab34a6f50c8a5296b562a81da42663b819.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_aq_famas_contour_light_large.65d515ab34a6f50c8a5296b562a81da42663b819.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-198728",
@@ -11242,7 +11482,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_augmented_light_large.eb79857bc2e4b80f4edf61a0c5a72fbae80f3a20.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_augmented_light_large.eb79857bc2e4b80f4edf61a0c5a72fbae80f3a20.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-264272",
@@ -11270,7 +11511,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_gs_glock18_award_light_large.198c0dc5630970b1f3bbcb307a1318745ca006e7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_gs_glock18_award_light_large.198c0dc5630970b1f3bbcb307a1318745ca006e7.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1771612",
@@ -11298,7 +11540,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_gs_mag7_praetorian_light_large.55d96fbd30315911a2397ef950887e8fda43a3ec.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_gs_mag7_praetorian_light_large.55d96fbd30315911a2397ef950887e8fda43a3ec.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2164832",
@@ -11325,7 +11568,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_sp_mp7_impire_light_large.aee431bcc2114fbc9f5cf46ca9735c86ddb450ba.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_sp_mp7_impire_light_large.aee431bcc2114fbc9f5cf46ca9735c86ddb450ba.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-591924",
@@ -11353,7 +11597,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_mastery_light_large.617e335043f250cdb9d6a4c798e075be9560cdd4.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_mastery_light_large.617e335043f250cdb9d6a4c798e075be9560cdd4.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-67644",
@@ -11381,7 +11626,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aq_deserteagle_kumichodragon_light_large.19874e9a20cfac49efbe1f1557b995e453633ffe.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aq_deserteagle_kumichodragon_light_large.19874e9a20cfac49efbe1f1557b995e453633ffe.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2295908",
@@ -11409,7 +11655,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_hyperbeast_light_large.ec64e1aa22dc78fa692a2269a99669842b91cc6f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_hyperbeast_light_large.ec64e1aa22dc78fa692a2269a99669842b91cc6f.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-460848",
@@ -11437,7 +11684,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_supercharged_light_large.8a0d53e84b7049366a3e3dbb25d29f473d76dceb.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_supercharged_light_large.8a0d53e84b7049366a3e3dbb25d29f473d76dceb.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-1050708",
@@ -11465,7 +11713,8 @@ const cases = [
                         "name": "Operation Wildfire Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_pioneer_light_large.2dcc4c93ad184179e34b9359090d7398718d36e4.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_pioneer_light_large.2dcc4c93ad184179e34b9359090d7398718d36e4.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -11570,7 +11819,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dualberettas_ventilators_light_large.45cb1ffd25de1ed5b90ba104b1f8e0a8eb2eb255.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dualberettas_ventilators_light_large.45cb1ffd25de1ed5b90ba104b1f8e0a8eb2eb255.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-723076",
@@ -11598,7 +11848,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_sp_g3sg1_militiaorange_light_large.215d54d5c86185e61d65694899bf029f6e070cab.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_sp_g3sg1_militiaorange_light_large.215d54d5c86185e61d65694899bf029f6e070cab.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-919692",
@@ -11626,7 +11877,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_cu_m249_spectre_light_large.b0a23c44e56390b4bbdc2c389911f6cc2b42da3d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_cu_m249_spectre_light_large.b0a23c44e56390b4bbdc2c389911f6cc2b42da3d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2230420",
@@ -11654,7 +11906,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_am_mp9_bioleak_light_large.d9b0d0e9fea2104871e0510bd704bfa03cdd6056.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_am_mp9_bioleak_light_large.d9b0d0e9fea2104871e0510bd704bfa03cdd6056.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2099352",
@@ -11682,7 +11935,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_hy_p2000_oceani_light_large.8f64654c5964975c85201b1dbbdf7b8ffab768be.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_hy_p2000_oceani_light_large.8f64654c5964975c85201b1dbbdf7b8ffab768be.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1902752",
@@ -11707,7 +11961,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_gs_sawedoff_fubar_light_large.0673d87171fccc0fc98e77806da7259e283283ea.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_gs_sawedoff_fubar_light_large.0673d87171fccc0fc98e77806da7259e283283ea.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2558116",
@@ -11735,7 +11990,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_atlas_light_large.536218f8160485fa927e19fa06fedae43d9c04e6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_atlas_light_large.536218f8160485fa927e19fa06fedae43d9c04e6.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4130940",
@@ -11763,7 +12019,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_gs_cz75a_redastor_light_large.e00e688986c50877a103fe66d70fdf1fc13bbe8b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_gs_cz75a_redastor_light_large.e00e688986c50877a103fe66d70fdf1fc13bbe8b.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-854152",
@@ -11791,7 +12048,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_gs_galilar_incenerator_light_large.669901b842361b46108ced0a555f5575839d093e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_gs_galilar_incenerator_light_large.669901b842361b46108ced0a555f5575839d093e.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2623656",
@@ -11819,7 +12077,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_gs_ssg08_armacore_light_large.043342869c64e1a08107055a4e1b332ad9c763c0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_gs_ssg08_armacore_light_large.043342869c64e1a08107055a4e1b332ad9c763c0.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1968300",
@@ -11846,7 +12105,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_am_tec9_redblast_light_large.0f8de75737cc35ac1d14cf74924838da4d7ab849.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_am_tec9_redblast_light_large.0f8de75737cc35ac1d14cf74924838da4d7ab849.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1640628",
@@ -11874,7 +12134,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_spectrum_light_large.6318ee51c405fb5e8a40aedfc3d98d530f789a5b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_spectrum_light_large.6318ee51c405fb5e8a40aedfc3d98d530f789a5b.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-526452",
@@ -11902,7 +12163,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_swallows_light_large.29e48baa4086b20e4a5f714b5f8cc6350de7c758.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_swallows_light_large.29e48baa4086b20e4a5f714b5f8cc6350de7c758.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2361500",
@@ -11929,7 +12191,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_asiimov_light_large.7ccf465f7dc55d2d960465d404c10cbc8c442cee.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_asiimov_light_large.7ccf465f7dc55d2d960465d404c10cbc8c442cee.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1575088",
@@ -11957,7 +12220,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_primalsaber_light_large.67bef91a43734d654516f65c4288711b257d2049.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_primalsaber_light_large.67bef91a43734d654516f65c4288711b257d2049.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1706104",
@@ -11985,7 +12249,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_curse_light_large.c19cf584d3e28db4914d1559cd387999457944d8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_curse_light_large.c19cf584d3e28db4914d1559cd387999457944d8.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-3934352",
@@ -12013,7 +12278,8 @@ const cases = [
                         "name": "Chroma 3 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_soultaker_light_large.4939d69bd691d421ca9c7d6558b46088c8ac5317.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_soultaker_light_large.4939d69bd691d421ca9c7d6558b46088c8ac5317.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -12353,7 +12619,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_five_seven_daimyo_light_large.d394398cae1977546887145dcf6a4892d2ed29aa.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_five_seven_daimyo_light_large.d394398cae1977546887145dcf6a4892d2ed29aa.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1116468",
@@ -12381,7 +12648,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_aq_mac_10_alien_camo_light_large.10568510ec37ec8515546e5ac03455391bb9ec2d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_aq_mac_10_alien_camo_light_large.10568510ec37ec8515546e5ac03455391bb9ec2d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2296120",
@@ -12409,7 +12677,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_aq_nova_sci_fi_light_large.9cf268816cad5bdbe33bd4d1ddce1eb81f905164.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_aq_nova_sci_fi_light_large.9cf268816cad5bdbe33bd4d1ddce1eb81f905164.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2361664",
@@ -12437,7 +12706,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_gs_p250_metal_panels_light_large.a104ce12e50fa24711708782e5d7b23e1bcb7d1b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_gs_p250_metal_panels_light_large.a104ce12e50fa24711708782e5d7b23e1bcb7d1b.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1706312",
@@ -12465,7 +12735,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_gs_pp_bizon_harvester_light_large.654d26d43d7e4583a0ede5e0ea6bb697858698dc.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_gs_pp_bizon_harvester_light_large.654d26d43d7e4583a0ede5e0ea6bb697858698dc.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2558296",
@@ -12493,7 +12764,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_aerial_light_large.a123874095a96a92aaacd0f64a4fef54fa455e82.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_aerial_light_large.a123874095a96a92aaacd0f64a4fef54fa455e82.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1968476",
@@ -12521,7 +12793,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_am_tec_9_sea_salt_light_large.726f78fd872aa2ccfcab9a051b4b79c314d50a4e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_am_tec_9_sea_salt_light_large.726f78fd872aa2ccfcab9a051b4b79c314d50a4e.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-526620",
@@ -12549,7 +12822,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_gs_aug_aristocrat_light_large.4004dbb20c03d1a210ff9a98968ddb251bdfddc6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_gs_aug_aristocrat_light_large.4004dbb20c03d1a210ff9a98968ddb251bdfddc6.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-592160",
@@ -12576,7 +12850,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_gs_awp_phobos_light_large.fca961cc99c704f09c44e6e82378434ef0e22087.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_gs_awp_phobos_light_large.fca961cc99c704f09c44e6e82378434ef0e22087.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1247556",
@@ -12604,7 +12879,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_full_throttle_light_large.70ef68d70617eb318e2df05e09f780448a1baf0d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_full_throttle_light_large.70ef68d70617eb318e2df05e09f780448a1baf0d.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-4196684",
@@ -12632,7 +12908,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_cu_r8_cybersport_light_large.d5eb827f99a401915b8377eda7b81a0bc9cae4bf.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_cu_r8_cybersport_light_large.d5eb827f99a401915b8377eda7b81a0bc9cae4bf.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1902928",
@@ -12660,7 +12937,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawed_off_lime_light_large.87fbbe1597ea04a51b56f3b0f7c3fc6a5ff6553c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawed_off_lime_light_large.87fbbe1597ea04a51b56f3b0f7c3fc6a5ff6553c.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1050928",
@@ -12688,7 +12966,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_desolate_space_light_large.1fcbd5e124ae7c54cf12e6f76c431e6671a73845.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_desolate_space_light_large.1fcbd5e124ae7c54cf12e6f76c431e6671a73845.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2099516",
@@ -12716,7 +12995,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_gs_p2000_imperial_dragon_light_large.cc82bc6353a0e8ce963f6b0b600905d4dc37bf4a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_gs_p2000_imperial_dragon_light_large.cc82bc6353a0e8ce963f6b0b600905d4dc37bf4a.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2492756",
@@ -12744,7 +13024,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_gs_scar20_bloodsport_light_large.dd99feccb31d2ec296bcd620abd885e6fe50d44e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_gs_scar20_bloodsport_light_large.dd99feccb31d2ec296bcd620abd885e6fe50d44e.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-264488",
@@ -12772,7 +13053,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_wasteland_rebel_light_large.284899ab35e5a29c6edb64b2af194cee19a0ed89.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_wasteland_rebel_light_large.284899ab35e5a29c6edb64b2af194cee19a0ed89.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-3934508",
@@ -12800,7 +13082,8 @@ const cases = [
                         "name": "Gamma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_gs_m4a1_mecha_industries_light_large.2973cf5ca9d1592d6652bf14ac89bcd8593d4f0a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_gs_m4a1_mecha_industries_light_large.2973cf5ca9d1592d6652bf14ac89bcd8593d4f0a.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -13090,7 +13373,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_gs_cz75_tread_light_large.8c276db730bb33477aaa52f7a23825f295e14364.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_gs_cz75_tread_light_large.8c276db730bb33477aaa52f7a23825f295e14364.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-199028",
@@ -13118,7 +13402,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_aq_five_seven_scumbria_light_large.bc05fc6435b84525a0ab140bc72e032a98dab710.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_aq_five_seven_scumbria_light_large.bc05fc6435b84525a0ab140bc72e032a98dab710.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-723320",
@@ -13146,7 +13431,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_ventilator_light_large.5cd3643d4d9cd0599e25a1302e788611bd9a0023.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_ventilator_light_large.5cd3643d4d9cd0599e25a1302e788611bd9a0023.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1837448",
@@ -13173,7 +13459,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_hy_negev_dazzle_light_large.3558ece2a70252dcaa8ea9e324539ae1a4fc1bc0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_hy_negev_dazzle_light_large.3558ece2a70252dcaa8ea9e324539ae1a4fc1bc0.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1247628",
@@ -13201,7 +13488,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_grimm_light_large.59514d7b54f637f314329bb3fef1c7ffd1b153ba.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_grimm_light_large.59514d7b54f637f314329bb3fef1c7ffd1b153ba.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1575324",
@@ -13229,7 +13517,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_metritera_light_large.46ac4388a9651c555ec6849358b85f60a87c328d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_metritera_light_large.46ac4388a9651c555ec6849358b85f60a87c328d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1640864",
@@ -13257,7 +13546,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_hy_xm1014_fractal_blue_light_large.e9720fb7b5928db8bcf79d62850af5bf475b9ec5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_hy_xm1014_fractal_blue_light_large.e9720fb7b5928db8bcf79d62850af5bf475b9ec5.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-67948",
@@ -13285,7 +13575,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aq_desert_eagle_constable_light_large.fb2f2673dd3997a21bff9129e0d2e294c03095e8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aq_desert_eagle_constable_light_large.fb2f2673dd3997a21bff9129e0d2e294c03095e8.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-264572",
@@ -13313,7 +13604,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock18_weasel_light_large.e02e6e5196ebdee47c595799ff011dd645147505.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock18_weasel_light_large.e02e6e5196ebdee47c595799ff011dd645147505.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1771904",
@@ -13340,7 +13632,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_tribal_light_large.c226728af447f07808ea5954eb9a24528092d972.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_tribal_light_large.c226728af447f07808ea5954eb9a24528092d972.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2492816",
@@ -13368,7 +13661,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_gs_scar20_powercore_light_large.74bcd65b1a4a52dd397ede5aa59b860ca4c38939.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_gs_scar20_powercore_light_large.74bcd65b1a4a52dd397ede5aa59b860ca4c38939.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2558356",
@@ -13396,7 +13690,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg556_triarch_light_large.3ea74bea530adda100d25911372ca313ea99453a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg556_triarch_light_large.3ea74bea530adda100d25911372ca313ea99453a.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-526692",
@@ -13424,7 +13719,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_gs_aug_syd_mead_light_large.333597e0555639f5d77541c363a9bb38d95055f3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_gs_aug_syd_mead_light_large.333597e0555639f5d77541c363a9bb38d95055f3.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2230660",
@@ -13452,7 +13748,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_narcis_light_large.c63eaf3fab8c65ec3ab22da8205cbe3c51366d7a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_narcis_light_large.c63eaf3fab8c65ec3ab22da8205cbe3c51366d7a.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1968536",
@@ -13480,7 +13777,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_gs_tec9_supercharged_light_large.e3ebc20f10eae02790fe95703b6099acca1d1809.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_gs_tec9_supercharged_light_large.e3ebc20f10eae02790fe95703b6099acca1d1809.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-461152",
@@ -13508,7 +13806,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_anarchy_light_large.6e98f0c6fcb81aaeca03c56eed68962f50c9ef94.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_anarchy_light_large.6e98f0c6fcb81aaeca03c56eed68962f50c9ef94.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-657776",
@@ -13536,7 +13835,8 @@ const cases = [
                         "name": "Gamma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_gs_famas_rally_light_large.538baee44eb772de95029e4267ea9c41101bbc94.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_gs_famas_rally_light_large.538baee44eb772de95029e4267ea9c41101bbc94.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -13826,7 +14126,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_am_czv2_mf_light_large.e99dde293e56f61d77908b8326d2a89155389783.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_am_czv2_mf_light_large.e99dde293e56f61d77908b8326d2a89155389783.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-264636",
@@ -13854,7 +14155,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_aq_glock_dark-fall_light_large.ac35c22bc50660c89ecfe7654ee93bb9f00bd6f4.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_aq_glock_dark-fall_light_large.ac35c22bc50660c89ecfe7654ee93bb9f00bd6f4.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2165196",
@@ -13882,7 +14184,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_gs_final_pooldeadv2_light_large.30ea2c8c934b49fa0a5e2b8c50ec880c10e2f295.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_gs_final_pooldeadv2_light_large.30ea2c8c934b49fa0a5e2b8c50ec880c10e2f295.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-854484",
@@ -13910,7 +14213,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_ar-camo_light_large.63272b54e93d40433f8ceec41efec2004d51941d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_ar-camo_light_large.63272b54e93d40433f8ceec41efec2004d51941d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2230744",
@@ -13938,7 +14242,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_aa_hide-mp9_light_large.77be0c0ed8276383c6a2d42842df3108bbdd173b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_aa_hide-mp9_light_large.77be0c0ed8276383c6a2d42842df3108bbdd173b.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1772004",
@@ -13966,7 +14271,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_am_mag7_malform_light_large.8a87c99550a4f609e7357bb4f63facf86279afca.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_am_mag7_malform_light_large.8a87c99550a4f609e7357bb4f63facf86279afca.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2099692",
@@ -13994,7 +14300,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_gs_p2000-sport_light_large.96ad9b76130cea95ec2f1bc61ee428e6a998a398.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_gs_p2000-sport_light_large.96ad9b76130cea95ec2f1bc61ee428e6a998a398.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-133572",
@@ -14022,7 +14329,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dual_berettas_golden_venice_light_large.23d73db6cf2b2a7af26414d26373171dd3be06b1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dual_berettas_golden_venice_light_large.23d73db6cf2b2a7af26414d26373171dd3be06b1.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-723408",
@@ -14050,7 +14358,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_viper_yellow_light_large.5a77c59b8c295d2e10f27b8372a146e973ddfb25.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_viper_yellow_light_large.5a77c59b8c295d2e10f27b8372a146e973ddfb25.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-3934684",
@@ -14078,7 +14387,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1_flashback_light_large.5e6c2d582d33006425b61dc0e0e8c28ecda9f853.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1_flashback_light_large.5e6c2d582d33006425b61dc0e0e8c28ecda9f853.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2296296",
@@ -14104,7 +14414,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_am_nova_sand_light_large.0dcb0fc065477e01afda8ecbc83208551a5f2e97.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_am_nova_sand_light_large.0dcb0fc065477e01afda8ecbc83208551a5f2e97.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-4000244",
@@ -14132,7 +14443,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_cyrex_light_large.caef5e9fa7e19c3a4fd6f135d7ae122459b348d0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_cyrex_light_large.caef5e9fa7e19c3a4fd6f135d7ae122459b348d0.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-657864",
@@ -14160,7 +14472,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_gs_famas_mecha_light_large.c26d3fccc156fe26ba3325ed73b29092b3e18093.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_gs_famas_mecha_light_large.c26d3fccc156fe26ba3325ed73b29092b3e18093.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1247728",
@@ -14188,7 +14501,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_shallow_grave_light_large.948019f5ffb76bcc24cfede19c992ffb34e3ecaf.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_shallow_grave_light_large.948019f5ffb76bcc24cfede19c992ffb34e3ecaf.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1903096",
@@ -14216,7 +14530,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_wp_sawedoff_light_large.5c3f71cb929e5d2922b25c7644d0ff1981d92fa0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_wp_sawedoff_light_large.5c3f71cb929e5d2922b25c7644d0ff1981d92fa0.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2623936",
@@ -14244,7 +14559,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_dragonfire_scope_light_large.482858c9d088454b42e53f02d927a8203c69dfc2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_dragonfire_scope_light_large.482858c9d088454b42e53f02d927a8203c69dfc2.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-1051104",
@@ -14272,7 +14588,8 @@ const cases = [
                         "name": "Glove Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_sector_light_large.43ec111ef558f74c49e31621d455f93ba414714e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_sector_light_large.43ec111ef558f74c49e31621d455f93ba414714e.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -14432,7 +14749,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_hy_bizon_torn_green_light_large.1aa076ede6a2511bf676ffb1c5a3eafca71c58a6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_hy_bizon_torn_green_light_large.1aa076ede6a2511bf676ffb1c5a3eafca71c58a6.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2492936",
@@ -14460,7 +14778,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_cu_blueprint_scar_light_large.9a71e8191c2b2081f5fd3884f57f919663b26ee5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_cu_blueprint_scar_light_large.9a71e8191c2b2081f5fd3884f57f919663b26ee5.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-68116",
@@ -14488,7 +14807,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_desert_eagle_corroden_light_large.5fde2cc1c9b82b0e9823445c7fb2be334bc286af.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_desert_eagle_corroden_light_large.5fde2cc1c9b82b0e9823445c7fb2be334bc286af.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-199192",
@@ -14516,7 +14836,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_vein_light_large.464ec691b3c3c9c828aa1a8d4e2b076daa4b7a4f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_vein_light_large.464ec691b3c3c9c828aa1a8d4e2b076daa4b7a4f.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2165284",
@@ -14544,7 +14865,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_sp_mp7_tribal_yellow_light_large.1c05d27487feb5d82e8165721942ea3a67e6ba33.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_sp_mp7_tribal_yellow_light_large.1c05d27487feb5d82e8165721942ea3a67e6ba33.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2361896",
@@ -14572,7 +14894,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_am_p250_sputnik_light_large.38766530975aaa4006dda7a24533ac1b05a6b6a8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_am_p250_sputnik_light_large.38766530975aaa4006dda7a24533ac1b05a6b6a8.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1903164",
@@ -14600,7 +14923,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_aq_sawedoff_zander2_light_large.514f7c6c606296838f56020877d7762c594dc4bd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_aq_sawedoff_zander2_light_large.514f7c6c606296838f56020877d7762c594dc4bd.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-854556",
@@ -14628,7 +14952,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_sp_galil_wave_light_large.0a4761ebb660428a77a622885054e1c44cf03959.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_sp_galil_wave_light_large.0a4761ebb660428a77a622885054e1c44cf03959.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-920096",
@@ -14656,7 +14981,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_sp_m249_frog_original_light_large.7331eb3d676ebdf8df71adb58b43aea63660f785.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_sp_m249_frog_original_light_large.7331eb3d676ebdf8df71adb58b43aea63660f785.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1116716",
@@ -14684,7 +15010,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_aa_mac10_the_last_dive_light_large.d0039a83384acbe26f9337c8a83e81f6410b7dc9.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_aa_mac10_the_last_dive_light_large.d0039a83384acbe26f9337c8a83e81f6410b7dc9.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1575472",
@@ -14712,7 +15039,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_gs_ump_abyss_light_large.55910298a6be9b071156ef176a31d26007d92d0f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_gs_ump_abyss_light_large.55910298a6be9b071156ef176a31d26007d92d0f.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1641016",
@@ -14740,7 +15068,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm_leaf_fade_light_large.f753b1b710a8023e299d1918ca150b42483ca1cd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm_leaf_fade_light_large.f753b1b710a8023e299d1918ca150b42483ca1cd.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-592384",
@@ -14768,7 +15097,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_psychopath_light_large.11e54a670b779e1757cce18ea252d70eb35c6a75.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_psychopath_light_large.11e54a670b779e1757cce18ea252d70eb35c6a75.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-4131340",
@@ -14796,7 +15126,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_gs_cz_snakes_purple_light_large.a06599fab1d73352fd970fc0356c215c50ca7e9a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_gs_cz_snakes_purple_light_large.a06599fab1d73352fd970fc0356c215c50ca7e9a.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-3934736",
@@ -14824,7 +15155,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_gs_m4a1_decimator_light_large.5af82e99273fcc0a4ad35b2971b63787ee989d6a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_gs_m4a1_decimator_light_large.5af82e99273fcc0a4ad35b2971b63787ee989d6a.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-461308",
@@ -14852,7 +15184,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_bloodsport_light_large.40f076f6b92e08acc37860923533aa9768795b2b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_bloodsport_light_large.40f076f6b92e08acc37860923533aa9768795b2b.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-4000308",
@@ -14880,7 +15213,8 @@ const cases = [
                         "name": "Spectrum Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usps_noir_light_large.ed0f4245c1b9031c6d410300ce6de1f1efb75481.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usps_noir_light_large.ed0f4245c1b9031c6d410300ce6de1f1efb75481.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -15220,7 +15554,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usps_blueprint_light_large.e4195098bb3a105e6545d32c4d72888f673bd761.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usps_blueprint_light_large.e4195098bb3a105e6545d32c4d72888f673bd761.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-657996",
@@ -15248,7 +15583,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_sp_famas_macabre_light_large.7582150e24a69922b814d6b56004327e2219890d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_sp_famas_macabre_light_large.7582150e24a69922b814d6b56004327e2219890d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-3934812",
@@ -15276,7 +15612,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_metritera_light_large.ec9c5f86d6788402519be7bd51b849355fbf93ee.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_metritera_light_large.ec9c5f86d6788402519be7bd51b849355fbf93ee.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1116772",
@@ -15304,7 +15641,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_am_mac10_aloha_light_large.bde81a20851cfd9f788d66745f69a288e57ea319.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_am_mac10_aloha_light_large.bde81a20851cfd9f788d66745f69a288e57ea319.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1772136",
@@ -15332,7 +15670,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_am_mag7_caustic_light_large.133bbfa9f3cf8220f8eb5556d4d54a766cf1c9e0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_am_mag7_caustic_light_large.133bbfa9f3cf8220f8eb5556d4d54a766cf1c9e0.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1968764",
@@ -15360,7 +15699,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_aq_tec9_chalk_pattern_light_large.e0425d0a56ca5a2240b71495a5ef2bc4af0e9331.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_aq_tec9_chalk_pattern_light_large.e0425d0a56ca5a2240b71495a5ef2bc4af0e9331.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1575552",
@@ -15388,7 +15728,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_aq_ump45_flameflower_light_large.9c5aedb21ad6461f0761375c53b50f030fa0e10c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_aq_ump45_flameflower_light_large.9c5aedb21ad6461f0761375c53b50f030fa0e10c.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-461376",
@@ -15416,7 +15757,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak_colony01_red_light_large.b688da7615b6e76fa34f775e200914dc44d5336c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak_colony01_red_light_large.b688da7615b6e76fa34f775e200914dc44d5336c.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2099820",
@@ -15444,7 +15786,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_hunter_light_large.57f4ea5be4f9bece6a3b71521a370d9afb4abb1f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_hunter_light_large.57f4ea5be4f9bece6a3b71521a370d9afb4abb1f.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2361968",
@@ -15472,7 +15815,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_axiom_light_large.a9b34e0a93dbaa8fa60dfdb080827b919938d9f6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_axiom_light_large.a9b34e0a93dbaa8fa60dfdb080827b919938d9f6.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1247860",
@@ -15500,7 +15844,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_hy_p90_barebones_blue_light_large.c908d6fc6d53cb2f4168a64b9a32e4b6b5479fc8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_hy_p90_barebones_blue_light_large.c908d6fc6d53cb2f4168a64b9a32e4b6b5479fc8.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2624120",
@@ -15528,7 +15873,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_deathshead_light_large.78676bc5fce74af519abdccae4d119727c392faf.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_deathshead_light_large.78676bc5fce74af519abdccae4d119727c392faf.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-133704",
@@ -15556,7 +15902,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dualberettas_cobra_light_large.0c2576234d95cb12089d9fdad47d1f7eed7f56c8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dualberettas_cobra_light_large.0c2576234d95cb12089d9fdad47d1f7eed7f56c8.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-854612",
@@ -15584,7 +15931,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_candychaos_light_large.70c1dba6c2de996ec666a260b604c760e01bb20d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_candychaos_light_large.70c1dba6c2de996ec666a260b604c760e01bb20d.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1051232",
@@ -15612,7 +15960,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_hellfire_light_large.d3675840da1d60e19ba26fc11539e9351a0ec892.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_hellfire_light_large.d3675840da1d60e19ba26fc11539e9351a0ec892.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-199248",
@@ -15640,7 +15989,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_hyperbeast_light_large.d2ef18b57b0b821624e42830ee4c47e241ed4476.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_hyperbeast_light_large.d2ef18b57b0b821624e42830ee4c47e241ed4476.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-592472",
@@ -15668,7 +16018,8 @@ const cases = [
                         "name": "Operation Hydra Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_hannya_light_large.dc87e0f1aeeabe6c1c840f2a9e756ea261ef9d81.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_hannya_light_large.dc87e0f1aeeabe6c1c840f2a9e756ea261ef9d81.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -15828,7 +16179,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_aq_sawed-off_flower_light_large.0d98b08ce8023d49dac2f76b10ef2f3cd7a33350.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_aq_sawed-off_flower_light_large.0d98b08ce8023d49dac2f76b10ef2f3cd7a33350.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-526984",
@@ -15856,7 +16208,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_orange_triangle_light_large.793eb05ec841c2664b8482565e5d080c731d6ecd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_orange_triangle_light_large.793eb05ec841c2664b8482565e5d080c731d6ecd.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-723604",
@@ -15884,7 +16237,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_cetme_redux_light_large.18ad1afdb32fca22879dcdd22e579c5afaef6ad8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_cetme_redux_light_large.18ad1afdb32fca22879dcdd22e579c5afaef6ad8.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-264864",
@@ -15912,7 +16266,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_indigo_light_large.3786c7c3be7d03ee053050af2f7a8427782742e1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_indigo_light_large.3786c7c3be7d03ee053050af2f7a8427782742e1.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1116840",
@@ -15940,7 +16295,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_am_mac10_oceani_light_large.25e5d3d5e249e11fe32971fa7bcdc0e5a1c777bd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_am_mac10_oceani_light_large.25e5d3d5e249e11fe32971fa7bcdc0e5a1c777bd.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1968816",
@@ -15968,7 +16324,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_cracked_opal_light_large.d6e9cc1c31550faeac9c55341be170abf07245b7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_cracked_opal_light_large.d6e9cc1c31550faeac9c55341be170abf07245b7.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2493108",
@@ -15996,7 +16353,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_hy_scar20_jungle_slipstream_light_large.d49f99ac854c1a25fc46bde5dd32f438bdd587f1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_hy_scar20_jungle_slipstream_light_large.d49f99ac854c1a25fc46bde5dd32f438bdd587f1.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2230940",
@@ -16024,7 +16382,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_goo_light_large.3cab8ecb356ee5f2549c1b148f5961fdf5d9cd76.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_goo_light_large.3cab8ecb356ee5f2549c1b148f5961fdf5d9cd76.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2558648",
@@ -16052,7 +16411,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_gs_sg553_phantom_light_large.51fc477c1024614f6f52080d3b7200408c9d2881.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_gs_sg553_phantom_light_large.51fc477c1024614f6f52080d3b7200408c9d2881.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-4131516",
@@ -16080,7 +16440,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_gs_cz75_tacticat_light_large.ed9ba2f6cb8fd5e2a2b6cfb1b9a0ba4c87c93ec3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_gs_cz75_tacticat_light_large.ed9ba2f6cb8fd5e2a2b6cfb1b9a0ba4c87c93ec3.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1575616",
@@ -16108,7 +16469,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_x-ray_machine_light_large.a4563e015fd33d1874cc220458db2754a15dd08a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_x-ray_machine_light_large.a4563e015fd33d1874cc220458db2754a15dd08a.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1641156",
@@ -16136,7 +16498,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm1014_ziggy_anarchy_light_large.7042642ba5043be6e1cb82d6bb9a05678402dea1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm1014_ziggy_anarchy_light_large.7042642ba5043be6e1cb82d6bb9a05678402dea1.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1706640",
@@ -16164,7 +16527,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_all_in_light_large.d31ae97fe448b550cfe06d617daa3575c77e8c2a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_all_in_light_large.d31ae97fe448b550cfe06d617daa3575c77e8c2a.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-3934884",
@@ -16192,7 +16556,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_gs_m4a1_shatter_light_large.f4d487cbf956eb13a505b8926c8f0f63cb3604b3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_gs_m4a1_shatter_light_large.f4d487cbf956eb13a505b8926c8f0f63cb3604b3.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-4197036",
@@ -16220,7 +16585,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_r8_llamacannon_light_large.ae4ce84764b4892a2ea2d3f9f0afc57023f7bdc8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_r8_llamacannon_light_large.ae4ce84764b4892a2ea2d3f9f0afc57023f7bdc8.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-461452",
@@ -16248,7 +16614,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_empress_light_large.f81d0b07dca381635c89f74bcdb6b64a6da6e81c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_empress_light_large.f81d0b07dca381635c89f74bcdb6b64a6da6e81c.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-2362008",
@@ -16276,7 +16643,8 @@ const cases = [
                         "name": "Spectrum 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_cybercroc_light_large.396de1d53797f8875d242d1eb33d5b81dce2bb8e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_cybercroc_light_large.396de1d53797f8875d242d1eb33d5b81dce2bb8e.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -16616,7 +16984,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_riot_light_large.2f0848b27a917287062306f49870cf9ec06bbbbe.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_riot_light_large.2f0848b27a917287062306f49870cf9ec06bbbbe.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-199380",
@@ -16644,7 +17013,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_gs_fiveseven_hot_rod_violet_light_large.66cb3d6336f4ea07a7f4ebbd3192c59f0afca3fc.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_gs_fiveseven_hot_rod_violet_light_large.66cb3d6336f4ea07a7f4ebbd3192c59f0afca3fc.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2231012",
@@ -16672,7 +17042,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_black_sand_light_large.37dce08f403ec73c1e16b3dc46068b22293e9514.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_black_sand_light_large.37dce08f403ec73c1e16b3dc46068b22293e9514.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2099952",
@@ -16700,7 +17071,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_urban_hazard_light_large.17657c4e9c3379f634c78e4d02ca9e9facbe9edb.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_urban_hazard_light_large.17657c4e9c3379f634c78e4d02ca9e9facbe9edb.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4197108",
@@ -16728,7 +17100,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_revolver_tread_light_large.7c3bd1302f62853e5694aec2d70cf1c7140b3fc0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_revolver_tread_light_large.7c3bd1302f62853e5694aec2d70cf1c7140b3fc0.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2558712",
@@ -16756,7 +17129,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_sp_sg533_aloha_light_large.03aa863680ab2223924ae9cbe8b7662a84fb162c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_sp_sg533_aloha_light_large.03aa863680ab2223924ae9cbe8b7662a84fb162c.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1641224",
@@ -16784,7 +17158,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_oxide_blaze_light_large.691be80b706e1ea4faf9b5c9bec40b3611b1d440.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_oxide_blaze_light_large.691be80b706e1ea4faf9b5c9bec40b3611b1d440.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-264920",
@@ -16812,7 +17187,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_aa_glock_18_urban_moon_fever_light_large.a0227f81e44dba68abbe595d427d62f9f90da99d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_aa_glock_18_urban_moon_fever_light_large.a0227f81e44dba68abbe595d427d62f9f90da99d.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1837800",
@@ -16840,7 +17216,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_sp_negev_lionfish_light_large.f8326a67617c5138ab8b6f6afc81375fbd091033.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_sp_negev_lionfish_light_large.f8326a67617c5138ab8b6f6afc81375fbd091033.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2296556",
@@ -16868,7 +17245,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_gs_nova_anchorite_light_large.419b869b5316b67a6ed673edafd088a9d16c066c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_gs_nova_anchorite_light_large.419b869b5316b67a6ed673edafd088a9d16c066c.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1772284",
@@ -16896,7 +17274,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_aq_mag7_swag7_light_large.20341e396db88a5ecde84f8b803a500f4aec3b55.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_aq_mag7_swag7_light_large.20341e396db88a5ecde84f8b803a500f4aec3b55.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1575680",
@@ -16924,7 +17303,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_white_fang_light_large.f63a10d5ee18e3045adfdcf963b9067b3b0a6b48.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_white_fang_light_large.f63a10d5ee18e3045adfdcf963b9067b3b0a6b48.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-527048",
@@ -16952,7 +17332,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_gs_aug_stymphalian_birds_light_large.0840c45db138a07275c2250a0881fe752f27c601.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_gs_aug_stymphalian_birds_light_large.0840c45db138a07275c2250a0881fe752f27c601.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-592588",
@@ -16980,7 +17361,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_gs_awp_death_light_large.19bdee04e6a0b4a3b8f832fd8ea18fea1e558f2e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_gs_awp_death_light_large.19bdee04e6a0b4a3b8f832fd8ea18fea1e558f2e.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-4000516",
@@ -17008,7 +17390,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_cut_light_large.573fc8c594667e378f3ed9890ce48bbb586e8de0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_cut_light_large.573fc8c594667e378f3ed9890ce48bbb586e8de0.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1051356",
@@ -17036,7 +17419,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_neo_noir_light_large.b03bd6902c1d714af0bd4795dce8e653dd12dcc9.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_neo_noir_light_large.b03bd6902c1d714af0bd4795dce8e653dd12dcc9.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-2165472",
@@ -17064,7 +17448,8 @@ const cases = [
                         "name": "Clutch Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_gs_mp7_bloodsport_light_large.ab5c304901ceb320482742b041815e7b5e3ccb95.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_gs_mp7_bloodsport_light_large.ab5c304901ceb320482742b041815e7b5e3ccb95.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -17224,7 +17609,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_hy_aug_torn_orange_light_large.53b51a022d38ea39eff5ffbed92551dc741e17c3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_hy_aug_torn_orange_light_large.53b51a022d38ea39eff5ffbed92551dc741e17c3.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-133912",
@@ -17252,7 +17638,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_sp_elites_winter_raider_light_large.eddc2e91d0081e57588b745589209094a6b3e9b6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_sp_elites_winter_raider_light_large.eddc2e91d0081e57588b745589209094a6b3e9b6.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-264996",
@@ -17280,7 +17667,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_gs_glock_thunder_dust_light_large.0e26afdd95bac17ce01c6e097ca0b97db3cffee4.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_gs_glock_thunder_dust_light_large.0e26afdd95bac17ce01c6e097ca0b97db3cffee4.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2231084",
@@ -17308,7 +17696,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_vein_light_large.d0189b21fba4603ff88d407d6af0e63093f22ba7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_vein_light_large.d0189b21fba4603ff88d407d6af0e63093f22ba7.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1248052",
@@ -17336,7 +17725,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_tread_light_large.0acb87de3db60e1c07aa159fd5b8238b11bb8f8f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_tread_light_large.0acb87de3db60e1c07aa159fd5b8238b11bb8f8f.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4197188",
@@ -17364,7 +17754,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_cu_r8_survivalist_light_large.cda482f11a63c89c574211b8d5ea9a60703e3cd2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_cu_r8_survivalist_light_large.cda482f11a63c89c574211b8d5ea9a60703e3cd2.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1968968",
@@ -17392,7 +17783,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_snake_light_large.9065015e55daa4190b97a8bc033925ed0aeb1abd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_snake_light_large.9065015e55daa4190b97a8bc033925ed0aeb1abd.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4131604",
@@ -17420,7 +17812,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_cz75_eco_light_large.19aa7b914ac71968e73ac48b112b9f4c8116c767.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_cz75_eco_light_large.19aa7b914ac71968e73ac48b112b9f4c8116c767.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-723744",
@@ -17448,7 +17841,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_buccaneer_light_large.68c69e9856fd43f17a4165d1f27116496657fd00.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_buccaneer_light_large.68c69e9856fd43f17a4165d1f27116496657fd00.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2296624",
@@ -17476,7 +17870,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_toy_soldier_light_large.e35320d18405b77fb9dd5e495fe4f625b8ab6c82.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_toy_soldier_light_large.e35320d18405b77fb9dd5e495fe4f625b8ab6c82.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-592696",
@@ -17504,7 +17899,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_am_awp_pawpaw_light_large.0ff115c31307cc3122536c44a9aef7e64277dc19.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_am_awp_pawpaw_light_large.0ff115c31307cc3122536c44a9aef7e64277dc19.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2165564",
@@ -17532,7 +17928,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_gs_powercore_mp7_light_large.cff12134204aef1ddc67e142088a2b7cec911960.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_gs_powercore_mp7_light_large.cff12134204aef1ddc67e142088a2b7cec911960.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-3935016",
@@ -17560,7 +17957,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_nightmare_light_large.68e892eb4dedad809205a5fd06f175297d1be1cb.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_nightmare_light_large.68e892eb4dedad809205a5fd06f175297d1be1cb.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1903424",
@@ -17588,7 +17986,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_devourer_light_large.d8365e13320f20eb532a2d5109e1fc35562bc376.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_devourer_light_large.d8365e13320f20eb532a2d5109e1fc35562bc376.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-658252",
@@ -17616,7 +18015,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_owl_orange_light_large.7cb3a86d36317530964f40d66b755789de7ca88a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_owl_orange_light_large.7cb3a86d36317530964f40d66b755789de7ca88a.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-461580",
@@ -17644,7 +18044,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak_neon_rider_light_large.9209192b514c4ec98146b4747dec8ce407a977c8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak_neon_rider_light_large.9209192b514c4ec98146b4747dec8ce407a977c8.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-68380",
@@ -17672,7 +18073,8 @@ const cases = [
                         "name": "Horizon Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_gs_deagle_aggressor_light_large.51ffb87f03ae0d3c467d4412f3c246067748e61d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_gs_deagle_aggressor_light_large.51ffb87f03ae0d3c467d4412f3c246067748e61d.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -17972,7 +18374,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_gs_mp9_colony01_light_large.f8d9792131b786025a960ddeda2eeb77f97c55e3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_gs_mp9_colony01_light_large.f8d9792131b786025a960ddeda2eeb77f97c55e3.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-265376",
@@ -18000,7 +18403,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock18_corroden_light_large.68906a0523399b599555746b51db2ffac29c5db5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock18_corroden_light_large.68906a0523399b599555746b51db2ffac29c5db5.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2296996",
@@ -18028,7 +18432,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_gs_nova_hunter_brute_light_large.8e2520f25098056ccd03b679859458fdc006c0a7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_gs_nova_hunter_brute_light_large.8e2520f25098056ccd03b679859458fdc006c0a7.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1051820",
@@ -18056,7 +18461,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_chopper_ghost_light_large.374913da49233223de4ca1ff09a20cc2a7a94288.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_chopper_ghost_light_large.374913da49233223de4ca1ff09a20cc2a7a94288.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1903800",
@@ -18084,7 +18490,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_black_sand_light_large.7ed9ce5083489c0fdf92814f0ebf6945ec6f29d4.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_black_sand_light_large.7ed9ce5083489c0fdf92814f0ebf6945ec6f29d4.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2559164",
@@ -18112,7 +18519,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_gs_sg553_over_heated_light_large.aba3188360b2a87b8687d73af6c2e3034290402c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_gs_sg553_over_heated_light_large.aba3188360b2a87b8687d73af6c2e3034290402c.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1969344",
@@ -18139,7 +18547,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_gs_tec9_fubar_light_large.00f64007983561f57c808b23e9260ebea6437bc7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_gs_tec9_fubar_light_large.00f64007983561f57c808b23e9260ebea6437bc7.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-724120",
@@ -18167,7 +18576,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_savage_light_large.e452574f580f51b1da6312c0f80a0dc07e073d8b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_savage_light_large.e452574f580f51b1da6312c0f80a0dc07e073d8b.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-855196",
@@ -18195,7 +18605,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_hy_galil_signal_red_light_large.d7c26f54fd72ec451094ea7791e921346e013197.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_hy_galil_signal_red_light_large.d7c26f54fd72ec451094ea7791e921346e013197.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1117360",
@@ -18223,7 +18634,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_gs_mac10_exo_pipes_light_large.355aad3fa1602f8e682a5663f72b12feba0d4cf2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_gs_mac10_exo_pipes_light_large.355aad3fa1602f8e682a5663f72b12feba0d4cf2.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2362548",
@@ -18250,7 +18662,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_aa_p250_gravediggers_light_large.df680e4648f5e08ec6e92ed36a5b9c05ae8bc5f4.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_aa_p250_gravediggers_light_large.df680e4648f5e08ec6e92ed36a5b9c05ae8bc5f4.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-4000964",
@@ -18278,7 +18691,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_flashback_light_large.47e10129af33303bac557560400c33e4fe555680.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_flashback_light_large.47e10129af33303bac557560400c33e4fe555680.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1576072",
@@ -18306,7 +18720,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump_arrows_light_large.83f1e692bdafa92f29ce15aebb02502c9e70f276.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump_arrows_light_large.83f1e692bdafa92f29ce15aebb02502c9e70f276.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-68756",
@@ -18334,7 +18749,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_gs_deagle_mecha_light_large.e08c1fd8709f6b368956c41c68b17c15ff635635.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_gs_deagle_mecha_light_large.e08c1fd8709f6b368956c41c68b17c15ff635635.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1510568",
@@ -18362,7 +18778,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5_festival_drip_light_large.c71af0a784e5ecd6e5d5f2f71961be155e283cde.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5_festival_drip_light_large.c71af0a784e5ecd6e5d5f2f71961be155e283cde.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-461956",
@@ -18390,7 +18807,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_asiimov_light_large.665fc3b83c8046398787a57d2ef7a9d938244820.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_asiimov_light_large.665fc3b83c8046398787a57d2ef7a9d938244820.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-593036",
@@ -18418,7 +18836,8 @@ const cases = [
                         "name": "Danger Zone Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_neonoir_light_large.c5dd57f8555d13c41f08024f27a9314074b698af.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_neonoir_light_large.c5dd57f8555d13c41f08024f27a9314074b698af.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -18718,7 +19137,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_sp_famas_ghost_insects_light_large.727c7db3f6df4aae8b692f6966dba460acafb07f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_sp_famas_ghost_insects_light_large.727c7db3f6df4aae8b692f6966dba460acafb07f.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-462096",
@@ -18746,7 +19166,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_aztec_light_large.368d90ba7bc01aa56489792a8962df5343238c5c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_aztec_light_large.368d90ba7bc01aa56489792a8962df5343238c5c.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1117472",
@@ -18774,7 +19195,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_gs_mac10_fish_bait_light_large.31a855282029b915748b21c11521b5f111b05e67.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_gs_mac10_fish_bait_light_large.31a855282029b915748b21c11521b5f111b05e67.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-855336",
@@ -18802,7 +19224,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_sp_galil_akoben_light_large.35a9e7a0fa943ac20d1b145d36bf3d4ccf33cc84.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_sp_galil_akoben_light_large.35a9e7a0fa943ac20d1b145d36bf3d4ccf33cc84.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2166076",
@@ -18829,7 +19252,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_racketeer_light_large.ba5b3641b7b309cdd16d9f54fc2bc2331e738929.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_racketeer_light_large.ba5b3641b7b309cdd16d9f54fc2bc2331e738929.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2362688",
@@ -18857,7 +19281,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_aq_p250_verdigris_light_large.379d19af038211ca3bf7d20c4c75726e9be36856.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_aq_p250_verdigris_light_large.379d19af038211ca3bf7d20c4c75726e9be36856.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1248580",
@@ -18885,7 +19310,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_offworld_light_large.45f1db5b8b435574f46fffe77960d8ef29519eca.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_offworld_light_large.45f1db5b8b435574f46fffe77960d8ef29519eca.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-593176",
@@ -18913,7 +19339,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_viper_light_large.2de75408a7c595312d58203f53c73a3a18faa4a3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_viper_light_large.2de75408a7c595312d58203f53c73a3a18faa4a3.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1969436",
@@ -18941,7 +19368,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_bamboo_light_large.24d8986c41f344d8c1e9167a935c7b904757f85e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_bamboo_light_large.24d8986c41f344d8c1e9167a935c7b904757f85e.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-68900",
@@ -18969,7 +19397,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_gs_deagle_exo_light_large.8bdc93f1b45efba187748065deff967eef8f2f2d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_gs_deagle_exo_light_large.8bdc93f1b45efba187748065deff967eef8f2f2d.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1510712",
@@ -18997,7 +19426,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5sd_astromatic_light_large.d7acba118f13e4b7b0d9146dddd32cf71da9210d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5sd_astromatic_light_large.d7acba118f13e4b7b0d9146dddd32cf71da9210d.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1576268",
@@ -19024,7 +19454,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_aa_ump45_moonrise_sunset_light_large.63cf279a66d95757f4fefe498b89480966887083.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_aa_ump45_moonrise_sunset_light_large.63cf279a66d95757f4fefe498b89480966887083.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-4197676",
@@ -19050,7 +19481,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_cu_revolver_oppressor_light_large.59414a184bcf3310d43528701292ba4f68ba55a0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_cu_revolver_oppressor_light_large.59414a184bcf3310d43528701292ba4f68ba55a0.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-527668",
@@ -19078,7 +19510,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_momentum_light_large.1f36037cec707a957785625f04b3740bb5286d16.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_momentum_light_large.1f36037cec707a957785625f04b3740bb5286d16.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1641800",
@@ -19105,7 +19538,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_incinerator_light_large.7649f64bbfea49d6f0d951320e0bdd98d6bee088.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_incinerator_light_large.7649f64bbfea49d6f0d951320e0bdd98d6bee088.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-199956",
@@ -19133,7 +19567,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_five_seven_angry_light_large.54986e86178e0462d34fe78b6b726292813541f5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_five_seven_angry_light_large.54986e86178e0462d34fe78b6b726292813541f5.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-1051952",
@@ -19161,7 +19596,8 @@ const cases = [
                         "name": "Prisma Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_emperor_light_large.61be48559b0a5d57e04108f876f5cf755ec8acc8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_emperor_light_large.61be48559b0a5d57e04108f876f5cf755ec8acc8.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -19441,7 +19877,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5_etch_light_large.a86867a43e3607c1826b6d106870bf69642687b0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5_etch_light_large.a86867a43e3607c1826b6d106870bf69642687b0.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2297320",
@@ -19469,7 +19906,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_featherswing_light_large.49e81792746dc7844ff18c45fb23030cd8b66d59.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_featherswing_light_large.49e81792746dc7844ff18c45fb23030cd8b66d59.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-724460",
@@ -19497,7 +19935,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_cu_g3sg1_blacksand_light_large.8a9b364779493ae19a87eb4e73aa47f4432d3f41.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_cu_g3sg1_blacksand_light_large.8a9b364779493ae19a87eb4e73aa47f4432d3f41.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4197872",
@@ -19525,7 +19964,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_r8_memento_light_large.8ca600a94c72b5a3b33bb826a1a588f7e48d5e78.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_r8_memento_light_large.8ca600a94c72b5a3b33bb826a1a588f7e48d5e78.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-134652",
@@ -19553,7 +19993,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dual_elites_rose_light_large.8df8980203b198879875be44656361ccbb41791e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dual_elites_rose_light_large.8df8980203b198879875be44656361ccbb41791e.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2493952",
@@ -19581,7 +20022,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_sp_scar20_striker_dust_light_large.0842dbdf0fe714c92f634b376e15c2f8c21b6d56.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_sp_scar20_striker_dust_light_large.0842dbdf0fe714c92f634b376e15c2f8c21b6d56.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-921104",
@@ -19609,7 +20051,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_gs_m249_warbird_veteran_light_large.29a2ee22222b037e6825fb0c230aa799718e4115.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_gs_m249_warbird_veteran_light_large.29a2ee22222b037e6825fb0c230aa799718e4115.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1707472",
@@ -19637,7 +20080,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_road_warrior_light_large.92dd3aa0346010a6e3a625d01ae4f965195a05d2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_road_warrior_light_large.92dd3aa0346010a6e3a625d01ae4f965195a05d2.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-462292",
@@ -19665,7 +20109,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_nibbler_light_large.1c402d395b628aa5667239eec44640d7f603d754.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_nibbler_light_large.1c402d395b628aa5667239eec44640d7f603d754.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-527832",
@@ -19693,7 +20138,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_whitefang_light_large.051b21da4e56c64ad78ee8a67a0e9e237a4e01b1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_whitefang_light_large.051b21da4e56c64ad78ee8a67a0e9e237a4e01b1.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2166260",
@@ -19721,7 +20167,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_replica_light_large.f56c050cb5147918efb6872ce61fda358a684cf5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_replica_light_large.f56c050cb5147918efb6872ce61fda358a684cf5.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2100728",
@@ -19749,7 +20196,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_obsidian_light_large.0a6ad31fe8f70401ffdd377c289309d0256282c6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_obsidian_light_large.0a6ad31fe8f70401ffdd377c289309d0256282c6.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1969636",
@@ -19777,7 +20225,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_gs_tec9_decimator_light_large.11236163667e1dd46c3d869d844e384a23544513.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_gs_tec9_decimator_light_large.11236163667e1dd46c3d869d844e384a23544513.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2559492",
@@ -19805,7 +20254,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_reactor_light_large.af5c07d2528198641adf32cf3498aa7d2823b048.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_reactor_light_large.af5c07d2528198641adf32cf3498aa7d2823b048.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2625036",
@@ -19832,7 +20282,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_tickler_light_large.b6a73afa62f8983211740a1570410df4864f45f6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_tickler_light_large.b6a73afa62f8983211740a1570410df4864f45f6.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-593372",
@@ -19860,7 +20311,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_virus_light_large.00307f818d425d94cb8e4eeda1e27699f713fb45.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_virus_light_large.00307f818d425d94cb8e4eeda1e27699f713fb45.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-1117704",
@@ -19888,7 +20340,8 @@ const cases = [
                         "name": "Shattered Web Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_gs_mac10_stalker_light_large.cb4d7a60a69978f1575526f979be8e1e1538a673.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_gs_mac10_stalker_light_large.cb4d7a60a69978f1575526f979be8e1e1538a673.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -20188,7 +20641,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dual_elites_classic_light_large.a899ad9f2e1bb8522fdeb022c99c64c2456826d1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dual_elites_classic_light_large.a899ad9f2e1bb8522fdeb022c99c64c2456826d1.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1969700",
@@ -20216,7 +20670,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_flash_light_large.977076b5fe7a2fdb9337de2a3ff7c4b867e9b674.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_flash_light_large.977076b5fe7a2fdb9337de2a3ff7c4b867e9b674.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1117744",
@@ -20244,7 +20699,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_gs_mac10_dust_crate_light_large.988816a75bc41f34cb18aff91ce6256299a9a52c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_gs_mac10_dust_crate_light_large.988816a75bc41f34cb18aff91ce6256299a9a52c.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1773108",
@@ -20272,7 +20728,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_gs_mag7_popdog_light_large.3c45fd23cd1947bb9b1747e36823980a44feaed4.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_gs_mag7_popdog_light_large.3c45fd23cd1947bb9b1747e36823980a44feaed4.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2494024",
@@ -20300,7 +20757,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_cu_scar_assault_light_large.57aa89979dfaab334bb3e91c09f54269e98cf47a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_cu_scar_assault_light_large.57aa89979dfaab334bb3e91c09f54269e98cf47a.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-658976",
@@ -20328,7 +20786,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_nuke_tension_light_large.0cf9412e22f626e675b76506cf2f240a64a05b22.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_nuke_tension_light_large.0cf9412e22f626e675b76506cf2f240a64a05b22.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-265816",
@@ -20356,7 +20815,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_hero_light_large.7b0f5975c7e0ba3ce1694c4795520184fc56c367.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_hero_light_large.7b0f5975c7e0ba3ce1694c4795520184fc56c367.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-921112",
@@ -20384,7 +20844,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_aq_m249_aztec_light_large.81173c5b61be806039e643a0c273e4dce33bd5ee.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_aq_m249_aztec_light_large.81173c5b61be806039e643a0c273e4dce33bd5ee.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1510988",
@@ -20412,7 +20873,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5_fbi_light_large.98c397d31feb201fd3d754a2e0b1d1508d75b2b9.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5_fbi_light_large.98c397d31feb201fd3d754a2e0b1d1508d75b2b9.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-200232",
@@ -20440,7 +20902,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_gsg9_light_large.870dec48f951d3a6420bdb332f0acd25ee1254b1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_gsg9_light_large.870dec48f951d3a6420bdb332f0acd25ee1254b1.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2362924",
@@ -20468,7 +20931,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_gs_p250_inferno_light_large.89b435cf4b1eab8a9fed8f7aa19228fe9421b4eb.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_gs_p250_inferno_light_large.89b435cf4b1eab8a9fed8f7aa19228fe9421b4eb.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1576528",
@@ -20496,7 +20960,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump_bomb_light_large.48162f997295cb72c35acb2eafbef620b60a1659.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump_bomb_light_large.48162f997295cb72c35acb2eafbef620b60a1659.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2231864",
@@ -20524,7 +20989,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_hydra_light_large.b7763a811b3bc9d19d04502fba0edc6cbe355766.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_hydra_light_large.b7763a811b3bc9d19d04502fba0edc6cbe355766.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1248828",
@@ -20552,7 +21018,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_nostalgia_light_large.8d1cfe3582915ab9702b57e1376eb0d0ffab2331.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_nostalgia_light_large.8d1cfe3582915ab9702b57e1376eb0d0ffab2331.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-527940",
@@ -20579,7 +21046,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_am_aug_death_by_doggy_light_large.eb9b56273d30c50b93d2cb0a2e2843b525012878.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_am_aug_death_by_doggy_light_large.eb9b56273d30c50b93d2cb0a2e2843b525012878.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-593492",
@@ -20607,7 +21075,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_wildfire_light_large.61e36b12eb45a39836cdb5badb5a536737684861.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_wildfire_light_large.61e36b12eb45a39836cdb5badb5a536737684861.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-659036",
@@ -20635,7 +21104,8 @@ const cases = [
                         "name": "CS20 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_gs_famas_legacy_gold_light_large.34013884c12276d1c83ceb4ea9fb83428df02920.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_gs_famas_legacy_gold_light_large.34013884c12276d1c83ceb4ea9fb83428df02920.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -20740,7 +21210,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_gs_aug_thunderstorm_light_large.127ba1a9f7c7eef6b701bf01ad50b3b146f9b951.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_gs_aug_thunderstorm_light_large.127ba1a9f7c7eef6b701bf01ad50b3b146f9b951.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-593596",
@@ -20768,7 +21239,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_vein_light_large.8665dc4b4231298e9bbcab7aad3abbbf22e3edd8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_vein_light_large.8665dc4b4231298e9bbcab7aad3abbbf22e3edd8.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4132544",
@@ -20796,7 +21268,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_cz75_cerakote_light_large.2f8286a9ca2313c23c6d9ad8d1c94650ef856c37.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_cz75_cerakote_light_large.2f8286a9ca2313c23c6d9ad8d1c94650ef856c37.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-69316",
@@ -20824,7 +21297,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_deagle_replica_light_large.900a30787dd7f4f32435cc55e56dc345d780baae.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_deagle_replica_light_large.900a30787dd7f4f32435cc55e56dc345d780baae.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1511124",
@@ -20852,7 +21326,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_cu_mp5_desert_strike_light_large.44958e2a47446043d6c929d5f4b4e3bea10f41c9.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_cu_mp5_desert_strike_light_large.44958e2a47446043d6c929d5f4b4e3bea10f41c9.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1838808",
@@ -20880,7 +21355,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_prototype_light_large.d1e542d85756bfc96bb32e6d2f8b548fbb26b2ad.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_prototype_light_large.d1e542d85756bfc96bb32e6d2f8b548fbb26b2ad.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4198112",
@@ -20908,7 +21384,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_r8_leviathan_light_large.656b77eecd4ef8f55f11866cce3da2778d6cc7d5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_r8_leviathan_light_large.656b77eecd4ef8f55f11866cce3da2778d6cc7d5.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2100956",
@@ -20936,7 +21413,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_aq_p2000_acid_clover_light_large.9b6c7f2c0bd30dc66570c41101129e1a624ab7b8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_aq_p2000_acid_clover_light_large.9b6c7f2c0bd30dc66570c41101129e1a624ab7b8.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1904356",
@@ -20964,7 +21442,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_apocalypto_light_large.fc0f69fec04cf4d6955ef4aa6629d083aa554af6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_apocalypto_light_large.fc0f69fec04cf4d6955ef4aa6629d083aa554af6.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2494184",
@@ -20992,7 +21471,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_gs_scar20_enforcer_light_large.20eba3a5a84f35019ceb7faae45a0b4246a72998.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_gs_scar20_enforcer_light_large.20eba3a5a84f35019ceb7faae45a0b4246a72998.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2559724",
@@ -21020,7 +21500,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_darkwing_light_large.f9c302279afebdd221344fa59f738f9317dc4122.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_darkwing_light_large.f9c302279afebdd221344fa59f738f9317dc4122.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2625264",
@@ -21048,7 +21529,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_fever_dream_light_large.cec554a86204344d6476b9071158fd02963a1aac.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_fever_dream_light_large.cec554a86204344d6476b9071158fd02963a1aac.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-462516",
@@ -21076,7 +21558,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak-47_phantom_disruptor_light_large.c14fcebe17a4c1a509edc597b33dcb9b5dcda32b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak-47_phantom_disruptor_light_large.c14fcebe17a4c1a509edc597b33dcb9b5dcda32b.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1117900",
@@ -21104,7 +21587,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_nacre_light_large.80fa2f0691e37e6e2a2755b8a7f6ccd6bfa83f3b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_nacre_light_large.80fa2f0691e37e6e2a2755b8a7f6ccd6bfa83f3b.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1773264",
@@ -21132,7 +21616,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_gs_mag7_justice_light_large.fcdc73ab779ab093ee7d90d91c1e3c369bbc8d65.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_gs_mag7_justice_light_large.fcdc73ab779ab093ee7d90d91c1e3c369bbc8d65.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-3935944",
@@ -21160,7 +21645,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_csgo2048_light_large.6531225ca224416df4dc6aa12c6ecea582b1e110.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_csgo2048_light_large.6531225ca224416df4dc6aa12c6ecea582b1e110.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-265972",
@@ -21188,7 +21674,8 @@ const cases = [
                         "name": "Prisma 2 Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock18_warmaiden_light_large.d99a6fdb4c1469d164182a74edba8de055726aa5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock18_warmaiden_light_large.d99a6fdb4c1469d164182a74edba8de055726aa5.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -21468,7 +21955,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_ultralight_light_large.f47680cfcd5c2eb1594fd5ae51ed9caf1bb6d9cd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_ultralight_light_large.f47680cfcd5c2eb1594fd5ae51ed9caf1bb6d9cd.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2100992",
@@ -21496,7 +21984,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_aq_p2000_lost_world_light_large.1d8b2a14b2b5b787ba450205bb3f133678dbe682.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_aq_p2000_lost_world_light_large.1d8b2a14b2b5b787ba450205bb3f133678dbe682.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2559768",
@@ -21524,7 +22013,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_gs_sg553_rusty_light_large.c5dd8204f44be6e68069633eb261b66641444ff6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_gs_sg553_rusty_light_large.c5dd8204f44be6e68069633eb261b66641444ff6.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2625308",
@@ -21552,7 +22042,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_mainframe_light_large.7d7d861da80bfecbe5141f19fbd32b95fb4496cf.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_mainframe_light_large.7d7d861da80bfecbe5141f19fbd32b95fb4496cf.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2363168",
@@ -21580,7 +22071,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_cassette_light_large.8e62f8c18421bceb377e95aa6a806b5767fcf731.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_cassette_light_large.8e62f8c18421bceb377e95aa6a806b5767fcf731.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1249060",
@@ -21608,7 +22100,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_container_light_large.ee8d779318fc1367b1c63bbfa202d6261a0171c1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_container_light_large.ee8d779318fc1367b1c63bbfa202d6261a0171c1.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1707828",
@@ -21636,7 +22129,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_gs_bizon_hellraider_light_large.c7aa487268b1e88b2e7fb1ff3c8c2eeeb24d4500.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_gs_bizon_hellraider_light_large.c7aa487268b1e88b2e7fb1ff3c8c2eeeb24d4500.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1773316",
@@ -21664,7 +22158,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_monster_call_light_large.8bd66022cda47ab85f73e765dc35526e6a2ce7f0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_monster_call_light_large.8bd66022cda47ab85f73e765dc35526e6a2ce7f0.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1969936",
@@ -21692,7 +22187,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_gs_tec9_guerilla_light_large.796534c0914361eec796eccd5558930096f75f96.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_gs_tec9_guerilla_light_large.796534c0914361eec796eccd5558930096f75f96.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1117972",
@@ -21720,7 +22216,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_isoonna_light_large.004a4ddf7e9318cfbe98448b1c3b888fd4aff8dd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_isoonna_light_large.004a4ddf7e9318cfbe98448b1c3b888fd4aff8dd.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-855856",
@@ -21748,7 +22245,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_gs_galil_phoenix_light_large.62909a6e708a56e8679b9aa9225ba438b1539511.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_gs_galil_phoenix_light_large.62909a6e708a56e8679b9aa9225ba438b1539511.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1511224",
@@ -21776,7 +22274,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5sd_wasteland_legacy_light_large.95ba928dc2c910eb819194227aa9196fdf6d9eea.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5sd_wasteland_legacy_light_large.95ba928dc2c910eb819194227aa9196fdf6d9eea.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1052460",
@@ -21804,7 +22303,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_queenfairy_light_large.e5fb022145442cf85ba485d8c3cfd4f6391938e0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_queenfairy_light_large.e5fb022145442cf85ba485d8c3cfd4f6391938e0.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-265996",
@@ -21832,7 +22332,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_eyecontact_light_large.fb7988d1d3d9ff159f81d3c0d9a2eacb976e2842.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_eyecontact_light_large.fb7988d1d3d9ff159f81d3c0d9a2eacb976e2842.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1642280",
@@ -21860,7 +22361,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_amulet_blue_light_large.1375467de64fba676253ac771bc9ce8f83b6a8f7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_amulet_blue_light_large.1375467de64fba676253ac771bc9ce8f83b6a8f7.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-69384",
@@ -21888,7 +22390,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_deag_printstream_light_large.b468e56607da39fb2c88e493456290fd5db174c8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_deag_printstream_light_large.b468e56607da39fb2c88e493456290fd5db174c8.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-462588",
@@ -21916,7 +22419,8 @@ const cases = [
                         "name": "Fracture Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_anubis_light_large.52aec34a0d4778512f4962b7790294bbe1434795.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_anubis_light_large.52aec34a0d4778512f4962b7790294bbe1434795.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -22216,7 +22720,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_gs_cz75_vendetta_light_large.0c3e295e82d8131b10e8daa2a1568e578fe01541.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_gs_cz75_vendetta_light_large.0c3e295e82d8131b10e8daa2a1568e578fe01541.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1249092",
@@ -22244,7 +22749,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_hy_p90_dino_rampage_light_large.2231742f05375d3370f5f8fbc7fd3f3f623af688.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_hy_p90_dino_rampage_light_large.2231742f05375d3370f5f8fbc7fd3f3f623af688.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-724816",
@@ -22272,7 +22778,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_disrupt_light_large.393db5c1a143ad7fc9e3c42a7d17ca860ce490ab.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_disrupt_light_large.393db5c1a143ad7fc9e3c42a7d17ca860ce490ab.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-855892",
@@ -22300,7 +22807,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_gs_galil_vandal_light_large.5144c3d7d0d1789bc5a25d3a62f15ccd876c9855.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_gs_galil_vandal_light_large.5144c3d7d0d1789bc5a25d3a62f15ccd876c9855.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2363224",
@@ -22328,7 +22836,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_infect_light_large.235d9f1d0efc7fe74748085ecd87540a03a4551d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_infect_light_large.235d9f1d0efc7fe74748085ecd87540a03a4551d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-921436",
@@ -22356,7 +22865,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_cu_m249_deep_relief_light_large.227a01518f45cbb6a43981e36b76f60785f9085b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_cu_m249_deep_relief_light_large.227a01518f45cbb6a43981e36b76f60785f9085b.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1511272",
@@ -22384,7 +22894,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5_conditionzero_light_large.4ed0ebd4f909faf2e09b5e18ec08e0a093719f63.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5_conditionzero_light_large.4ed0ebd4f909faf2e09b5e18ec08e0a093719f63.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-593724",
@@ -22412,7 +22923,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_gs_awp_exoskeleton_light_large.7b7a8af63a8c06beacea7494a41adcda5d5afdd8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_gs_awp_exoskeleton_light_large.7b7a8af63a8c06beacea7494a41adcda5d5afdd8.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-134984",
@@ -22440,7 +22952,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dual_elites_dezastre_light_large.9b7aa9accd1e31a202b0f2ab66d0cf8d3039ee7d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dual_elites_dezastre_light_large.9b7aa9accd1e31a202b0f2ab66d0cf8d3039ee7d.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2297708",
@@ -22468,7 +22981,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_polymer_light_large.a45b7ef66f8e62eecf26687892e5c4a76966d7f6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_polymer_light_large.a45b7ef66f8e62eecf26687892e5c4a76966d7f6.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2625396",
@@ -22496,7 +23010,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_chromatic_light_large.66f506ebe947b68afa1d3a6cbbdd8916b054f84a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_chromatic_light_large.66f506ebe947b68afa1d3a6cbbdd8916b054f84a.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1576824",
@@ -22524,7 +23039,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_gs_ump_gold_bismuth_light_large.c09fa5b0617d1c486737c9beb39f79bec31621dc.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_gs_ump_gold_bismuth_light_large.c09fa5b0617d1c486737c9beb39f79bec31621dc.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-200524",
@@ -22552,7 +23068,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_five_seven_diary_light_large.e09a26df236581e02db30cdbb9c55adb2a4d2292.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_five_seven_diary_light_large.e09a26df236581e02db30cdbb9c55adb2a4d2292.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1052516",
@@ -22580,7 +23097,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_cyberpunk_light_large.8ed70290de88498fcfdc0c89f23ba2ad60bd13a5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_cyberpunk_light_large.8ed70290de88498fcfdc0c89f23ba2ad60bd13a5.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-4001660",
@@ -22608,7 +23126,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_krokos_light_large.ef94a997db4a990e55bc44d4b07b25f0f420e59e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_krokos_light_large.ef94a997db4a990e55bc44d4b07b25f0f420e59e.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-3936096",
@@ -22636,7 +23155,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_printstream_light_large.99e340c2eed00b54eef5320fd63e009fcede6cae.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_printstream_light_large.99e340c2eed00b54eef5320fd63e009fcede6cae.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-266096",
@@ -22664,7 +23184,8 @@ const cases = [
                         "name": "Operation Broken Fang Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_noir_light_large.c93d0cbfa767d1f822a53ebfca0d57f532088c48.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_noir_light_large.c93d0cbfa767d1f822a53ebfca0d57f532088c48.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -22824,7 +23345,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_gs_sg553_deathmetal_light_large.c41041d1a69838d3b66f21032254066eaea8fe41.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_gs_sg553_deathmetal_light_large.c41041d1a69838d3b66f21032254066eaea8fe41.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-266300",
@@ -22852,7 +23374,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_gs_glock_polymer_light_large.9a56b15b2deea5847b0820c5ad982c1796cc8e0c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_gs_glock_polymer_light_large.9a56b15b2deea5847b0820c5ad982c1796cc8e0c.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-921672",
@@ -22880,7 +23403,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_gs_m249_combine_light_large.6f8724ef896506ede0925a425da05969f19aafdc.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_gs_m249_combine_light_large.6f8724ef896506ede0925a425da05969f19aafdc.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4132912",
@@ -22908,7 +23432,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_cz75_whirlwind_light_large.86609770746655c350bb7b087a8c0f1f1b55d01f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_cz75_whirlwind_light_large.86609770746655c350bb7b087a8c0f1f1b55d01f.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1577060",
@@ -22936,7 +23461,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_am_ump45_electrowave_light_large.98b6a5211b19bfeecb69d08cc7ebe6584cff353f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_am_ump45_electrowave_light_large.98b6a5211b19bfeecb69d08cc7ebe6584cff353f.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4198492",
@@ -22964,7 +23490,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_r8_rustking_light_large.5245178cf84e1bf8d77eb7a3ec19d108a70131d3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_r8_rustking_light_large.5245178cf84e1bf8d77eb7a3ec19d108a70131d3.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2297964",
@@ -22992,7 +23519,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_sp_nova_wind_dispersal_light_large.9156d5a206e0e4b47f814bee9b6b54ac0a16b159.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_sp_nova_wind_dispersal_light_large.9156d5a206e0e4b47f814bee9b6b54ac0a16b159.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2363472",
@@ -23020,7 +23548,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_gs_p250_cybershell_light_large.9f0408cde898dd81609541a8e68ff1ffe81320fd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_gs_p250_cybershell_light_large.9f0408cde898dd81609541a8e68ff1ffe81320fd.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1839180",
@@ -23048,7 +23577,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_devtexture_light_large.a0c6f2fcbac9d473d7b9d0452773843c284683e3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_devtexture_light_large.a0c6f2fcbac9d473d7b9d0452773843c284683e3.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1118292",
@@ -23076,7 +23606,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_portable_light_large.d4e97127a92ecba12884e5af083aa84685486b39.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_portable_light_large.d4e97127a92ecba12884e5af083aa84685486b39.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-69736",
@@ -23104,7 +23635,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_deag_trigger_discipline_light_large.9d8615945f079e3f7ea84c572fd34408fee6341c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_deag_trigger_discipline_light_large.9d8615945f079e3f7ea84c572fd34408fee6341c.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-462892",
@@ -23132,7 +23664,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_professional_light_large.d09d623d0a725c63e8a3905f66bba41ba2ed59e8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_professional_light_large.d09d623d0a725c63e8a3905f66bba41ba2ed59e8.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2232372",
@@ -23160,7 +23693,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_food_chain_light_large.5895f4cc864387a61a3783470037e6ed1953f7df.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_food_chain_light_large.5895f4cc864387a61a3783470037e6ed1953f7df.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1642584",
@@ -23188,7 +23722,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm1014_punk_light_large.8c6eb5bcf234179713a52b1a5e22c64c21c52007.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_aq_xm1014_punk_light_large.8c6eb5bcf234179713a52b1a5e22c64c21c52007.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-856120",
@@ -23216,7 +23751,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_chroma_pink_light_large.e29cb838de1fc6318d36ed2d7263b7fcef10a4d8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_chroma_pink_light_large.e29cb838de1fc6318d36ed2d7263b7fcef10a4d8.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-4001856",
@@ -23244,7 +23780,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_gs_usps_hangedman_light_large.a01890fdeb8335437df7af6641a7b4f6e2fcca34.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_gs_usps_hangedman_light_large.a01890fdeb8335437df7af6641a7b4f6e2fcca34.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-1052740",
@@ -23272,7 +23809,8 @@ const cases = [
                         "name": "Snakebite Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_love_light_large.5f7f6a3085aedc1a878dd10881144e7898a2db3d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_love_light_large.5f7f6a3085aedc1a878dd10881144e7898a2db3d.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -23432,7 +23970,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_gs_aug_plague_light_large.d7c01b0e4e2bc1e890cf3965874fad8a1bb27a17.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_gs_aug_plague_light_large.d7c01b0e4e2bc1e890cf3965874fad8a1bb27a17.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-135436",
@@ -23460,7 +23999,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dual_berettas_tread_light_large.c48f5d783dd8f91dabffcd64cd2d95690b309ce5.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dual_berettas_tread_light_large.c48f5d783dd8f91dabffcd64cd2d95690b309ce5.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-725276",
@@ -23488,7 +24028,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_cu_g3sg1_tacticalmap_light_large.c1340d04161c17f48cf0091a52f649c1e9bd8d41.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_cu_g3sg1_tacticalmap_light_large.c1340d04161c17f48cf0091a52f649c1e9bd8d41.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2167072",
@@ -23516,7 +24057,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_khaki_light_large.c9fb92fece0f425328e2c5c8c536302ed2dbcf99.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_khaki_light_large.c9fb92fece0f425328e2c5c8c536302ed2dbcf99.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1708332",
@@ -23544,7 +24086,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_gs_bizon_flasher_light_large.a200d5213d5fe9f2e74b5ca5b9ce8eeb7eee4d5f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_gs_bizon_flasher_light_large.a200d5213d5fe9f2e74b5ca5b9ce8eeb7eee4d5f.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4002104",
@@ -23572,7 +24115,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_black_lotus_light_large.d40de54b67e255871a2a31a15e871e8d185049ea.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_black_lotus_light_large.d40de54b67e255871a2a31a15e871e8d185049ea.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1642812",
@@ -23600,7 +24144,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_gs_xm1014_watchdog_light_large.5443196414c00a57b26d9af50d4a75a35dd8dbd8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_gs_xm1014_watchdog_light_large.5443196414c00a57b26d9af50d4a75a35dd8dbd8.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1773828",
@@ -23628,7 +24173,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_gs_mag7_bismuth_light_large.f5df59b5024b23a1ca187985b7650e337adda4b4.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_gs_mag7_bismuth_light_large.f5df59b5024b23a1ca187985b7650e337adda4b4.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-659728",
@@ -23656,7 +24202,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_spectron_light_large.5212ab188ec7d54b55d4280c3b508b11b1f567ed.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_spectron_light_large.5212ab188ec7d54b55d4280c3b508b11b1f567ed.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-200980",
@@ -23683,7 +24230,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_gs_five_seven_efusion_light_large.78c44b69ab40456b90279ad0252463e9de816e78.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_gs_five_seven_efusion_light_large.78c44b69ab40456b90279ad0252463e9de816e78.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2232600",
@@ -23711,7 +24259,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_aa_mp9_fuji_pink_light_large.5c7bf05ff05d82c34b6d71a3aa97537e55cec97e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_aa_mp9_fuji_pink_light_large.5c7bf05ff05d82c34b6d71a3aa97537e55cec97e.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1052964",
@@ -23739,7 +24288,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4_flowers_light_large.9953864326ad495e32b855ac45d96367b149be90.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4_flowers_light_large.9953864326ad495e32b855ac45d96367b149be90.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1118504",
@@ -23767,7 +24317,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_toybox_light_large.0eaa520b37c7d53ed3ef541e59d2303714c7e21d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_toybox_light_large.0eaa520b37c7d53ed3ef541e59d2303714c7e21d.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-266544",
@@ -23795,7 +24346,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_snackattack_light_large.145d863714fb0fd6f766ef28f3639c0efded5018.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_snackattack_light_large.145d863714fb0fd6f766ef28f3639c0efded5018.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2625844",
@@ -23823,7 +24375,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg_overtake_light_large.62261051818eb21f13e782cd49a33970360b4581.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg_overtake_light_large.62261051818eb21f13e782cd49a33970360b4581.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-463100",
@@ -23851,7 +24404,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_abstract_light_large.c0eca2ab0cee2c60491b9b64358f72ae4398e78a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_abstract_light_large.c0eca2ab0cee2c60491b9b64358f72ae4398e78a.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-69896",
@@ -23879,7 +24433,8 @@ const cases = [
                         "name": "Operation Riptide Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_deagle_kitch_light_large.0df9b5246d27786b413642f5fc959f37d8892c3a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_cu_deagle_kitch_light_large.0df9b5246d27786b413642f5fc959f37d8892c3a.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -24169,7 +24724,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_alpha_omega_light_large.698d00d53621c1b2358655aaff4f729bc0ed6300.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_cu_fiveseven_alpha_omega_light_large.698d00d53621c1b2358655aaff4f729bc0ed6300.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1118636",
@@ -24197,7 +24753,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_pixie_light_large.26950e30ef7e74e69920d67965c409b8b88902c8.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_pixie_light_large.26950e30ef7e74e69920d67965c409b8b88902c8.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1774000",
@@ -24225,7 +24782,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_predictor_light_large.431734cae141d06a20fa3615d38e3b15c708602a.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_predictor_light_large.431734cae141d06a20fa3615d38e3b15c708602a.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1511876",
@@ -24253,7 +24811,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5_kid_necronomicon_light_large.87443871e29948cd2cea24c01bd241b3623e91dd.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_gs_mp5_kid_necronomicon_light_large.87443871e29948cd2cea24c01bd241b3623e91dd.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2101704",
@@ -24281,7 +24840,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2k_flying_dream_light_large.db13d5d635e72a5c6d5ab742a6fa3a1ec4129405.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2k_flying_dream_light_large.db13d5d635e72a5c6d5ab742a6fa3a1ec4129405.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2494924",
@@ -24309,7 +24869,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_sp_scar_chickenfight_light_large.b32fde27f0f45456b4c1e5f049be6f44bc8649b7.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_sp_scar_chickenfight_light_large.b32fde27f0f45456b4c1e5f049be6f44bc8649b7.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1905104",
@@ -24337,7 +24898,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_ouija_light_large.79ee13876374fa1fd2f04bea84124c265fb55407.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_ouija_light_large.79ee13876374fa1fd2f04bea84124c265fb55407.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1708436",
@@ -24365,7 +24927,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_spacecat_light_large.c2c9bbf949c4bdf2ce3173cd2447559177716dd3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_spacecat_light_large.c2c9bbf949c4bdf2ce3173cd2447559177716dd3.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-725412",
@@ -24393,7 +24956,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_cu_g3sg1_glade_light_large.93e176857183136f472c81b75331929d7b51d3ad.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_cu_g3sg1_glade_light_large.93e176857183136f472c81b75331929d7b51d3ad.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-3936680",
@@ -24421,7 +24985,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_gs_m4a1s_insomnia_light_large.265e6eb866d751caf4bbe7f8c8b62e400c5f0175.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_gs_m4a1s_insomnia_light_large.265e6eb866d751caf4bbe7f8c8b62e400c5f0175.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1642940",
@@ -24449,7 +25014,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_am_xm_zombie_offensive_light_large.0e15d69fbf9b3d93b14f54f85fa84bcb45c8f49e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_am_xm_zombie_offensive_light_large.0e15d69fbf9b3d93b14f54f85fa84bcb45c8f49e.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-4002240",
@@ -24477,7 +25043,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_to_hell_light_large.13912fa139f2055f7e3044a234ad111bbbce548f.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_to_hell_light_large.13912fa139f2055f7e3044a234ad111bbbce548f.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-135576",
@@ -24505,7 +25072,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_cu_elites_beware_light_large.3a4517010e237136f9cca5c593beedd94a2a0a15.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_cu_elites_beware_light_large.3a4517010e237136f9cca5c593beedd94a2a0a15.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-659868",
@@ -24533,7 +25101,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_gs_famas_rapid_eyes_light_large.8a166e6d36121b16dddc11b9aca94d5c541b0b56.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_gs_famas_rapid_eyes_light_large.8a166e6d36121b16dddc11b9aca94d5c541b0b56.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2167220",
@@ -24561,7 +25130,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_fear_light_large.17f608ce70f44af09c1a92c541430804429ae2d6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_cu_mp7_fear_light_large.17f608ce70f44af09c1a92c541430804429ae2d6.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-463316",
@@ -24589,7 +25159,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_nightwish_light_large.0c4581be094e2bd732bec18ebdad2f71b1018af2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_nightwish_light_large.0c4581be094e2bd732bec18ebdad2f71b1018af2.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-2232760",
@@ -24617,7 +25188,8 @@ const cases = [
                         "name": "Dreams & Nightmares Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_gs_mp9_starlight_light_large.79d29560c71c4ba592824c1a1e3a8172cc7269be.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_gs_mp9_starlight_light_large.79d29560c71c4ba592824c1a1e3a8172cc7269be.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -24907,7 +25479,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_gs_famas_corp_meow_light_large.7e27ced9616b1a4808cad37e8c0c653b9c866f07.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_gs_famas_corp_meow_light_large.7e27ced9616b1a4808cad37e8c0c653b9c866f07.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-856556",
@@ -24935,7 +25508,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_destroyer_light_large.00308096b32ca8c6252ed241878ca1ec5e743c36.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_destroyer_light_large.00308096b32ca8c6252ed241878ca1ec5e743c36.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1053172",
@@ -24963,7 +25537,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_elite_tactical_light_large.015fd86aa32f4f0331aa1b7dc2571d89dbf38671.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_elite_tactical_light_large.015fd86aa32f4f0331aa1b7dc2571d89dbf38671.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1118712",
@@ -24991,7 +25566,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_monkeyflage_light_large.8f24ab7b33719d43a7d4e0886cb3f79d506e7068.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_monkeyflage_light_large.8f24ab7b33719d43a7d4e0886cb3f79d506e7068.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1839616",
@@ -25019,7 +25595,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_clear_sky_light_large.fc6f06d0f44e71207660f44b9b56021ce42a7e46.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_clear_sky_light_large.fc6f06d0f44e71207660f44b9b56021ce42a7e46.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1577492",
@@ -25047,7 +25624,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_gs_ump_roadblock_light_large.d6b1372a575db666a8a7f039a39c05597d6cb60b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_gs_ump_roadblock_light_large.d6b1372a575db666a8a7f039a39c05597d6cb60b.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-266776",
@@ -25075,7 +25653,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_gs_glock_elite_camo_light_large.00d135c0b32cabd8b48692d11794c830a9a4de5c.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_gs_glock_elite_camo_light_large.00d135c0b32cabd8b48692d11794c830a9a4de5c.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-4198884",
@@ -25103,7 +25682,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_revolver_purple_elite_light_large.12a25ff5490bc9199a7ef870677455e42b9d8847.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_revolver_purple_elite_light_large.12a25ff5490bc9199a7ef870677455e42b9d8847.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-922096",
@@ -25131,7 +25711,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_cu_m249_downvote_light_large.9d51d5d89b1df07b160580b5b929f66f06bb8310.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_cu_m249_downvote_light_large.9d51d5d89b1df07b160580b5b929f66f06bb8310.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-2560508",
@@ -25159,7 +25740,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_cyber_dragon_light_large.563b70babc5251fe5df218140582cd0aa576701e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_cyber_dragon_light_large.563b70babc5251fe5df218140582cd0aa576701e.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1249800",
@@ -25187,7 +25769,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_tangled_light_large.d1c6b11dc6876f1cf546281df8b8fac68a037518.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_tangled_light_large.d1c6b11dc6876f1cf546281df8b8fac68a037518.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-135696",
@@ -25215,7 +25798,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_cu_dual_elites_evil_flora_light_large.3afd7e8e7cf008e4b38a206b79adae3b9d0d7757.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_cu_dual_elites_evil_flora_light_large.3afd7e8e7cf008e4b38a206b79adae3b9d0d7757.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-463324",
@@ -25243,7 +25827,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_cogthings_light_large.9b4678a70c315e5d60a203436b7a95cd4c5dcc89.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_cogthings_light_large.9b4678a70c315e5d60a203436b7a95cd4c5dcc89.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2363908",
@@ -25271,7 +25856,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_gs_p250_visions_light_large.a47ba6d191d3c734c3248667fb341a0e3f0c423e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_gs_p250_visions_light_large.a47ba6d191d3c734c3248667fb341a0e3f0c423e.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1905164",
@@ -25299,7 +25885,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_kisslove_light_large.55dc07f073e8c5ce65f21e4fb5957625db7ba266.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_kisslove_light_large.55dc07f073e8c5ce65f21e4fb5957625db7ba266.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-4002264",
@@ -25327,7 +25914,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_printstream_light_large.9f5bcd4f94db3d965b3b2e7c3aace470e9466380.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_printstream_light_large.9f5bcd4f94db3d965b3b2e7c3aace470e9466380.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-594400",
@@ -25355,7 +25943,8 @@ const cases = [
                         "name": "Recoil Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_chroma_pink_light_large.afc69cbf51b04e24149744b6ee1d998cc18d3002.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_chroma_pink_light_large.afc69cbf51b04e24149744b6ee1d998cc18d3002.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -25515,7 +26104,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_insomnia_light_large.0d971fb17ca0bb1df7baed6a1caa902c56c1ea5b.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_insomnia_light_large.0d971fb17ca0bb1df7baed6a1caa902c56c1ea5b.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2233124",
@@ -25543,7 +26133,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_superlight_light_large.81ad837f4c889f250fa03b227ef74555614de55d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_superlight_light_large.81ad837f4c889f250fa03b227ef74555614de55d.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2495272",
@@ -25571,7 +26162,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_gs_scar_fragments_black_light_large.d6bde287b06ba2380ba07621a0b06c36b13c4025.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_gs_scar_fragments_black_light_large.d6bde287b06ba2380ba07621a0b06c36b13c4025.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2364216",
@@ -25599,7 +26191,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_rebuilt_light_large.69d4fcb9a8151d09818d1c26cf4c7b03d046b5a1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_rebuilt_light_large.69d4fcb9a8151d09818d1c26cf4c7b03d046b5a1.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1512252",
@@ -25627,7 +26220,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_cu_mp5sd_quick_liquidation_light_large.2b446c710928debe38469e33b3b9030bd218c0e3.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_cu_mp5sd_quick_liquidation_light_large.2b446c710928debe38469e33b3b9030bd218c0e3.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-2560840",
@@ -25655,7 +26249,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_cyberforce_light_large.63aa4e611195d801eb706ac65d38df68f98e2b76.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_cyberforce_light_large.63aa4e611195d801eb706ac65d38df68f98e2b76.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-1971020",
@@ -25683,7 +26278,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_freedom_light_large.bb79585222a88d4dd3b154915c5527cac7e507d1.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_freedom_light_large.bb79585222a88d4dd3b154915c5527cac7e507d1.png",
+                "odds": 79.92
             },
             {
                 "id": "skin-3937052",
@@ -25711,7 +26307,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_feeding_frenzy_light_large.e1cb803e0e10ae4457e42d34ec8515b1500f4762.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_feeding_frenzy_light_large.e1cb803e0e10ae4457e42d34ec8515b1500f4762.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-267052",
@@ -25739,7 +26336,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_moon_rabbit_light_large.9063b9745250446c657632eb13a6325f51d101f2.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_moon_rabbit_light_large.9063b9745250446c657632eb13a6325f51d101f2.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1119028",
@@ -25765,7 +26363,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_sakkaku_light_large.b590689d0ca099e8a759dd0a86da0710a58bca42.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_sakkaku_light_large.b590689d0ca099e8a759dd0a86da0710a58bca42.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-4199232",
@@ -25793,7 +26392,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_r8_banana_light_large.50f0b729a36a405d48b41d58463234dbbd15b9cf.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_r8_banana_light_large.50f0b729a36a405d48b41d58463234dbbd15b9cf.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-1250116",
@@ -25821,7 +26421,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_neoqueen_light_large.fa2a81f8c7906b2683b5eb4b562edd2529ad2cf0.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_neoqueen_light_large.fa2a81f8c7906b2683b5eb4b562edd2529ad2cf0.png",
+                "odds": 15.98
             },
             {
                 "id": "skin-594712",
@@ -25849,7 +26450,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_gs_awp_limbo_snake_light_large.60984ce1e5c1a4ac10e83444a9b7e7f78dd98b1e.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_gs_awp_limbo_snake_light_large.60984ce1e5c1a4ac10e83444a9b7e7f78dd98b1e.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1577808",
@@ -25877,7 +26479,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump_clutch_kick_light_large.b57e43c07b433517b1c3bdaa1e52ce44878af481.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump_clutch_kick_light_large.b57e43c07b433517b1c3bdaa1e52ce44878af481.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-2102048",
@@ -25905,7 +26508,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_decline_light_large.7f57145674a5e41b3b8e7fe70be4ffbb57ec6f84.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_decline_light_large.7f57145674a5e41b3b8e7fe70be4ffbb57ec6f84.png",
+                "odds": 3.2
             },
             {
                 "id": "skin-1053488",
@@ -25933,7 +26537,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_temukau_light_large.a41eb80c70cbbee5d84e53b5cd1eaa10954c938d.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_temukau_light_large.a41eb80c70cbbee5d84e53b5cd1eaa10954c938d.png",
+                "odds": 0.64
             },
             {
                 "id": "skin-463636",
@@ -25961,7 +26566,8 @@ const cases = [
                         "name": "Revolution Case"
                     }
                 ],
-                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak_head_shot_holo_light_large.85be84ba7c07917493b8e8a66c9d95c928ebe8b6.png"
+                "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak_head_shot_holo_light_large.85be84ba7c07917493b8e8a66c9d95c928ebe8b6.png",
+                "odds": 0.64
             }
         ],
         "contains_rare": [
@@ -26088,9 +26694,9 @@ const cases = [
         ],
         "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapon_cases/crate_community_32.2d4bcc3d6832d2b4d1d11a273a4ff4bf55dc63a1.png"
     }
-]
+];
 
-const caseItemsList = cases[0].contains;
+const caseItemsList = cases[1].contains;
 
 const rollItemCount = 360;
 
@@ -26206,7 +26812,7 @@ function randomGenItem(array, distribution) {
 
 function createDistribution(items, size) {
     const distribution = [];
-    const weights = items.map(item => item.max_float);
+    const weights = items.map(item => item.odds / 100);
     const sum = weights.reduce((a, b) => a + b);
     const quant = size / sum;
     for (let i = 0; i < weights.length; ++i) {
