@@ -5,6 +5,10 @@ let itemHolder = document.querySelector('.item-holder');
 
 const caseOpenWindow = document.querySelector('.case-open-window-holder');
 
+const caseSelect = document.querySelector('select');
+
+
+
 // const caseItemsList = [
 //     {
 //         name: 'awp', color: 'purple', odds: 0.07375,
@@ -26696,13 +26700,29 @@ const cases = [
     }
 ];
 
-const caseItemsList = cases[1].contains;
+cases.sort((caseA, caseB) => (caseA.first_sale_date < caseB.first_sale_date ? 1 : -1));
+
+cases.map((caseItem, index) => {
+    let option = document.createElement('option');
+    option.value = index;
+    option.textContent = caseItem.name;
+
+    caseSelect.appendChild(option);
+});
+
+caseOpenWindow.disabled = true;
+
+const caseItemsList = cases[0].contains;
+
+
 
 const rollItemCount = 360;
 
 const distribution = createDistribution(caseItemsList, 100);
 
 console.log(caseItemsList);
+
+
 
 for (let i = 0; i < 10; i++) {
     // randomization will be hugely reworked
@@ -26726,6 +26746,8 @@ button.addEventListener('click', () => openCase());
 
 
 function openCase() {
+
+    const caseItemsList = cases[caseSelect.value].contains;
 
     caseOpenWindow.style.setProperty('--random-translateX', `${getRandomInt(-5000, -6000)}px`);
 

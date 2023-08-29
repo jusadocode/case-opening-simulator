@@ -17,6 +17,11 @@ p {
     text-align: center;
 }
 
+select {
+    height: 2rem;
+    margin: 10px;
+}
+
 .balance-section {
     text-align: right;
     margin: 30px;
@@ -34,6 +39,11 @@ p {
     border: 2px solid black;
     width: 700px;
     height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.case-select-container {
     display: flex;
     justify-content: center;
 }
