@@ -7,7 +7,7 @@ const caseOpenWindow = document.querySelector('.case-open-window-holder');
 
 const caseSelect = document.querySelector('select');
 
-
+const itemMarker = document.querySelector('.case-open-marker');
 
 // const caseItemsList = [
 //     {
@@ -26716,7 +26716,7 @@ const caseItemsList = cases[0].contains;
 
 
 
-const rollItemCount = 360;
+const rollItemCount = 100;
 
 const distribution = createDistribution(caseItemsList, 100);
 
@@ -26748,9 +26748,13 @@ button.addEventListener('click', () => openCase());
 function openCase() {
 
     const caseItemsList = cases[caseSelect.value].contains;
+    let translateX = getRandomInt(-5000, -6000);
 
-    caseOpenWindow.style.setProperty('--random-translateX', `${getRandomInt(-5000, -6000)}px`);
 
+    caseOpenWindow.style.setProperty('--random-translateX', `${translateX}px`);
+    translateX -= 352; // roller is position 352px from the start
+    const itemNumber = Math.floor((translateX / 152) * (-1));
+    console.log(itemNumber);
     button.classList.add('animated');
     button.classList.add('bounceOut');
     button.disabled = true;
@@ -26769,6 +26773,16 @@ function openCase() {
 
         caseOpenWindow.classList.remove('animated');
         caseOpenWindow.classList.remove('flipInX');
+
+
+
+        var rect = itemMarker.getBoundingClientRect();
+
+
+        let elements = document.elementsFromPoint(rect.x, rect.y);
+        elements.map(element => console.log(element));
+        itemHolder.childNodes[itemNumber].style.setProperty('border', '3px solid yellow');
+
     }, 6000);
 
 
