@@ -102,15 +102,16 @@ select {
     position: absolute;
     transform: translateY(-100px);
     width: 20vw;
-    height: 40vh;
-    border-radius: 10px;
-    background-color: black;
+    /* height: 40vh; */
+    border-radius: 20%;
+    /* background-color: black; */
     z-index: 3;
-    border: 5px solid grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
     scale: 0.9;
+    backdrop-filter: blur(50px);
+    border: 1px solid gray;
 }
 
 .obtainedItem:hover {
@@ -134,7 +135,13 @@ select {
     position: relative;
     width: 100%;
     min-height: 20px;
+}
 
+.obtained-item-rarity-box {
+    align-self: center;
+    position: relative;
+    width: 50%;
+    height: 5%;
 }
 
 .animated {
