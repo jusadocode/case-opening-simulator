@@ -26718,9 +26718,12 @@ const caseItemsList = cases[0].contains;
 
 const rollItemCount = 100;
 
+let rolledItems = [];
+
 const distribution = createDistribution(caseItemsList, 100);
 
 console.log(caseItemsList);
+
 
 
 
@@ -26731,7 +26734,22 @@ for (let i = 0; i < 10; i++) {
     let newItem = document.createElement('div');
     newItem.classList.add('item');
 
-    newItem.textContent = randomItem.name;
+    let img = document.createElement('img');
+
+    img.src = randomItem.image;
+    img.classList.add('image');
+    // newItem.textContent = randomItem.name;
+
+    const rarityColor = getRarityColor(randomItem.rarity);
+
+    newItem.style.backgroundImage = 'linear-gradient(white 40%, '
+        + rarityColor + ')';
+    let rarityBox = document.createElement('div');
+    rarityBox.classList.add('item-rarity-box');
+    rarityBox.style.backgroundColor = rarityColor;
+    newItem.appendChild(img);
+    newItem.appendChild(rarityBox);
+    itemHolder.appendChild(newItem);
 
     itemHolder.appendChild(newItem);
 
@@ -26750,9 +26768,8 @@ function openCase() {
     const caseItemsList = cases[caseSelect.value].contains;
     let translateX = getRandomInt(-5000, -6000);
 
-
-    caseOpenWindow.style.setProperty('--random-translateX', `${translateX}px`);
-    translateX -= 352; // roller is position 352px from the start
+    caseOpenWindow.style.setProperty('--random-translateXb', `${translateX}px`);
+    translateX -= 352; // roller is positioned 352px from the start
     const itemNumber = Math.floor((translateX / 152) * (-1));
     console.log(itemNumber);
     button.classList.add('animated');
@@ -26764,9 +26781,9 @@ function openCase() {
     caseOpenWindow.classList.add('flipInX');
 
 
-
-
     setTimeout(() => {
+
+
         button.disabled = false;
         button.classList.remove('animated');
         button.classList.remove('bounceOut');
@@ -26774,22 +26791,62 @@ function openCase() {
         caseOpenWindow.classList.remove('animated');
         caseOpenWindow.classList.remove('flipInX');
 
-
-
         var rect = itemMarker.getBoundingClientRect();
 
-
         let elements = document.elementsFromPoint(rect.x, rect.y);
-        elements.map(element => console.log(element));
-        itemHolder.childNodes[itemNumber].style.setProperty('border', '3px solid yellow');
 
-    }, 6000);
+        // elements.map(element => console.log(element, window.getComputedStyle(element).getPropertyValue('z-index')));
+        let itemWon = rolledItems[itemNumber];
+        let obtainedItem = document.createElement('div');
+        obtainedItem.classList.add('obtainedItem');
+        let img = document.createElement('img');
+
+        img.src = itemWon.image;
+        img.classList.add('obtained-image');
+
+        obtainedItem.appendChild(img);
+
+        const rarityColor = getRarityColor(itemWon.rarity);
+        obtainedItem.style.backgroundColor = rarityColor;
+
+
+        obtainedItem.classList.add('animated');
+        obtainedItem.classList.add('fadeIn');
+
+
+        let info = [];
+
+
+        let name = itemWon.name;
+        let price = 'Market price: 0.45';
+        let float = 'Float: ' + itemWon.max_float;
+
+        info.push(name);
+        info.push(price);
+        info.push(float);
+
+        let obtainedText = document.createElement('div');
+
+        info.forEach((element) => {
+            let par = document.createElement('p');
+            par.textContent = element;
+            obtainedText.appendChild(par);
+        })
+
+        //itemWon.style.setProperty('border', '3px solid yellow');
+        obtainedItem.appendChild(obtainedText);
+        caseOpenWindow.appendChild(obtainedItem);
+
+    }, 1);
+
+
 
 
 
     for (let i = 0; i < rollItemCount; i++) {
 
         let randomItem = randomGenItem(caseItemsList, distribution);
+        rolledItems.push(randomItem);
         let newItem = document.createElement('div');
         newItem.classList.add('item');
         newItem.classList.add('animatedItem');
