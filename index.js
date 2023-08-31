@@ -26807,7 +26807,12 @@ function openCase() {
         obtainedItem.appendChild(img);
 
         const rarityColor = getRarityColor(itemWon.rarity);
-        obtainedItem.style.backgroundColor = rarityColor;
+
+        let rarityBox = document.createElement('div');
+        rarityBox.classList.add('obtained-item-rarity-box');
+        rarityBox.style.backgroundColor = rarityColor;
+
+
 
 
         obtainedItem.classList.add('animated');
@@ -26821,7 +26826,11 @@ function openCase() {
         let price = 'Market price: 0.45';
         let float = 'Float: ' + itemWon.max_float;
 
-        info.push(name);
+
+        let par = document.createElement('p');
+        par.textContent = name;
+        obtainedItem.prepend(name);
+
         info.push(price);
         info.push(float);
 
@@ -26864,6 +26873,7 @@ function openCase() {
         let rarityBox = document.createElement('div');
         rarityBox.classList.add('item-rarity-box');
         rarityBox.style.backgroundColor = rarityColor;
+
         newItem.appendChild(img);
         newItem.appendChild(rarityBox);
         itemHolder.appendChild(newItem);
