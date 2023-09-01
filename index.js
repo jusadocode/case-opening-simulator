@@ -1,4 +1,5 @@
 
+const baseUrl = "localhost:8080/api/price/";
 const button = document.querySelector('.open-button');
 
 let itemHolder = document.querySelector('.item-holder');
@@ -26758,7 +26759,7 @@ const items = document.querySelectorAll('.item');
 button.addEventListener('click', () => openCase());
 
 
-function openCase() {
+async function openCase() {
 
     //clearUpWindow();
     const caseItemsList = cases[caseSelect.value].contains;
@@ -26777,7 +26778,7 @@ function openCase() {
     caseOpenWindow.classList.add('flipInX');
 
 
-    setTimeout(() => {
+    setTimeout(async () => {
 
         button.disabled = false;
         button.classList.remove('animated');
@@ -26816,19 +26817,25 @@ function openCase() {
         const textParts = itemWon.name.split(' ');
         console.log(textParts);
 
-        let price = 'Market price: 0.45';
+        let price = '';
         let stattrack = '';
 
         //const gluedData = textParts.reduce((sum, current) => sum + '%' + current);
         //console.log(gluedData);
         //let result = arr.reduce((sum, current) => sum + current);
         ///////////////https://steamcommunity.com/market/priceoverview/?currency=3&appid=730&market_hash_name=StatTrak%E2%84%A2%20P250%20%7C%20Steel%20Disruption%20%28Factory%20New%29
+        const baseUrl = "http://localhost:8080/data";
         const link = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${itemWon.weapon}%20|%20${itemWon.pattern}%20(${itemWon.wears[0]})&currency=${3}`;
-        console.log(link);
-        fetch(link, { mode: 'cors' })
+        const url = `${baseUrl}`;
+        // Call to backend
+        await fetch(url)
             .then((response) => response.json())
             .then((data) => {
                 console.log(data)
+                price = 'Market price: ' + data.lowest_price;
+            })
+            .catch((err) => {
+                console.log(err);
             });
 
         let float = 'Float: ' + itemWon.max_float;
