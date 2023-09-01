@@ -26714,8 +26714,6 @@ caseOpenWindow.disabled = true;
 
 const caseItemsList = cases[0].contains;
 
-
-
 const rollItemCount = 100;
 
 let rolledItems = [];
@@ -26723,8 +26721,6 @@ let rolledItems = [];
 const distribution = createDistribution(caseItemsList, 100);
 
 console.log(caseItemsList);
-
-
 
 
 for (let i = 0; i < 10; i++) {
@@ -26762,9 +26758,9 @@ const items = document.querySelectorAll('.item');
 button.addEventListener('click', () => openCase());
 
 
-
 function openCase() {
 
+    //clearUpWindow();
     const caseItemsList = cases[caseSelect.value].contains;
     let translateX = getRandomInt(-5000, -6000);
 
@@ -26782,7 +26778,6 @@ function openCase() {
 
 
     setTimeout(() => {
-
 
         button.disabled = false;
         button.classList.remove('animated');
@@ -26813,19 +26808,30 @@ function openCase() {
         rarityBox.style.backgroundColor = rarityColor;
 
 
-
-
         obtainedItem.classList.add('animated');
         obtainedItem.classList.add('fadeIn');
 
-
         let info = [];
 
+        const textParts = itemWon.name.split(' ');
+        console.log(textParts);
 
-        let name = itemWon.name;
         let price = 'Market price: 0.45';
-        let float = 'Float: ' + itemWon.max_float;
+        let stattrack = '';
 
+        //const gluedData = textParts.reduce((sum, current) => sum + '%' + current);
+        //console.log(gluedData);
+        //let result = arr.reduce((sum, current) => sum + current);
+        ///////////////https://steamcommunity.com/market/priceoverview/?currency=3&appid=730&market_hash_name=StatTrak%E2%84%A2%20P250%20%7C%20Steel%20Disruption%20%28Factory%20New%29
+        const link = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${itemWon.weapon}%20|%20${itemWon.pattern}%20(${itemWon.wears[0]})&currency=${3}`;
+        console.log(link);
+        fetch(link, { mode: 'cors' })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data)
+            });
+
+        let float = 'Float: ' + itemWon.max_float;
 
         let par = document.createElement('p');
         par.textContent = name;
@@ -26847,8 +26853,6 @@ function openCase() {
         caseOpenWindow.appendChild(obtainedItem);
 
     }, 1);
-
-
 
 
 
@@ -26880,7 +26884,11 @@ function openCase() {
 
     }
 
+}
 
+function clearUpWindow() {
+    if (caseOpenWindow.lastChild.classList[0] === 'obtainedItem animated fadeIn')
+        caseOpenWindow.removeChild[caseOpenWindow.childElementCount];
 }
 
 function getRarityColor(rarity) {
