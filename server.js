@@ -11,36 +11,47 @@ app.use(
     })
 )
 
-app.get("/data", (req, res) => {
+app.get("/data/price", (req, res) => {
+
+    const queryParams = req.query;
+    // console.log(queryParams);
+
+    let link = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${queryParams.weapon} | ${queryParams.skin} (${queryParams.wear})&currency=${3}`
+    const encodedUrl = link.replace(/ /g, '%20');
+
+
     const options = {
         method: "GET",
-        url: `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=SG%20553%20|%20Cyberforce%20(Factory%20New)&currency=3`
+        url: encodedUrl
+        // url: `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=SG%20553%20|%20Cyberforce%20(Factory%20New)&currency=3`
     };
 
     axios
         .request(options)
         .then((response) => {
+
             res.json(response.data);
         })
         .catch((error) => {
+            console.log(error);
             res.json(error);
         });
 });
 
-// function callApi(url) {
-//     const options = {
-//         method: "GET",
-//         url: "http://localhost:8080/",
-//     };
+app.get("/data/cases", (req, res) => {
 
-//     axios.request(options)
-//         .then((response) => {
-//             console.log(response.data);
-//         })
-//         .catch((error) => {
-//             console.log(error);
-//         });
-// }
+    const path = 'file:///C:/Users/justa/source/repos/CaseOpeningSim/case-opening-simulator/data/cases.json'
+
+    axios
+        .get(path)
+        .then((response) => {
+            res.json(response.data);
+        })
+        .catch((error) => {
+            console.log(error);
+            res.json(error);
+        });
+});
 
 
 
