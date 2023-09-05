@@ -2,6 +2,7 @@ const PORT = 8080;
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
+const caseData = require('./data/cases.json');
 
 const app = express();
 
@@ -29,7 +30,6 @@ app.get("/data/price", (req, res) => {
     axios
         .request(options)
         .then((response) => {
-
             res.json(response.data);
         })
         .catch((error) => {
@@ -39,18 +39,7 @@ app.get("/data/price", (req, res) => {
 });
 
 app.get("/data/cases", (req, res) => {
-
-    const path = 'file:///C:/Users/justa/source/repos/CaseOpeningSim/case-opening-simulator/data/cases.json'
-
-    axios
-        .get(path)
-        .then((response) => {
-            res.json(response.data);
-        })
-        .catch((error) => {
-            console.log(error);
-            res.json(error);
-        });
+    res.json(caseData);
 });
 
 

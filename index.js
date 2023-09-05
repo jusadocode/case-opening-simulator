@@ -10,87 +10,68 @@ const caseSelect = document.querySelector('select');
 
 const itemMarker = document.querySelector('.case-open-marker');
 
-// const caseItemsList = [
-//     {
-//         name: 'awp', color: 'purple', odds: 0.07375,
-//         img: 'https:\/\/community.akamai.steamstatic.com\/economy\/image\/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17PLfYQJD_9W7m5a0mvLwOq7c2G9SupUijOjAotyg3w2x_0ZkZ2rzd4OXdgRoYQuE8gDtyL_mg5K4tJ7XiSw0WqKv8kM\/62fx62f\''
-//     },
-//     { name: 'm4', color: 'darkblue', odds: 0.075 },
-//     {
-//         name: 'pistol', color: 'lightblue', odds: 0.35,
-//         img: "https:\/\/community.akamai.steamstatic.com\/economy\/image\/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17PLfYQJD_9W7m5a0mvLwOq7c2G9SupUijOjAotyg3w2x_0ZkZ2rzd4OXdgRoYQuE8gDtyL_mg5K4tJ7XiSw0WqKv8kM\/62fx62f\''"
-//     },
-//     { name: 'knife', color: 'yellow', odds: 0.00125 },
-//     { name: 'ak2', color: 'darkblue', odds: 0.07375 },
-//     { name: 'm42', color: 'purple', odds: 0.075 },
-//     { name: 'pistol2', color: 'lightblue', odds: 0.35 },]
-
-
-
 let cases = [];
-
-fetchCaseData();
-
-console.log(cases)
-
-
-
-cases.sort((caseA, caseB) => (caseA.first_sale_date < caseB.first_sale_date ? 1 : -1));
-
-cases.map((caseItem, index) => {
-    let option = document.createElement('option');
-    option.value = index;
-    option.textContent = caseItem.name;
-
-    caseSelect.appendChild(option);
-});
-
-caseOpenWindow.disabled = true;
-
-const caseItemsList = cases[0].contains;
-
 const rollItemCount = 100;
-
 let rolledItems = [];
+let distribution = [];
 
-const distribution = createDistribution(caseItemsList, 100);
-
-console.log(caseItemsList);
+initializeCaseLoad();
 
 
-for (let i = 0; i < 10; i++) {
-    // randomization will be hugely reworked
-    let randomItem = caseItemsList[getRandomInt(0, caseItemsList.length - 1)];
+async function initializeCaseLoad() {
 
-    let newItem = document.createElement('div');
-    newItem.classList.add('item');
+    await fetchCaseData();
 
-    let img = document.createElement('img');
+    cases.sort((caseA, caseB) => (caseA.first_sale_date < caseB.first_sale_date ? 1 : -1));
 
-    img.src = randomItem.image;
-    img.classList.add('image');
-    // newItem.textContent = randomItem.name;
+    cases.map((caseItem, index) => {
+        let option = document.createElement('option');
+        option.value = index;
+        option.textContent = caseItem.name;
 
-    const rarityColor = getRarityColor(randomItem.rarity);
+        caseSelect.appendChild(option);
+    });
 
-    newItem.style.backgroundImage = 'linear-gradient(white 40%, '
-        + rarityColor + ')';
-    let rarityBox = document.createElement('div');
-    rarityBox.classList.add('item-rarity-box');
-    rarityBox.style.backgroundColor = rarityColor;
-    newItem.appendChild(img);
-    newItem.appendChild(rarityBox);
-    itemHolder.appendChild(newItem);
+    caseOpenWindow.disabled = true;
 
-    itemHolder.appendChild(newItem);
+    const caseItemsList = cases[0].contains;
 
+    distribution = createDistribution(caseItemsList, 100);
+
+    console.log(caseItemsList);
+
+
+    for (let i = 0; i < 10; i++) {
+        // randomization will be hugely reworked
+        let randomItem = caseItemsList[getRandomInt(0, caseItemsList.length - 1)];
+
+        let newItem = document.createElement('div');
+        newItem.classList.add('item');
+
+        let img = document.createElement('img');
+
+        img.src = randomItem.image;
+        img.classList.add('image');
+        // newItem.textContent = randomItem.name;
+
+        const rarityColor = getRarityColor(randomItem.rarity);
+
+        newItem.style.backgroundImage = 'linear-gradient(white 40%, '
+            + rarityColor + ')';
+        let rarityBox = document.createElement('div');
+        rarityBox.classList.add('item-rarity-box');
+        rarityBox.style.backgroundColor = rarityColor;
+        newItem.appendChild(img);
+        newItem.appendChild(rarityBox);
+        itemHolder.appendChild(newItem);
+
+        itemHolder.appendChild(newItem);
+
+    }
+
+
+    button.addEventListener('click', () => openCase());
 }
-
-
-const items = document.querySelectorAll('.item');
-
-
-button.addEventListener('click', () => openCase());
 
 
 async function openCase() {
@@ -300,14 +281,15 @@ async function callApi(urlPostfix) {
 }
 
 async function fetchCaseData() {
-    try {
-        const data = await callApi(`data/cases`);
-        if (data) {
+    await callApi(`data/cases`)
+        .then((data) => {
+            console.log(data);
             cases = data;
-        }
-    } catch (error) {
-        console.log(error);
-    }
+            console.log(cases);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
 }
 
 
