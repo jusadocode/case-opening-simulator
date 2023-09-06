@@ -6,6 +6,16 @@ const caseData = require('./data/cases.json');
 
 const app = express();
 
+
+caseData.sort((caseA, caseB) => (caseA.first_sale_date < caseB.first_sale_date ? 1 : -1));
+
+
+/////////////////////
+// 429 error from too many requests
+// make case price search periodical
+//////////////////////
+//fetchCasePrices();
+
 app.use(
     cors({
         // origin: 'http://localhost:8080/data'
@@ -17,13 +27,22 @@ app.get("/data/price", (req, res) => {
     const queryParams = req.query;
     // console.log(queryParams);
 
-    let link = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${queryParams.weapon} | ${queryParams.skin} (${queryParams.wear})&currency=${3}`
-    const encodedUrl = link.replace(/ /g, '%20');
+    // currency (Euro) = index 3 
+
+
+
+    let skinLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${queryParams.weapon} | ${queryParams.skin} (${queryParams.wear})&currency=3`
+    let caseLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${queryParams.case}&currency=3`
+
+    let url = queryParams.case ? caseLink : skinLink;
+
+    const encodedUrl = url.replace(/ /g, '%20');
 
 
     const options = {
         method: "GET",
         url: encodedUrl
+        // url: `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=SG%20553%20|%20Cyberforce%20(Factory%20New)&currency=3`
         // url: `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=SG%20553%20|%20Cyberforce%20(Factory%20New)&currency=3`
     };
 
@@ -47,3 +66,24 @@ app.get("/data/cases", (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+
+
+
+function fetchCasePrices() {
+    caseData.map(async (crate, index) => {
+        if (index === 19)
+            return;
+        let caseLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${crate.name}&currency=3`
+        axios.request(caseLink)
+            .then((data) => {
+                crate.price = data.lowest_price;
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+    })
+}
+
+
+

@@ -1,3 +1,6 @@
+/////////////////////////////////
+// Dont use the word case in code
+/////////////////////////////////
 
 const baseUrl = "http:localhost:8080";
 const button = document.querySelector('.open-button');
@@ -22,12 +25,22 @@ async function initializeCaseLoad() {
 
     await fetchCaseData();
 
-    cases.sort((caseA, caseB) => (caseA.first_sale_date < caseB.first_sale_date ? 1 : -1));
-
-    cases.map((caseItem, index) => {
+    cases.map(async (crate, index) => {
         let option = document.createElement('option');
         option.value = index;
-        option.textContent = caseItem.name;
+
+        console.log(crate.name);
+        option.textContent = crate.name;
+
+
+
+        // await callApi(``)
+        //     .then((data) => {
+        //         option.textContent += ' ' + data.lowest_price;
+        //     })
+        //     .catch((error) => {
+        //         console.log(error);
+        //     })
 
         caseSelect.appendChild(option);
     });
@@ -137,7 +150,7 @@ async function openCase() {
         let stattrack = '';
 
         // Call to backend
-        await callApi(`data/price?weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWon.wears[0]}`)
+        await callApi(`data/price?&weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWon.wears[0]}`)
             .then((data) => {
                 if (data) {
                     price = 'Market price: ' + data.lowest_price;
