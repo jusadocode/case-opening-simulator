@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap);
 
+
 :root {
     --random-translateXa: -2500px;
     --random-translateXb: 0;
@@ -109,14 +110,32 @@ select {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    scale: 0.9;
+    align-items: center;
+
     backdrop-filter: blur(50px);
     border: 1px solid gray;
+    background-image: url('inferno-CS2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: scale 0.3s ease-in-out;
+
 }
 
 .obtainedItem:hover {
-    scale: 1;
+    /* transition: scale 0.3s ease-in-out; */
+    scale: 1.1;
 }
+
+.obtainedItem:hover * {
+    /* transition: scale 0.3s ease-in-out; */
+    scale: 1.1;
+}
+
+.obtainedItem:hover * {
+    /* transition: scale 0.3s ease-in-out; */
+    scale: 1.1;
+}
+
 
 .obtained-image {
     margin: 0 auto;
@@ -152,7 +171,7 @@ select {
 }
 
 .animatedItem {
-    animation-duration: 1s;
+    animation-duration: 6s;
     animation-fill-mode: both;
 }
 

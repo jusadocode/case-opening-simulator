@@ -4,6 +4,8 @@
 
 const baseUrl = "http:localhost:8080";
 const button = document.querySelector('.open-button');
+let statusText = document.querySelector('#status');
+let moneyStatus = 0.00;
 
 let itemHolder = document.querySelector('.item-holder');
 
@@ -29,7 +31,7 @@ async function initializeCaseLoad() {
         let option = document.createElement('option');
         option.value = index;
 
-        console.log(crate.name);
+        // console.log(crate.name);
         option.textContent = crate.name;
 
 
@@ -51,7 +53,7 @@ async function initializeCaseLoad() {
 
     distribution = createDistribution(caseItemsList, 100);
 
-    console.log(caseItemsList);
+    // console.log(caseItemsList);
 
 
     for (let i = 0; i < 10; i++) {
@@ -84,20 +86,26 @@ async function initializeCaseLoad() {
 
 
     button.addEventListener('click', () => openCase());
+
 }
 
 
 async function openCase() {
 
+    clearUpWindow();
+
+    moneyStatus -= 2;
+    updateMoneyStatus();
     //clearUpWindow();
-    console.log(caseSelect.value);
+    console.log(cases[caseSelect.value].name);
     const caseItemsList = cases[caseSelect.value].contains;
+
     let translateX = getRandomInt(-5000, -6000);
 
     caseOpenWindow.style.setProperty('--random-translateXb', `${translateX}px`);
     translateX -= 352; // roller is positioned 352px from the start
     const itemNumber = Math.floor((translateX / 152) * (-1));
-    console.log(itemNumber);
+    // console.log(itemNumber);
     button.classList.add('animated');
     button.classList.add('bounceOut');
     button.disabled = true;
@@ -119,9 +127,10 @@ async function openCase() {
         var rect = itemMarker.getBoundingClientRect();
 
         let elements = document.elementsFromPoint(rect.x, rect.y);
-
         // elements.map(element => console.log(element, window.getComputedStyle(element).getPropertyValue('z-index')));
         let itemWon = rolledItems[itemNumber];
+
+
         let obtainedItem = document.createElement('div');
         obtainedItem.classList.add('obtainedItem');
         let img = document.createElement('img');
@@ -144,7 +153,7 @@ async function openCase() {
         let info = [];
 
         const textParts = itemWon.name.split(' ');
-        console.log(textParts);
+        // console.log(textParts);
 
         let price = '';
         let stattrack = '';
@@ -154,6 +163,10 @@ async function openCase() {
             .then((data) => {
                 if (data) {
                     price = 'Market price: ' + data.lowest_price;
+                    const worth = data.lowest_price.slice(0, -1);
+                    console.log(moneyStatus);
+                    moneyStatus += parseFloat(worth);
+                    console.log(moneyStatus);
                 } else {
                     price = 'Market price not available';
                 }
@@ -174,6 +187,8 @@ async function openCase() {
 
         let obtainedText = document.createElement('div');
 
+
+
         info.forEach((element) => {
             let par = document.createElement('p');
             par.textContent = element;
@@ -182,9 +197,20 @@ async function openCase() {
 
         //itemWon.style.setProperty('border', '3px solid yellow');
         obtainedItem.appendChild(obtainedText);
+
+        button.style.border = 'none';
+        button.style.width = '50%';
+        button.textContent = 'Open another (-2Eur)'
+        button.style.width = '50%';
+        button.style.borderRadius = '10px';
+
+        obtainedItem.appendChild(button);
+
         caseOpenWindow.appendChild(obtainedItem);
 
-    }, 1);
+        updateMoneyStatus();
+
+    }, 6000);
 
 
 
@@ -218,9 +244,14 @@ async function openCase() {
 
 }
 
+function updateMoneyStatus() {
+    statusText.textContent = 'State: ' + moneyStatus + '€';
+}
+
+
 function clearUpWindow() {
-    if (caseOpenWindow.lastChild.classList[0] === 'obtainedItem animated fadeIn')
-        caseOpenWindow.removeChild[caseOpenWindow.childElementCount];
+    caseOpenWindow.lastChild.remove();
+    rolledItems = [];
 }
 
 function getRarityColor(rarity) {
