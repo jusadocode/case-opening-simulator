@@ -119,22 +119,18 @@ select {
     background-position: center;
     transition: scale 0.3s ease-in-out;
 
+    font-weight: bold;
+
 }
 
 .obtainedItem:hover {
-    /* transition: scale 0.3s ease-in-out; */
-    scale: 1.1;
+    scale: 1.05;
 }
 
 .obtainedItem:hover * {
-    /* transition: scale 0.3s ease-in-out; */
-    scale: 1.1;
+    scale: 1.05;
 }
 
-.obtainedItem:hover * {
-    /* transition: scale 0.3s ease-in-out; */
-    scale: 1.1;
-}
 
 
 .obtained-image {

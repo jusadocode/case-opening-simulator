@@ -2,7 +2,16 @@ const PORT = 8080;
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
-const caseData = require('./data/cases.json');
+const caseData = require('./data/final_join.json');
+
+// hashMap for reoccuring item price requests
+// should save requests
+
+let itemPriceMap = new Map();
+
+// map1.set('a', 1);
+// map1.set('b', 2);
+// map1.set('c', 3);
 
 const app = express();
 
@@ -29,7 +38,14 @@ app.get("/data/price", (req, res) => {
 
     // currency (Euro) = index 3 
 
+    const itemId = queryParams.itemID;
 
+    const mapItem = itemPriceMap.get(itemId);
+
+    if (mapItem) {
+        res.json(mapItem);
+        return;
+    }
 
     let skinLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${queryParams.weapon} | ${queryParams.skin} (${queryParams.wear})&currency=3`
     let caseLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${queryParams.case}&currency=3`
@@ -50,6 +66,8 @@ app.get("/data/price", (req, res) => {
         .request(options)
         .then((response) => {
             res.json(response.data);
+            itemPriceMap.set(itemId, response.data);
+            console.log('ITEM ADDED TO MAP');
         })
         .catch((error) => {
             console.log(error);

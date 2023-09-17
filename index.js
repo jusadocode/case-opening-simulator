@@ -5,7 +5,9 @@
 const baseUrl = "http:localhost:8080";
 const button = document.querySelector('.open-button');
 let statusText = document.querySelector('#status');
+
 let moneyStatus = 0.00;
+const keyPrice = 2.34;
 
 let itemHolder = document.querySelector('.item-holder');
 
@@ -16,7 +18,7 @@ const caseSelect = document.querySelector('select');
 const itemMarker = document.querySelector('.case-open-marker');
 
 let cases = [];
-const rollItemCount = 100;
+const rollItemCount = 150;
 let rolledItems = [];
 let distribution = [];
 
@@ -30,28 +32,16 @@ async function initializeCaseLoad() {
     cases.map(async (crate, index) => {
         let option = document.createElement('option');
         option.value = index;
-
-        // console.log(crate.name);
         option.textContent = crate.name;
-
-
-
-        // await callApi(``)
-        //     .then((data) => {
-        //         option.textContent += ' ' + data.lowest_price;
-        //     })
-        //     .catch((error) => {
-        //         console.log(error);
-        //     })
 
         caseSelect.appendChild(option);
     });
 
     caseOpenWindow.disabled = true;
 
-    const caseItemsList = cases[0].contains;
+    const caseItemsList = (cases[0].contains);
 
-    distribution = createDistribution(caseItemsList, 100);
+
 
     // console.log(caseItemsList);
 
@@ -66,6 +56,8 @@ async function initializeCaseLoad() {
         let img = document.createElement('img');
 
         img.src = randomItem.image;
+
+
         img.classList.add('image');
         // newItem.textContent = randomItem.name;
 
@@ -92,13 +84,23 @@ async function initializeCaseLoad() {
 
 async function openCase() {
 
+
+
     clearUpWindow();
 
-    moneyStatus -= 2;
+    moneyStatus -= keyPrice;
     updateMoneyStatus();
     //clearUpWindow();
     console.log(cases[caseSelect.value].name);
-    const caseItemsList = cases[caseSelect.value].contains;
+    let caseItemsList = cases[caseSelect.value].contains;
+
+    // Adding knives to the table
+
+    const selectedKnives = cases[caseSelect.value].contains_rare;
+
+    caseItemsList = caseItemsList.concat(cases[caseSelect.value].contains_rare);
+
+    distribution = createDistribution(caseItemsList, 200);
 
     let translateX = getRandomInt(-5000, -6000);
 
@@ -135,7 +137,11 @@ async function openCase() {
         obtainedItem.classList.add('obtainedItem');
         let img = document.createElement('img');
 
-        img.src = itemWon.image;
+        if (itemWon.image)
+            img.src = itemWon.image;
+        else
+            img.src = 'xray.png';
+
         img.classList.add('obtained-image');
 
         obtainedItem.appendChild(img);
@@ -159,11 +165,13 @@ async function openCase() {
         let stattrack = '';
 
         // Call to backend
-        await callApi(`data/price?&weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWon.wears[0]}`)
+        await callApi(`data/price?&weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWon.wears[0]}&itemID=${itemWon.id}`)
             .then((data) => {
                 if (data) {
-                    price = 'Market price: ' + data.lowest_price;
-                    const worth = data.lowest_price.slice(0, -1);
+                    skinPriceText = data.lowest_price;
+                    price = 'Market price: ' + skinPriceText;
+                    skinPriceText = skinPriceText.replace(',', '.');
+                    const worth = skinPriceText.slice(0, -1);
                     console.log(moneyStatus);
                     moneyStatus += parseFloat(worth);
                     console.log(moneyStatus);
@@ -198,13 +206,16 @@ async function openCase() {
         //itemWon.style.setProperty('border', '3px solid yellow');
         obtainedItem.appendChild(obtainedText);
 
-        button.style.border = 'none';
-        button.style.width = '50%';
-        button.textContent = 'Open another (-2Eur)'
-        button.style.width = '50%';
-        button.style.borderRadius = '10px';
+        let newButton = button.cloneNode(true);
 
-        obtainedItem.appendChild(button);
+        newButton.style.border = 'none';
+        newButton.style.width = '50%';
+        newButton.textContent = `Open another (-${keyPrice}€)`
+        newButton.style.width = '50%';
+        newButton.style.borderRadius = '10px';
+
+        newButton.addEventListener('click', () => openCase());
+        obtainedItem.appendChild(newButton);
 
         caseOpenWindow.appendChild(obtainedItem);
 
@@ -224,7 +235,11 @@ async function openCase() {
         newItem.classList.add('moveLeft');
         let img = document.createElement('img');
 
-        img.src = randomItem.image;
+        if (randomItem.image)
+            img.src = randomItem.image;
+        else
+            img.src = 'xray.png';
+
         img.classList.add('image');
         // newItem.textContent = randomItem.name;
 
@@ -245,7 +260,7 @@ async function openCase() {
 }
 
 function updateMoneyStatus() {
-    statusText.textContent = 'State: ' + moneyStatus + '€';
+    statusText.textContent = 'State: ' + moneyStatus.toFixed(2) + '€';
 }
 
 
