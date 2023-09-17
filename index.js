@@ -39,7 +39,7 @@ async function initializeCaseLoad() {
 
     caseOpenWindow.disabled = true;
 
-    const caseItemsList = (cases[0].contains);
+    const caseItemsList = cases[0].contains;
 
 
 
@@ -84,23 +84,26 @@ async function initializeCaseLoad() {
 
 async function openCase() {
 
-
-
     clearUpWindow();
 
     moneyStatus -= keyPrice;
     updateMoneyStatus();
     //clearUpWindow();
-    console.log(cases[caseSelect.value].name);
-    let caseItemsList = cases[caseSelect.value].contains;
+    console.log(cases[caseSelect.value]);
+    let caseItemList = [];
+    caseItemList = cases[caseSelect.value].contains;
+    let knives = cases[caseSelect.value].contains_rare;
 
-    // Adding knives to the table
+    // Adding a random knife from the case to the table
 
-    const selectedKnives = cases[caseSelect.value].contains_rare;
+    let randomKnife = knives[getRandomInt(0, 8)];
 
-    caseItemsList = caseItemsList.concat(cases[caseSelect.value].contains_rare);
+    if (caseItemList.length < 18)
+        caseItemList.push(randomKnife);
 
-    distribution = createDistribution(caseItemsList, 200);
+    console.log(caseItemList);
+
+    distribution = createDistribution(caseItemList, 100);
 
     let translateX = getRandomInt(-5000, -6000);
 
@@ -227,7 +230,7 @@ async function openCase() {
 
     for (let i = 0; i < rollItemCount; i++) {
 
-        let randomItem = randomGenItem(caseItemsList, distribution);
+        let randomItem = randomGenItem(caseItemList, distribution);
         rolledItems.push(randomItem);
         let newItem = document.createElement('div');
         newItem.classList.add('item');
@@ -290,6 +293,27 @@ function getRarityColor(rarity) {
     }
 }
 
+function getRarityOdds(item) {
+    switch (item.rarity) {
+        case ("Consumer"):
+            return 7;
+        case ("Industrial"):
+            return 7;
+        case ("Mil-Spec Grade"):
+            return 7;
+        case ("Restricted"):
+            return 5;
+        case ("Classified"):
+            return 3;
+        case ("Covert"):
+            return 2;
+        case ("Contraband"):
+            return 7;
+        default:
+            return 1;
+    }
+}
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -301,8 +325,11 @@ function randomGenItem(array, distribution) {
 
 function createDistribution(items, size) {
     const distribution = [];
-    const weights = items.map(item => item.odds / 100);
-    const sum = weights.reduce((a, b) => a + b);
+    const weights = items.map(item => (item.odds / getRarityOdds(item)) / 100);
+    console.log(weights);
+
+    const sum = weights.reduce((accum, currVal) => accum + currVal);
+    console.log(sum);
     const quant = size / sum;
     for (let i = 0; i < weights.length; ++i) {
         const limit = quant * weights[i];
