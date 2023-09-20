@@ -13,7 +13,7 @@ let itemHolder = document.querySelector('.item-holder');
 
 const caseOpenWindow = document.querySelector('.case-open-window-holder');
 
-const caseSelect = document.querySelector('select');
+let caseSelect = document.querySelector('select');
 
 const itemMarker = document.querySelector('.case-open-marker');
 
@@ -22,8 +22,11 @@ const rollItemCount = 150;
 let rolledItems = [];
 let distribution = [];
 
-initializeCaseLoad();
+let selectedCase = {};
+let fixedItemCount = 18;
 
+
+initializeCaseLoad();
 
 async function initializeCaseLoad() {
 
@@ -37,9 +40,12 @@ async function initializeCaseLoad() {
         caseSelect.appendChild(option);
     });
 
+    setSelectedCase(cases[caseSelect.value]);
+
     caseOpenWindow.disabled = true;
 
-    const caseItemsList = cases[0].contains;
+
+    const caseItemsList = selectedCase.contains;
 
 
 
@@ -61,7 +67,7 @@ async function initializeCaseLoad() {
         img.classList.add('image');
         // newItem.textContent = randomItem.name;
 
-        const rarityColor = getRarityColor(randomItem.rarity);
+        const rarityColor = getRarityColor(randomItem);
 
         newItem.style.backgroundImage = 'linear-gradient(white 40%, '
             + rarityColor + ')';
@@ -79,6 +85,8 @@ async function initializeCaseLoad() {
 
     button.addEventListener('click', () => openCase());
 
+    caseSelect.addEventListener('change', () => setSelectedCase(cases[caseSelect.value]));
+
 }
 
 
@@ -90,15 +98,16 @@ async function openCase() {
     updateMoneyStatus();
     //clearUpWindow();
     console.log(cases[caseSelect.value]);
-    let caseItemList = [];
-    caseItemList = cases[caseSelect.value].contains;
-    let knives = cases[caseSelect.value].contains_rare;
+    let caseItemList = selectedCase.contains;
+    let knives = selectedCase.contains_rare;
 
     // Adding a random knife from the case to the table
 
     let randomKnife = knives[getRandomInt(0, 8)];
 
-    if (caseItemList.length < 18)
+    randomKnife.odds = 0.26;
+
+    if (caseItemList.length < fixedItemCount)
         caseItemList.push(randomKnife);
 
     console.log(caseItemList);
@@ -143,13 +152,13 @@ async function openCase() {
         if (itemWon.image)
             img.src = itemWon.image;
         else
-            img.src = 'xray.png';
+            img.src = 'data/images/xray.png';
 
         img.classList.add('obtained-image');
 
         obtainedItem.appendChild(img);
 
-        const rarityColor = getRarityColor(itemWon.rarity);
+        const rarityColor = getRarityColor(itemWon);
 
         let rarityBox = document.createElement('div');
         rarityBox.classList.add('obtained-item-rarity-box');
@@ -187,7 +196,7 @@ async function openCase() {
             })
 
 
-        let float = 'Float: ' + itemWon.max_float;
+        let float = 'Float: ' + getRandomFloat(itemWon.min_float, itemWon.max_float);
 
         let par = document.createElement('p');
         par.textContent = name;
@@ -238,15 +247,20 @@ async function openCase() {
         newItem.classList.add('moveLeft');
         let img = document.createElement('img');
 
-        if (randomItem.image)
-            img.src = randomItem.image;
+        if (randomItem.image) {
+            // exceedingly_rare_item.png
+            if (randomItem.category === 'Knives' || randomItem.category === 'Gloves')
+                img.src = 'data/images/exceedingly_rare_item.png';
+            else
+                img.src = randomItem.image;
+        }
         else
-            img.src = 'xray.png';
+            img.src = './data/images/xray.png';
 
         img.classList.add('image');
         // newItem.textContent = randomItem.name;
 
-        const rarityColor = getRarityColor(randomItem.rarity);
+        const rarityColor = getRarityColor(randomItem);
 
         newItem.style.backgroundImage = 'linear-gradient(white 40%, '
             + rarityColor + ')';
@@ -272,8 +286,12 @@ function clearUpWindow() {
     rolledItems = [];
 }
 
-function getRarityColor(rarity) {
-    switch (rarity) {
+function getRarityColor(item) {
+
+    if (item.category === 'Knives' || item.category === 'Gloves')
+        return "#ffcc00";
+
+    switch (item.rarity) {
         case ("Consumer"):
             return "#afafaf";
         case ("Industrial"):
@@ -293,29 +311,32 @@ function getRarityColor(rarity) {
     }
 }
 
-function getRarityOdds(item) {
-    switch (item.rarity) {
-        case ("Consumer"):
-            return 7;
-        case ("Industrial"):
-            return 7;
-        case ("Mil-Spec Grade"):
-            return 7;
-        case ("Restricted"):
-            return 5;
-        case ("Classified"):
-            return 3;
-        case ("Covert"):
-            return 2;
-        case ("Contraband"):
-            return 7;
-        default:
-            return 1;
-    }
+function getRarityOdds(crate) {
+    const caseRarityCounts = {
+        Consumer: 0,
+        Industrial: 0,
+        'Mil-Spec Grade': 0,
+        Restricted: 0,
+        Classified: 0,
+        Covert: 0,
+        Contraband: 0
+    };
+
+    // Count the rarities in the selected case
+    crate.contains.forEach((item) => {
+        caseRarityCounts[item.rarity]++;
+    });
+
+    // Return the count object
+    return caseRarityCounts;
 }
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getRandomFloat(min, max) {
+    return (Math.random() * (max - min) + min).toFixed(4);
 }
 
 function randomGenItem(array, distribution) {
@@ -325,7 +346,7 @@ function randomGenItem(array, distribution) {
 
 function createDistribution(items, size) {
     const distribution = [];
-    const weights = items.map(item => (item.odds / getRarityOdds(item)) / 100);
+    const weights = items.map(item => (item.odds / (selectedCase.caseRarityCounts[item.rarity] || 1) / 100));
     console.log(weights);
 
     const sum = weights.reduce((accum, currVal) => accum + currVal);
@@ -343,6 +364,16 @@ function createDistribution(items, size) {
 function randomIndex(distribution) {
     const index = Math.floor(distribution.length * Math.random());  // random index
     return distribution[index];
+};
+
+function setSelectedCase(crate) {
+    selectedCase = crate;
+    fixedItemCount = crate.contains.length + 1;
+    console.log("Items: " + selectedCase.contains.length);
+    if (!selectedCase.caseRarityCounts) {
+        selectedCase.caseRarityCounts = getRarityOdds(selectedCase);
+    }
+
 };
 
 async function callApi(urlPostfix) {
