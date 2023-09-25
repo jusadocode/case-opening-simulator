@@ -1,9 +1,12 @@
 /////////////////////////////////
-// Dont use the word case in code
+// Dont use the word case in the code
 /////////////////////////////////
 
 const baseUrl = "http:localhost:8080";
 const button = document.querySelector('.open-button');
+
+let newButton;
+
 let statusText = document.querySelector('#status');
 
 let moneyStatus = 0.00;
@@ -13,9 +16,13 @@ let itemHolder = document.querySelector('.item-holder');
 
 const caseOpenWindow = document.querySelector('.case-open-window-holder');
 
+let caseImageSection = document.querySelector('.case-image-section');
+
 let caseSelect = document.querySelector('select');
 
 const itemMarker = document.querySelector('.case-open-marker');
+
+
 
 let cases = [];
 const rollItemCount = 150;
@@ -24,6 +31,16 @@ let distribution = [];
 
 let selectedCase = {};
 let fixedItemCount = 18;
+
+let itemRarityCounts = {
+    Consumer: 0,
+    Industrial: 0,
+    'Mil-Spec Grade': 0,
+    Restricted: 0,
+    Classified: 0,
+    Covert: 0,
+    Contraband: 0
+};
 
 
 initializeCaseLoad();
@@ -84,6 +101,19 @@ async function initializeCaseLoad() {
 
 
     button.addEventListener('click', () => openCase());
+    button.addEventListener('click', () => instantiateMoneyAmount('red'));
+
+    newButton = button.cloneNode(true);
+
+    newButton.style.width = '50%';
+    newButton.textContent = `Open another (-${keyPrice}€)`
+    newButton.style.width = '50%';
+    newButton.style.borderRadius = '10px';
+
+
+    newButton.addEventListener('click', () => openCase());
+    newButton.addEventListener('click', () => instantiateMoneyAmount('red'));
+
 
     caseSelect.addEventListener('change', () => setSelectedCase(cases[caseSelect.value]));
 
@@ -138,12 +168,7 @@ async function openCase() {
         caseOpenWindow.classList.remove('animated');
         caseOpenWindow.classList.remove('flipInX');
 
-        var rect = itemMarker.getBoundingClientRect();
-
-        let elements = document.elementsFromPoint(rect.x, rect.y);
-        // elements.map(element => console.log(element, window.getComputedStyle(element).getPropertyValue('z-index')));
         let itemWon = rolledItems[itemNumber];
-
 
         let obtainedItem = document.createElement('div');
         obtainedItem.classList.add('obtainedItem');
@@ -187,12 +212,13 @@ async function openCase() {
                     console.log(moneyStatus);
                     moneyStatus += parseFloat(worth);
                     console.log(moneyStatus);
-                } else {
-                    price = 'Market price not available';
+
+                    instantiateMoneyAmount('green');
                 }
             })
             .catch((error) => {
                 console.log(error);
+                price = 'Market price not available';
             })
 
 
@@ -201,6 +227,10 @@ async function openCase() {
         let par = document.createElement('p');
         par.textContent = name;
         obtainedItem.prepend(name);
+
+        itemRarityCounts[itemWon.rarity]++;
+
+        console.log(itemRarityCounts);
 
         info.push(price);
         info.push(float);
@@ -218,15 +248,6 @@ async function openCase() {
         //itemWon.style.setProperty('border', '3px solid yellow');
         obtainedItem.appendChild(obtainedText);
 
-        let newButton = button.cloneNode(true);
-
-        newButton.style.border = 'none';
-        newButton.style.width = '50%';
-        newButton.textContent = `Open another (-${keyPrice}€)`
-        newButton.style.width = '50%';
-        newButton.style.borderRadius = '10px';
-
-        newButton.addEventListener('click', () => openCase());
         obtainedItem.appendChild(newButton);
 
         caseOpenWindow.appendChild(obtainedItem);
@@ -331,6 +352,16 @@ function getRarityOdds(crate) {
     return caseRarityCounts;
 }
 
+function instantiateMoneyAmount(color) {
+
+    statusText.style.color = color;
+    statusText.classList.add('highlight-amount');
+    setTimeout(() => {
+        statusText.style.color = 'black';
+        statusText.classList.remove('highlight-amount');
+    }, 1000);
+}
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -372,6 +403,14 @@ function setSelectedCase(crate) {
     console.log("Items: " + selectedCase.contains.length);
     if (!selectedCase.caseRarityCounts) {
         selectedCase.caseRarityCounts = getRarityOdds(selectedCase);
+    }
+
+    let caseImage = document.createElement('img');
+
+    caseImage.src = selectedCase.image;
+    if (caseImageSection.hasChildNodes()) {
+        caseImageSection.removeChild(caseImageSection.lastChild);
+        caseImageSection.appendChild(caseImage);
     }
 
 };
