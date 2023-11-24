@@ -1,4 +1,4 @@
-const PORT = process.env.PORT;
+const PORT = 8080;
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
@@ -27,12 +27,11 @@ caseData.sort((caseA, caseB) => (caseA.first_sale_date < caseB.first_sale_date ?
 
 
 if (process.env.NODE_ENV === 'production') {
+    PORT = process.env.PORT;
 	app.use(express.static('client/build'));
 }
 
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-});
+
 
 app.use(
     cors({
