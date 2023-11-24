@@ -27,6 +27,7 @@ caseData.sort((caseA, caseB) => (caseA.first_sale_date < caseB.first_sale_date ?
 
 
 if (process.env.NODE_ENV === 'production') {
+    PORT = process.env.PORT;
 	app.use(express.static('client/build'));
 }
 
