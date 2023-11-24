@@ -9,7 +9,7 @@ let newButton;
 
 let statusText = document.querySelector('#status');
 
-let moneyStatus = 0.00;
+let moneyStatus = 4.35;
 const keyPrice = 2.34;
 
 let itemHolder = document.querySelector('.item-holder');
@@ -24,6 +24,9 @@ const itemMarker = document.querySelector('.case-open-marker');
 
 
 
+/////////////////////////////////
+// Case variables
+/////////////////////////////////
 let cases = [];
 const rollItemCount = 150;
 let rolledItems = [];
@@ -352,6 +355,10 @@ function getRarityOdds(crate) {
     return caseRarityCounts;
 }
 
+/////////////////////////////////
+// function for updating the money text with any color
+/////////////////////////////////
+
 function instantiateMoneyAmount(color) {
 
     statusText.style.color = color;
@@ -361,6 +368,11 @@ function instantiateMoneyAmount(color) {
         statusText.classList.remove('highlight-amount');
     }, 1000);
 }
+
+
+/////////////////////////////////
+// Mathematical utilities
+/////////////////////////////////
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -414,6 +426,10 @@ function setSelectedCase(crate) {
     }
 
 };
+
+/////////////////////////////////
+// Functions for fetching data from server
+/////////////////////////////////
 
 async function callApi(urlPostfix) {
     let url = baseUrl + '/' + urlPostfix;
