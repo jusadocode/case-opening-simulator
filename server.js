@@ -25,6 +25,15 @@ caseData.sort((caseA, caseB) => (caseA.first_sale_date < caseB.first_sale_date ?
 //////////////////////
 //fetchCasePrices();
 
+
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static('client/build'));
+}
+
+app.get('*', (request, response) => {
+	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
 app.use(
     cors({
         // origin: 'http://localhost:8080/data'
