@@ -7,6 +7,7 @@
 //const baseUrl =  "http:localhost:8080";
 const baseUrl = window.location.href
 
+baseUrl.slice(0, -1);
 console.log(baseUrl);
 const button = document.querySelector('.open-button');
 
