@@ -33,11 +33,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 
-app.use(
-    cors({
-        // origin: 'http://localhost:8080/data'
-    })
-)
+app.use(cors());
 
 app.get("/data/price", (req, res) => {
 

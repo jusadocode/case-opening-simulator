@@ -2,7 +2,10 @@
 // Dont use the word case in the code
 /////////////////////////////////
 
-const baseUrl = "http:localhost:8080";
+
+// Change this for production build (it wont be using localhost)
+
+const baseUrl = window.location.href;
 const button = document.querySelector('.open-button');
 
 let newButton;
