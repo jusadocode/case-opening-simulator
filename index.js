@@ -4,8 +4,10 @@
 
 
 // Change this for production build (it wont be using localhost)
+//const baseUrl =  "http:localhost:8080";
+const baseUrl = window.location.href
 
-const baseUrl = window.location.href;
+console.log(baseUrl);
 const button = document.querySelector('.open-button');
 
 let newButton;
