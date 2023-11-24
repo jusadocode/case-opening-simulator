@@ -2,7 +2,7 @@
   "name": "case-opening-sim",
   "description": "project_description",
   "scripts": {
-    "start": "index.html",
+    "start": "start index.html",
     "backend": "node server.js"
   },
   "dependencies": {
