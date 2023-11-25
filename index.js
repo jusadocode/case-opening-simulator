@@ -4,10 +4,14 @@
 
 
 // Change this for production build (it wont be using localhost)
-//const baseUrl =  "http:localhost:8080";
-let baseUrl = window.location.href;
+let baseUrl =  "http:localhost:8080";
 
-baseUrl = baseUrl.slice(0, -1);
+
+// if(process.env.NODE_ENV === 'production') {
+//     baseUrl = window.location.href;
+//     baseUrl = baseUrl.slice(0, -1);
+// }
+
 console.log(baseUrl);
 const button = document.querySelector('.open-button');
 
