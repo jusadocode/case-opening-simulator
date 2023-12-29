@@ -43,6 +43,13 @@ select {
     gap: 1rem;
 }
 
+@media only screen and (max-width: 767px) {
+    .balance-section {
+        position:static;
+        margin: auto;
+    }
+  }
+
 
 .case-open-window-holder {
 
@@ -100,11 +107,13 @@ select {
 
 .open-button {
     font-size: 1rem;
-    padding: 2%;
+    padding: 0.9rem;
     min-height: 20px;
+    min-width: 8rem;
     border-radius: 5%;
     transition: border 1s ease-in-out;
     transition: background-color 1s ease-in-out;
+    background-color: inherit;
 }
 
 .open-button:hover {
@@ -135,11 +144,14 @@ select {
 }
 
 .obtainedItem {
+    /* This is added as a child element to case window holder */
     position: absolute;
-    transform: translateY(-100px);
-    width: 20vw;
-    /* height: 40vh; */
-    border-radius: 20%;
+
+    transform: translate(-50%, -50%);
+    /* transform: translateY(200px); */
+    min-width: 20rem;
+    /* max-height: 40vh; */
+    border-radius: 10px 20px 30px 40px;
     /* background-color: black; */
     z-index: 3;
     display: flex;
@@ -147,11 +159,11 @@ select {
     justify-content: center;
     align-items: center;
 
-    backdrop-filter: blur(50px);
+    /* backdrop-filter: blur(50px); */
     border: 1px solid gray;
-    background-image: url('data/images/inferno-CS2.png');
-    background-repeat: no-repeat;
+    background-image: url('../data/images/inferno-CS2.png');
     background-position: center;
+    background-size: cover;
     transition: scale 0.3s ease-in-out;
 
     font-weight: bold;
