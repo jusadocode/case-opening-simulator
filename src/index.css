@@ -64,6 +64,8 @@ select {
 .case-open-window {
     position: relative;
     border: 2px solid black;
+    /* Previously, itemHolder was hidden instead of this*/
+    overflow: hidden;
     max-width: 43.75rem;
     min-height: 6.25rem;
     display: flex;
@@ -124,7 +126,6 @@ select {
 .item-holder {
     width: 100%;
     position: relative;
-    overflow: hidden;
     text-align: center;
     border: 1px solid black;
     display: flex;

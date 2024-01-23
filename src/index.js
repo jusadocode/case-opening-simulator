@@ -159,10 +159,14 @@ async function openCase() {
 
   let translateX = getRandomInt(-5000, -6000);
 
+  // Possible performance issue - we are moving all the items instead of the container
+  console.log(translateX);
   caseOpenWindow.style.setProperty('--random-translateXb', `${translateX}px`);
   translateX -= 352; // roller is positioned 352px from the start
   const itemNumber = Math.floor((translateX / 152) * (-1));
-  // console.log(itemNumber);
+  console.log(itemNumber);
+  console.log(rolledItems[itemNumber]);
+  
   button.classList.add('animated');
   button.classList.add('bounceOut');
   button.disabled = true;
@@ -215,24 +219,24 @@ async function openCase() {
     let stattrack = '';
 
     // Call to backend
-    await callApi(`data/price?&weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWon.wears[0]}&itemID=${itemWon.id}`)
-      .then((data) => {
-        if (data) {
-          let skinPriceText = data.lowest_price;
-          price = 'Market price: ' + skinPriceText;
-          skinPriceText = skinPriceText.replace(',', '.');
-          const worth = skinPriceText.slice(0, -1);
-          console.log(moneyStatus);
-          moneyStatus += parseFloat(worth);
-          console.log(moneyStatus);
+    // await callApi(`data/price?&weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWon.wears[0]}&itemID=${itemWon.id}`)
+    //   .then((data) => {
+    //     if (data) {
+    //       let skinPriceText = data.lowest_price;
+    //       price = 'Market price: ' + skinPriceText;
+    //       skinPriceText = skinPriceText.replace(',', '.');
+    //       const worth = skinPriceText.slice(0, -1);
+    //       console.log(moneyStatus);
+    //       moneyStatus += parseFloat(worth);
+    //       console.log(moneyStatus);
 
-          instantiateMoneyAmount('green');
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-        price = 'Market price not available';
-      });
+    //       instantiateMoneyAmount('green');
+    //     }
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //     price = 'Market price not available';
+    //   });
 
 
     let float = 'Float: ' + getRandomFloat(itemWon.min_float, itemWon.max_float);
@@ -264,6 +268,10 @@ async function openCase() {
 
     updateMoneyStatus();
 
+    // console.log(itemMarker.getBoundingClientRect());
+
+    // getElementsUnderneathThePoint();
+
   }, 6000);
 
 
@@ -274,8 +282,12 @@ async function openCase() {
     rolledItems.push(randomItem);
     let newItem = document.createElement('div');
     newItem.classList.add('item');
-    newItem.classList.add('animatedItem');
-    newItem.classList.add('moveLeft');
+    // newItem.classList.add('animatedItem');
+
+    // newItem.classList.add('moveLeft');
+
+    itemHolder.classList.add('animatedItem');
+    itemHolder.classList.add('moveLeft');
     let img = document.createElement('img');
 
     if (randomItem.image) {
@@ -313,6 +325,8 @@ function updateMoneyStatus() {
 
 
 function clearUpWindow() {
+  itemHolder.classList.remove('animatedItem');
+  itemHolder.classList.remove('moveLeft');
   caseOpenWindow.lastChild.remove();
   rolledItems = [];
 }
@@ -414,6 +428,19 @@ function createDistribution(items, size) {
 function randomIndex(distribution) {
   const index = Math.floor(distribution.length * Math.random()); // random index
   return distribution[index];
+}
+
+function getElementsUnderneathThePoint(x, y) {
+  var itemMarkerRect = itemMarker.getBoundingClientRect();
+
+  var itemMarkerX = itemMarkerRect.left + window.scrollX;
+  var itemMarkerY = itemMarkerRect.top + window.scrollY;
+  // const elems = document.elementsFromPoint(caseOpenWindow.getBoundingClientRect().x, caseOpenWindow.getBoundingClientRect().y);
+  const elems = document.elementsFromPoint(itemMarkerX, itemMarkerY);
+  console.log(caseOpenWindow.getBoundingClientRect());
+  elems.forEach(elem => {
+    console.log(elem, getComputedStyle(elem).zIndex);
+  });
 }
 
 function setSelectedCase(crate) {
