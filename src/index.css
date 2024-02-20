@@ -45,10 +45,10 @@ select {
 
 @media only screen and (max-width: 767px) {
     .balance-section {
-        position:static;
+        position: static;
         margin: auto;
     }
-  }
+}
 
 
 .case-open-window-holder {
@@ -120,6 +120,30 @@ select {
     border: 2px solid orange;
     background-color: orange;
 }
+
+.report-button {
+    font-size: 1rem;
+    padding: 0.9rem;
+    min-height: 20px;
+    min-width: 8rem;
+    border-radius: 5%;
+    transition: border 1s ease-in-out;
+    transition: background-color 1s ease-in-out;
+    background-color: inherit;
+}
+
+
+.report-button:hover {
+    border: 2px solid orange;
+    background-color: orange;
+}
+
+#reportForm {
+    backdrop-filter: blur(20px);
+    width: 10rem;
+    height: 14rem;
+}
+
 
 .item-holder {
     width: 100%;
