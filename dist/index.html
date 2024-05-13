@@ -1,72 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Should I Open</title>
-    <link rel="stylesheet" href="../src/index.css">
-
-</head>
-
-<body>
-    <div class="balance-section">
-        <p id="status">Money state: 4.35€</p>
-    </div>
-
-    <button class="report-button">
-        Suggestions/Problems
-    </button>
-
-    <dialog id="report-dialog">
-        <form id="reportForm">
-            <label for="email">Your email address:</label>
-            <input type="email" id="e-mail" name="email">
-
-            <label for="report">Your ideas:</label>
-            <textarea id="report" name="report" minlength="2"></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-        <button class="exitButton">X</button>
-
-    </dialog>
-
-    <div class="main-container">
-        <div class="header-section">
-            <h1>Should I Open</h1>
-            <p>Find out if the urge was worth pursuing</p>
-        </div>
-
-        <div class="case-select-container">
-            <p>Select case:</p>
-            <select name="case" id="case">
-            </select>
-        </div>
-
-        <div class="case-image-section">
-
-        </div>
-
-        <div class="case-open-window-holder">
-            <div class="case-open-window">
-                <div class="case-open-marker"></div>
-                <div class="item-holder">
-                </div>
-            </div>
-        </div>
-
-
-        <div class="button-section">
-            <button class="open-button">
-                Open
-            </button>
-        </div>
-
-    </div>
-
-<script defer src="bundle.js"></script></body>
-
-<script src="index.js"></script>
-
-</html>
+Html Webpack Plugin:
+<pre>
+Error: Child compilation failed:
+Module not found: Error: Can't resolve 'F:\Justas\case-opening-simulator\node_modules\html-webpack-plugin\lib\loader.js' in 'F:\Justas\case-opening-simulator'
+ModuleNotFoundError: Module not found: Error: Can't resolve 'F:\Justas\case-opening-simulator\node_modules\html-webpack-plugin\lib\loader.js' in 'F:\Justas\case-opening-simulator'
+    at F:\Justas\case-opening-simulator\node_modules\webpack\lib\Compilation.js:2022:28
+    at F:\Justas\case-opening-simulator\node_modules\webpack\lib\NormalModuleFactory.js:817:13
+    at eval (eval at create (F:\Justas\case-opening-simulator\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
+    at F:\Justas\case-opening-simulator\node_modules\webpack\lib\NormalModuleFactory.js:275:22
+    at eval (eval at create (F:\Justas\case-opening-simulator\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
+    at F:\Justas\case-opening-simulator\node_modules\webpack\lib\NormalModuleFactory.js:448:22
+    at F:\Justas\case-opening-simulator\node_modules\webpack\lib\NormalModuleFactory.js:118:11
+    at F:\Justas\case-opening-simulator\node_modules\webpack\lib\NormalModuleFactory.js:654:23
+    at F:\Justas\case-opening-simulator\node_modules\neo-async\async.js:2830:7
+    at done (F:\Justas\case-opening-simulator\node_modules\neo-async\async.js:2925:13)</pre><script defer src="bundle.js"></script>
