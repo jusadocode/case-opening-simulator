@@ -3,7 +3,7 @@ const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   // The entry point file described above
-  entry: './src/index.js',
+  entry: ['./src/index.js'],
   // The location of the build folder described above
   output: {
     path: path.resolve(__dirname, 'dist'),

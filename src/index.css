@@ -140,8 +140,36 @@ select {
 
 #reportForm {
     backdrop-filter: blur(20px);
-    width: 10rem;
+    width: 14rem;
     height: 14rem;
+    margin: 2rem;
+}
+
+#reportForm>button {
+    font-size: 1rem;
+    padding: 0.5rem;
+
+    border-radius: 5%;
+    transition: border 1s ease-in-out;
+    transition: background-color 1s ease-in-out;
+    background-color: inherit;
+}
+
+#report-dialog .exitButton {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: inherit;
+    border: none;
+
+}
+
+
+#reportForm>input,
+#reportForm>textarea {
+    line-height: 1.5rem;
+    width: 12rem;
 }
 
 

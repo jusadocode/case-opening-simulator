@@ -20,14 +20,16 @@
 
     <dialog id="report-dialog">
         <form id="reportForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <label for="email">Your email address:</label>
+            <input type="email" id="e-mail" name="email">
 
-            <label for="report">Write your report:</label>
-            <textarea id="report" name="report"></textarea>
+            <label for="report">Your ideas:</label>
+            <textarea id="report" name="report" minlength="2"></textarea>
 
             <button type="submit">Submit</button>
         </form>
+        <button class="exitButton">X</button>
+
     </dialog>
 
     <div class="main-container">

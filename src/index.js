@@ -1,7 +1,7 @@
 /////////////////////////////////
 // Dont use the word case in the code
 /////////////////////////////////
-import reportButton from '../report-section';
+import reportButton from '../src/report-section';
 
 // Change this for production build (it wont be using localhost)
 let baseUrl = 'http:localhost:8080';
