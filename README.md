@@ -1,6 +1,6 @@
 # case-opening-simulator
 
-Projects visual representation is not final.
+Projects UI is work in progress.
 
 A simulator created to imitate CS2 case opening system, to track how much money would have been spent if the person chose to proceed with buying keys to open cases.
 
