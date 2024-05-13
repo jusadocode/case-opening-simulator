@@ -19,11 +19,12 @@ Once the application is set up and running, follow these steps to use it:
 
 Click the "Open" button to start the case opening process.
 
+![caseOpeningSim](https://github.com/jusadocode/case-opening-simulator/assets/77744027/8553541f-069b-4d45-8a50-d55f5c8c71ee)
+
 The simulator will distribute each item's chances of being obtained based on its rarity in the container.
 
 After a rolling animation, a random item from the opening process will be provided.
 
-![caseOpeningSim](https://github.com/jusadocode/case-opening-simulator/assets/77744027/8553541f-069b-4d45-8a50-d55f5c8c71ee)
 
 To minimize API requests and improve performance, the server utilizes caching (used API highly limits the requests per minute).
 
