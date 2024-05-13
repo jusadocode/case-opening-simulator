@@ -8,6 +8,6 @@ Real item data price from steam market (price overview API )is used to provide a
 
 ![caseOpeningSim](https://github.com/jusadocode/case-opening-simulator/assets/77744027/8553541f-069b-4d45-8a50-d55f5c8c71ee)
 
-With the click of Open, it goes through the process of distrubuting each item chances of being obtained based on its rarity in the container.
+With the click of Open, it goes through the process of distrubuting each item chances of being obtained based on its rarity in the container, and finally, after the rolling animation, you are provided a random item from the opening process.
 
 The server uses caching to minimize the API requests users would initiate (used API highly limits the requests per minute). 
