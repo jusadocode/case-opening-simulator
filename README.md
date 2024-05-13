@@ -1,5 +1,7 @@
 # case-opening-simulator
 
+Projects visual representation is not final.
+
 A simulator created to imitate CS2 case opening system, to track how much money would have been spent if the person chose to proceed with buying keys to open cases.
 
 Application checks the obtained item's value and accordingly updates the state of the money spent so you can see the tendency.
