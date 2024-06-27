@@ -1,6 +1,9 @@
 /////////////////////////////////
 // Dont use the word case in the code
 /////////////////////////////////
+
+// Divide the code into functions
+
 import reportButton from '../src/report-section';
 
 // Change this for production build (it wont be using localhost)
@@ -262,6 +265,9 @@ async function openCase() {
 
     caseOpenWindow.appendChild(obtainedItem);
 
+    setTimeout(() => {obtainedItem.style.borderRadius = getBorderRadius()}, 500)
+    
+
     updateMoneyStatus();
 
   }, 6000);
@@ -472,3 +478,21 @@ async function fetchCaseData() {
 }
 
 
+//////////////////
+// Styling functions
+//////////////////
+
+function getBorderRadius() {
+  
+  const borderRadiusInstructions = [
+    '10px 20px 30px 40px',
+    '25% 10%',
+    '10% 30% 50% 70%',
+    '10% / 50%',
+    '10px 100px / 120px',
+    '50% 20% / 10% 40%'
+  ]
+
+  return borderRadiusInstructions[getRandomInt(0, borderRadiusInstructions.length-1)];
+
+}

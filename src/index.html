@@ -19,14 +19,17 @@
     </button>
 
     <dialog id="report-dialog">
-        <form id="reportForm">
-            <label for="email">Your email address:</label>
+        <form id="reportForm" novalidate>
+
+            <label for="name">Your name:</label>
+            <input type="name" id="name" name="name">
+            <label for="e-mail">Your email address: (optional)</label>
             <input type="email" id="e-mail" name="email">
 
             <label for="report">Your ideas:</label>
-            <textarea id="report" name="report" minlength="2"></textarea>
+            <textarea id="report" name="report"></textarea>
 
-            <button type="submit">Submit</button>
+            <button id="submitButton" type="submit">Submit</button>
         </form>
         <button class="exitButton">X</button>
 
@@ -59,7 +62,7 @@
 
         <div class="button-section">
             <button class="open-button">
-                Open
+                Unlock container
             </button>
         </div>
 

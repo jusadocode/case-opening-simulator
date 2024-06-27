@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap);
 
-
+* {
+    font-family: 'MuseoModerno';
+}
 :root {
     --random-translateXa: -2500px;
     --random-translateXb: 0;
@@ -118,7 +120,7 @@ select {
 
 .open-button:hover {
     border: 2px solid orange;
-    background-color: orange;
+    background-color: greenyellow
 }
 
 .report-button {
@@ -216,7 +218,7 @@ select {
     background-image: url('../data/images/inferno-CS2.png');
     background-position: center;
     background-size: cover;
-    transition: scale 0.3s ease-in-out;
+    transition: scale 0.3s ease-in-out, border-radius 0.5s ease-in-out;
 
     font-weight: bold;
 }
@@ -232,7 +234,7 @@ select {
 .obtained-image {
     margin: 0 auto;
     position: relative;
-    width: 120%;
+    /* width: 120%; */
     z-index: 4;
 }
 
@@ -349,3 +351,5 @@ select {
     -webkit-animation-name: moveLeft;
     animation-name: moveLeft;
 }
+
+
