@@ -1,8 +1,10 @@
 // Add functionality to send email from form with env variables
 
+
 //// CAUTION RELATED TO CUSTOM VALIDATION 
 // Mixing default html validation with custom provides difficult results
 // disable default html validations if possible
+
 
 const reportButton = document.querySelector('.report-button');
 const reportDialog = document.querySelector('#report-dialog');
@@ -12,6 +14,7 @@ let emailInput = document.querySelector('#e-mail');
 let ideasInput = document.querySelector('#report');
 let exitButton = document.querySelector('.exitButton');
 let submitButton = document.querySelector('#submitButton');
+let statusLabel = document.querySelector('#statusLabel');
 
 reportButton.addEventListener('click', () => {
   // Show the dialog
@@ -32,8 +35,8 @@ function initializeInputs() {
   ideasInput.addEventListener('input', ideasVerification);
 }
 
-function handleSubmit(event) {
-
+async function handleSubmit(event) {
+  statusLabel.textContent = '';
   event.preventDefault();
 
   let isValid = true;
@@ -42,13 +45,41 @@ function handleSubmit(event) {
   if (!emailVerification()) isValid = false;
   if (!ideasVerification()) isValid = false;
 
-  if(isValid) {
+  if (isValid) {
     // submit information
-    // reset inputs
-    resetInputs();
-    reportDialog.close();
-  }
+    const reportObj = {
+      name: nameInput.value,
+      email: emailInput.value,
+      text: ideasInput.value
+    };
+
+    let baseUrl = 'http:localhost:8080';
+    try {
+      const response = await fetch(`${baseUrl}/send-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(reportObj)
+        
+      });
+
+      if (response.ok) {
+        statusLabel.textContent = 'Thank you for your feedback!';
+      } else {
+        statusLabel.textContent = 'Failed to send feedback';
+      }
+    } catch (error) {
+      statusLabel.textContent = `Error: ${error.message}`;
+      return;
+    }
+
+    setTimeout(()=>{
+      resetInputs();
+      reportDialog.close();
+    }, 1000);
     
+  }
 }
 
 
@@ -108,25 +139,8 @@ function resetInputs() {
   nameInput.value = '';
   emailInput.value = '';
   ideasInput.value = '';
-
+  statusLabel.textContent = '';
 }
 
-function sendEmail(email, report) {
-  // Use environment variables to get the email service configuration
-  const serviceId = process.env.EMAIL_SERVICE_ID;
-  const templateId = process.env.EMAIL_TEMPLATE_ID;
-  const userId = process.env.EMAIL_USER_ID;
-  
-  // Use an email sending service like EmailJS
-  emailjs.send(serviceId, templateId, {
-    email: email,
-    report: report
-  }, userId)
-  .then((response) => {
-    console.log('Email sent successfully:', response.status, response.text);
-  }, (error) => {
-    console.error('Failed to send email:', error);
-  });
-}
 
 export default reportButton;

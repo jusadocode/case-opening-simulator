@@ -141,20 +141,25 @@ select {
 }
 
 #reportForm {
+
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.5rem; */
     backdrop-filter: blur(20px);
     width: 14rem;
-    height: 14rem;
+    height: 20rem;
     margin: 2rem;
 }
 
 #reportForm>button {
     font-size: 1rem;
     padding: 0.5rem;
-
+    margin-top: 1rem;
     border-radius: 5%;
     transition: border 1s ease-in-out;
     transition: background-color 1s ease-in-out;
     background-color: inherit;
+    width: 12rem;
 }
 
 #report-dialog .exitButton {
@@ -169,11 +174,19 @@ select {
 
 
 #reportForm>input,
-#reportForm>textarea {
+#reportForm>textarea,
+#reportForm>label
+{
     line-height: 1.5rem;
     width: 12rem;
 }
 
+#reportForm>textarea
+{
+    min-height: 5rem;
+    min-width: 12rem;
+    max-width: 12rem;
+}
 
 .item-holder {
     width: 100%;

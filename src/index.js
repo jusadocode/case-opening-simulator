@@ -4,18 +4,16 @@
 
 // Divide the code into functions
 
-import reportButton from '../src/report-section';
+// Working emails
+// Add more info about obtained skin
+// Loading indicators
 
+
+import { getRandomInt, getRandomFloat, randomGenItem, createDistribution } from "./math-utilities/mathUtils";
+import { getRarityOdds, getRarityColor } from "./crate-info-utilities/crateUtils";
+import reportButton from "./report-section";
 // Change this for production build (it wont be using localhost)
-let baseUrl = 'http:localhost:8080';
 
-
-// if(process.env.NODE_ENV === 'production') {
-//     baseUrl = window.location.href;
-//     baseUrl = baseUrl.slice(0, -1);
-// }
-
-console.log(baseUrl);
 const button = document.querySelector('.open-button');
 
 let newButton;
@@ -56,14 +54,14 @@ let itemRarityCounts = {
   Classified: 0,
   Covert: 0,
   Contraband: 0
-};
+}; // could be used to track what color items user obtained
 
 
-initializeCaseLoad();
+initializeCaseLoad(); // catch of an error might be good
 
 async function initializeCaseLoad() {
 
-  await fetchCaseData();
+  await fetchCaseData(); // add indicators while getting data
 
   cases.map(async (crate, index) => {
     let option = document.createElement('option');
@@ -86,7 +84,6 @@ async function initializeCaseLoad() {
 
 
   for (let i = 0; i < 10; i++) {
-    // randomization will be hugely reworked
     let randomItem = caseItemsList[getRandomInt(0, caseItemsList.length - 1)];
 
     let newItem = document.createElement('div');
@@ -158,7 +155,7 @@ async function openCase() {
 
   console.log(caseItemList);
 
-  distribution = createDistribution(caseItemList, 100);
+  distribution = createDistribution(caseItemList, 100, selectedCase);
 
   let translateX = getRandomInt(-5000, -6000);
 
@@ -220,7 +217,6 @@ async function openCase() {
     // Call to backend
     await callApi(`data/price?&weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWon.wears[0]}&itemID=${itemWon.id}`)
       .then((data) => {
-        if (data) {
           let skinPriceText = data.lowest_price;
           price = 'Market price: ' + skinPriceText;
           skinPriceText = skinPriceText.replace(',', '.');
@@ -230,7 +226,6 @@ async function openCase() {
           console.log(moneyStatus);
 
           instantiateMoneyAmount('green');
-        }
       })
       .catch((error) => {
         console.log(error);
@@ -323,50 +318,8 @@ function clearUpWindow() {
   rolledItems = [];
 }
 
-function getRarityColor(item) {
 
-  if (item.category === 'Knives' || item.category === 'Gloves')
-    return '#ffcc00';
 
-  switch (item.rarity) {
-  case ('Consumer'):
-    return '#afafaf';
-  case ('Industrial'):
-    return '#6496e1';
-  case ('Mil-Spec Grade'):
-    return '#4b69cd';
-  case ('Restricted'):
-    return '#8847ff';
-  case ('Classified'):
-    return '#d32ce6';
-  case ('Covert'):
-    return '#eb4b4b';
-  case ('Contraband'):
-    return '#886a08';
-  default:
-    return '';
-  }
-}
-
-function getRarityOdds(crate) {
-  const caseRarityCounts = {
-    Consumer: 0,
-    Industrial: 0,
-    'Mil-Spec Grade': 0,
-    Restricted: 0,
-    Classified: 0,
-    Covert: 0,
-    Contraband: 0
-  };
-
-  // Count the rarities in the selected case
-  crate.contains.forEach((item) => {
-    caseRarityCounts[item.rarity]++;
-  });
-
-  // Return the count object
-  return caseRarityCounts;
-}
 
 /////////////////////////////////
 // function for updating the money text with any color
@@ -383,44 +336,6 @@ function instantiateMoneyAmount(color) {
 }
 
 
-/////////////////////////////////
-// Mathematical utilities
-/////////////////////////////////
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function getRandomFloat(min, max) {
-  return (Math.random() * (max - min) + min).toFixed(4);
-}
-
-function randomGenItem(array, distribution) {
-  const index = randomIndex(distribution);
-  return array[index];
-}
-
-function createDistribution(items, size) {
-  const distribution = [];
-  const weights = items.map(item => (item.odds / (selectedCase.caseRarityCounts[item.rarity] || 1) / 100));
-  console.log(weights);
-
-  const sum = weights.reduce((accum, currVal) => accum + currVal);
-  console.log(sum);
-  const quant = size / sum;
-  for (let i = 0; i < weights.length; ++i) {
-    const limit = quant * weights[i];
-    for (let j = 0; j < limit; ++j) {
-      distribution.push(i);
-    }
-  }
-  return distribution;
-}
-
-function randomIndex(distribution) {
-  const index = Math.floor(distribution.length * Math.random()); // random index
-  return distribution[index];
-}
 
 function setSelectedCase(crate) {
   selectedCase = crate;
@@ -445,6 +360,14 @@ function setSelectedCase(crate) {
 /////////////////////////////////
 
 async function callApi(urlPostfix) {
+
+  let baseUrl = 'http:localhost:8080';
+
+// if(process.env.NODE_ENV === 'production') {
+//     baseUrl = window.location.href;
+//     baseUrl = baseUrl.slice(0, -1);
+// }
+
   let url = baseUrl + '/' + urlPostfix;
 
   console.log(url);
@@ -468,7 +391,6 @@ async function callApi(urlPostfix) {
 async function fetchCaseData() {
   await callApi('data/cases')
     .then((data) => {
-      console.log(data);
       cases = data;
       console.log(cases);
     })
@@ -496,3 +418,5 @@ function getBorderRadius() {
   return borderRadiusInstructions[getRandomInt(0, borderRadiusInstructions.length-1)];
 
 }
+
+

@@ -1,9 +1,25 @@
+// for testing, open the file instead of live server
+
 let PORT = 8080;
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
 const caseData = require('../data/final_join.json');
 
+const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
+
+dotenv.config();
+
+const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false, // Use `true` for port 465, `false` for all other ports
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
+  },
+});
 // hashMap for reoccuring item price requests
 // should save requests
 
@@ -31,9 +47,8 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(__dirname));
 }
 
-
-
 app.use(cors());
+app.use(express.json())
 
 app.get('/data/price', (req, res) => {
 
@@ -69,9 +84,10 @@ app.get('/data/price', (req, res) => {
   axios
     .request(options)
     .then((response) => {
-      res.json(response.data);
-      itemPriceMap.set(itemId, response.data);
-      console.log('ITEM ADDED TO MAP');
+      const data = res.json(response.data);
+      console.log(data)
+      itemPriceMap.set(itemId, data);
+      console.log('Item added to map: ', itemId, queryParams.weapon, queryParams.skin, queryParams.wear);
     })
     .catch((error) => {
       console.log(error);
@@ -83,13 +99,39 @@ app.get('/data/cases', (req, res) => {
   res.json(caseData);
 });
 
+app.post('/send-email', async (req, res) => {
+
+  // res is for responding to requests
+  // req is the incoming request with parameters
+
+  console.log(req.body);
+  const { name, email, text } = req.body;
+
+
+
+  const mailOptions = {
+    from: process.env.EMAIL_USER, // sender address
+    to: process.env.EMAIL_USER, // list of receivers
+    subject: "Feedback", // Subject line
+    text: `Name: ${name}\n ${email ? 'Email: ' + email : 'Email not provided'}\n\nReport:\n${text}`, // plain text body
+    html: `<b>Incoming feedback from case opening simulator</b><p>Name: ${name}</p><p>${email ? 'Email: ' + email : 'Email not provided'}<p>Report: ${text}</p>`, // html body
+  };
+
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Message sent: %s", info.messageId);
+    res.status(200).send('Email sent successfully');
+  } catch (error) {
+    console.error("Error sending email: %s", error);
+    res.status(500).send('Error sending email');
+  }
+});
+
 
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-
 
 
 function fetchCasePrices() {
@@ -106,6 +148,7 @@ function fetchCasePrices() {
       });
   });
 }
+
 
 
 
