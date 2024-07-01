@@ -1,3 +1,5 @@
+import { getRandomInt } from "../math-utilities/mathUtils";
+
 function getRarityOdds(crate) {
     const caseRarityCounts = {
       Consumer: 0,
@@ -43,5 +45,10 @@ function getRarityOdds(crate) {
     }
   }
 
-export {getRarityColor, getRarityOdds}
+
+  function getRandomWear(item) {
+    return item.wears[getRandomInt(0, item.wears.length-1)];
+  }
+
+export {getRarityColor, getRarityOdds, getRandomWear}
   

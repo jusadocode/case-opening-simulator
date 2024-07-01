@@ -225,22 +225,22 @@ select {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* backdrop-filter: blur(50px); */
-    border: 1px solid gray;
-    background-image: url('../data/images/inferno-CS2.png');
+    border: 5px solid rgb(0, 0, 0);
+    background-image: url('../data/images/cs2dust2.jpg');
+    
     background-position: center;
     background-size: cover;
     transition: scale 0.3s ease-in-out, border-radius 0.5s ease-in-out;
 
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .obtainedItem:hover {
     scale: 1.05;
 }
 
-.obtainedItem:hover * {
+.obtainedItem:hover img,
+.obtainedItem:hover .obtainedItemInfo {
     scale: 1.05;
 }
 
@@ -249,7 +249,33 @@ select {
     position: relative;
     /* width: 120%; */
     z-index: 4;
+    transition: scale 1s ease-in-out;
 }
+
+.obtainedItemInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    color: white;
+    transition: scale 1s ease-in-out;
+}
+
+
+.bottomSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+}
+
+.buttonSection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 
 .image {
 
@@ -299,7 +325,7 @@ select {
 
     100% {
         transform: scale(1);
-        transform: translateY(-100px);
+        transform: translateY(-200px);
     }
 }
 

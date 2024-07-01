@@ -57,19 +57,25 @@ app.get('/data/price', (req, res) => {
 
   // currency (Euro) = index 3 
 
-  const itemId = queryParams.itemID;
+  const itemId = queryParams.itemID + queryParams.wear;
 
   const mapItem = itemPriceMap.get(itemId);
 
   if (mapItem) {
+    console.log('Item found in map');
     res.json(mapItem);
     return;
   }
 
-  let skinLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${queryParams.weapon} | ${queryParams.skin} (${queryParams.wear})&currency=3`;
+  let weaponName = queryParams.weapon;
+
+  if(queryParams.category === 'Knives' || queryParams.category === 'Gloves')
+    weaponName = '★ ' + weaponName;
+
+  let skinLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${weaponName} | ${queryParams.skin} (${queryParams.wear})&currency=3`;
   let caseLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${queryParams.case}&currency=3`;
 
-  let url = queryParams.case ? caseLink : skinLink;
+  let url = queryParams.case ? caseLink : skinLink; // ??
 
   const encodedUrl = url.replace(/ /g, '%20');
 
@@ -77,6 +83,7 @@ app.get('/data/price', (req, res) => {
   const options = {
     method: 'GET',
     url: encodedUrl
+    // gloves: market_hash_name=★%20Driver%20Gloves%20%7C%20King%20Snake%20(Field-Tested)
     // url: `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=SG%20553%20|%20Cyberforce%20(Factory%20New)&currency=3`
     // url: `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=SG%20553%20|%20Cyberforce%20(Factory%20New)&currency=3`
   };
@@ -84,14 +91,15 @@ app.get('/data/price', (req, res) => {
   axios
     .request(options)
     .then((response) => {
-      const data = res.json(response.data);
-      console.log(data)
+      const data = convertToSkinObj(response.data);
+      console.log(data);
+      res.json(data);
       itemPriceMap.set(itemId, data);
-      console.log('Item added to map: ', itemId, queryParams.weapon, queryParams.skin, queryParams.wear);
+      console.log('Item added to map: ', itemId, queryParams.weapon, queryParams.skin);
     })
     .catch((error) => {
       console.log(error);
-      res.json(error);
+      res.status(500).json({ error: error.message });
     });
 });
 
@@ -149,6 +157,14 @@ function fetchCasePrices() {
   });
 }
 
+function convertToSkinObj(data) {
+  return {
+    success: data.success,
+    lowest_price: data.lowest_price,
+    volume: data.volume,
+    median_price: data.median_price
+  }
+}
 
 
 

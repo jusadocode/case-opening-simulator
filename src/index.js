@@ -4,15 +4,13 @@
 
 // Divide the code into functions
 
-// Working emails
-// Add more info about obtained skin
 // Loading indicators
-
+// Writing text effect
 
 import { getRandomInt, getRandomFloat, randomGenItem, createDistribution } from "./math-utilities/mathUtils";
-import { getRarityOdds, getRarityColor } from "./crate-info-utilities/crateUtils";
-import reportButton from "./report-section";
-// Change this for production build (it wont be using localhost)
+import { getRarityOdds, getRarityColor, getRandomWear } from "./crate-info-utilities/crateUtils";
+import reportButton from "./report-section"; // need to load report section, otherwise add in webpack entries
+
 
 const button = document.querySelector('.open-button');
 
@@ -121,7 +119,7 @@ async function initializeCaseLoad() {
   newButton.style.width = '50%';
   newButton.textContent = `Open another (-${keyPrice}€)`;
   newButton.style.width = '50%';
-  newButton.style.borderRadius = '10px';
+  newButton.style.color = 'white';
 
 
   newButton.addEventListener('click', () => openCase());
@@ -140,7 +138,7 @@ async function openCase() {
   moneyStatus -= keyPrice;
   updateMoneyStatus();
   //clearUpWindow();
-  console.log(cases[caseSelect.value]);
+  // console.log(cases[caseSelect.value]);
   let caseItemList = selectedCase.contains;
   let knives = selectedCase.contains_rare;
 
@@ -153,7 +151,7 @@ async function openCase() {
   if (caseItemList.length < fixedItemCount)
     caseItemList.push(randomKnife);
 
-  console.log(caseItemList);
+  // console.log(caseItemList);
 
   distribution = createDistribution(caseItemList, 100, selectedCase);
 
@@ -182,6 +180,7 @@ async function openCase() {
     caseOpenWindow.classList.remove('flipInX');
 
     let itemWon = rolledItems[itemNumber];
+    console.log('ITEM WON:', itemWon);
 
     let obtainedItem = document.createElement('div');
     obtainedItem.classList.add('obtainedItem');
@@ -206,7 +205,8 @@ async function openCase() {
     obtainedItem.classList.add('animated');
     obtainedItem.classList.add('fadeIn');
 
-    let info = [];
+    let itemWear = getRandomWear(itemWon);
+    let infoObj = {};
 
     const textParts = itemWon.name.split(' ');
     // console.log(textParts);
@@ -215,15 +215,17 @@ async function openCase() {
     let stattrack = '';
 
     // Call to backend
-    await callApi(`data/price?&weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWon.wears[0]}&itemID=${itemWon.id}`)
+    await callApi(`data/price?&weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWear}&itemID=${itemWon.id}&category=${itemWon.category}`)
       .then((data) => {
+          console.log(data);
           let skinPriceText = data.lowest_price;
-          price = 'Market price: ' + skinPriceText;
+          price = skinPriceText;
+          // Convert to summable number
           skinPriceText = skinPriceText.replace(',', '.');
           const worth = skinPriceText.slice(0, -1);
-          console.log(moneyStatus);
+          // console.log(moneyStatus);
           moneyStatus += parseFloat(worth);
-          console.log(moneyStatus);
+          // console.log(moneyStatus);
 
           instantiateMoneyAmount('green');
       })
@@ -233,39 +235,66 @@ async function openCase() {
       });
 
 
-    let float = 'Float: ' + getRandomFloat(itemWon.min_float, itemWon.max_float);
+    let float = getRandomFloat(itemWon.min_float, itemWon.max_float);
 
 
     itemRarityCounts[itemWon.rarity]++;
 
-    console.log(itemRarityCounts);
+    // console.log(itemRarityCounts);
 
-    info.push(price);
-    info.push(float);
+    infoObj = {
+      name: itemWon.name,
+      wear: itemWear,
+      rarity: itemWon.rarity,
+      price: price,
+      float: float
+    }
+
+
 
     let obtainedText = document.createElement('div');
-    obtainedText.style.margin = '1rem';
+    obtainedText.classList.add('obtainedItemInfo');
 
-    info.forEach((element) => {
-      let par = document.createElement('p');
-      par.textContent = element;
-      par.style.color = 'white';
-      obtainedText.appendChild(par);
+    Object.entries(infoObj).forEach(([key, value]) => {
+
+        let par = document.createElement('p');
+        
+        par.textContent = `${key.toLocaleUpperCase()}: ${value}`;
+
+        if (key === 'rarity') {
+          par.style.textShadow = `4px 2px 4px ${rarityColor}`;
+        }
+        
+
+        obtainedText.appendChild(par);
     });
 
-    //itemWon.style.setProperty('border', '3px solid yellow');
-    obtainedItem.appendChild(obtainedText);
+    // Create a wrapper for the info and the button
+    let bottomSection = document.createElement('div');
+    bottomSection.classList.add('bottomSection');
+    bottomSection.appendChild(obtainedText);
 
-    obtainedItem.appendChild(newButton);
+    let buttonSection = document.createElement('div');
+    buttonSection.classList.add('buttonSection');
+    buttonSection.appendChild(newButton);
 
+    bottomSection.appendChild(buttonSection);
+
+    // Append the infoWrapper to the obtainedItem
+    obtainedItem.appendChild(bottomSection);
+
+    // Append the obtainedItem to the caseOpenWindow
     caseOpenWindow.appendChild(obtainedItem);
 
-    setTimeout(() => {obtainedItem.style.borderRadius = getBorderRadius()}, 500)
+    setTimeout(() => {
+      obtainedItem.style.borderRadius = getBorderRadius()
+      obtainedItem.style.borderColor = rarityColor;
+    }, 500)
     
 
     updateMoneyStatus();
 
-  }, 6000);
+  }, 2000);
 
 
 
@@ -340,7 +369,7 @@ function instantiateMoneyAmount(color) {
 function setSelectedCase(crate) {
   selectedCase = crate;
   fixedItemCount = crate.contains.length + 1;
-  console.log('Items: ' + selectedCase.contains.length);
+  // console.log('Items: ' + selectedCase.contains.length);
   if (!selectedCase.caseRarityCounts) {
     selectedCase.caseRarityCounts = getRarityOdds(selectedCase);
   }
@@ -361,6 +390,7 @@ function setSelectedCase(crate) {
 
 async function callApi(urlPostfix) {
 
+  // Change this for production build (it wont be using localhost)
   let baseUrl = 'http:localhost:8080';
 
 // if(process.env.NODE_ENV === 'production') {
@@ -409,7 +439,7 @@ function getBorderRadius() {
   const borderRadiusInstructions = [
     '10px 20px 30px 40px',
     '25% 10%',
-    '10% 30% 50% 70%',
+    '10% 20% 40% 20%;',
     '10% / 50%',
     '10px 100px / 120px',
     '50% 20% / 10% 40%'
@@ -418,5 +448,3 @@ function getBorderRadius() {
   return borderRadiusInstructions[getRandomInt(0, borderRadiusInstructions.length-1)];
 
 }
-
-
