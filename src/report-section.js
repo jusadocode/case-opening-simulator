@@ -5,7 +5,6 @@
 // Mixing default html validation with custom provides difficult results
 // disable default html validations if possible
 
-
 const reportButton = document.querySelector('.report-button');
 const reportDialog = document.querySelector('#report-dialog');
 
@@ -27,7 +26,7 @@ reportButton.addEventListener('click', () => {
 
 exitButton.addEventListener('click', () => reportDialog.close());
 
-submitButton.addEventListener('click', handleSubmit)
+submitButton.addEventListener('click', handleSubmit);
 
 function initializeInputs() {
   nameInput.addEventListener('input', nameVerification);
@@ -36,6 +35,7 @@ function initializeInputs() {
 }
 
 async function handleSubmit(event) {
+
   statusLabel.textContent = '';
   event.preventDefault();
 
@@ -55,6 +55,9 @@ async function handleSubmit(event) {
 
     let baseUrl = 'http:localhost:8080';
     try {
+
+      submitButton.disabled = true;
+      
       const response = await fetch(`${baseUrl}/send-email`, {
         method: 'POST',
         headers: {
@@ -73,6 +76,10 @@ async function handleSubmit(event) {
       statusLabel.textContent = `Error: ${error.message}`;
       return;
     }
+    finally {
+      submitButton.disabled = false;
+    }
+
 
     setTimeout(()=>{
       resetInputs();
@@ -84,7 +91,7 @@ async function handleSubmit(event) {
 
 
 function nameVerification() {
-  if (nameInput.value.trim() === "") {
+  if (nameInput.value.trim() === '') {
     nameInput.setCustomValidity('Write your name');
     nameInput.reportValidity();
     return false;
@@ -99,7 +106,7 @@ function nameVerification() {
 function emailVerification() {
 
   // If chosen to write email - write it properly
-  if (emailInput.value.trim() === "") {
+  if (emailInput.value.trim() === '') {
     //emailInput.setCustomValidity('Email cannot be empty');
     return true;
   }
@@ -116,7 +123,7 @@ function emailVerification() {
 }
 
 function ideasVerification() {
-  if (ideasInput.value.trim() === "") {
+  if (ideasInput.value.trim() === '') {
     ideasInput.setCustomValidity('Say something, your feedback is important :)');
     ideasInput.reportValidity();
     return false;

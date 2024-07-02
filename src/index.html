@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Should I Open</title>
     <link rel="stylesheet" href="../src/index.css">
+    <link rel="stylesheet" href="../src/loadingIndicator.css">
     <link rel="icon" href="favicon.ico">
 
 </head>
 
 <body>
-    <div class="balance-section">
+    <div class="header-section">
+        <button class="report-button">
+            Suggestions/Problems
+        </button>
+
         <p id="status">Money state: 4.35€</p>
     </div>
-
-    <button class="report-button">
-        Suggestions/Problems
-    </button>
 
     <dialog id="report-dialog">
         <form id="reportForm" novalidate>
@@ -38,36 +39,44 @@
     </dialog>
 
     <div class="main-container">
-        <div class="header-section">
+        <div class="title-section">
             <h1>Should I Open</h1>
             <p>Find out if the urge was worth pursuing</p>
         </div>
 
-        <div class="case-select-container">
-            <p>Select case:</p>
-            <select name="case" id="case">
-            </select>
-        </div>
-
-        <div class="case-image-section">
-
-        </div>
-
-        <div class="case-open-window-holder">
-            <div class="case-open-window">
-                <div class="case-open-marker"></div>
-                <div class="item-holder">
+        <div class="interaction-container">
+            
+            <div class="case-select-container">
+                <p>Select case:</p>
+                <select name="case" id="case">
+                </select>
+            </div>
+    
+            <div class="case-image-section">
+                
+            </div>
+    
+            <div class="case-open-window-holder">
+                <div class="case-open-window">
+                    <div class="case-open-marker"></div>
+                    <div class="item-holder">
+                    </div>
                 </div>
             </div>
+    
+    
+            <div class="button-section">
+                <button class="open-button">
+                    Unlock container
+                </button>
+            </div>
         </div>
+        
 
+    </div>
 
-        <div class="button-section">
-            <button class="open-button">
-                Unlock container
-            </button>
-        </div>
-
+    <div class="footer">
+        
     </div>
 
 </body>

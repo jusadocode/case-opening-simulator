@@ -2,6 +2,7 @@
 
 * {
     font-family: 'MuseoModerno';
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
 }
 :root {
     --random-translateXa: -2500px;
@@ -10,11 +11,24 @@
 
 body {
     font-family: 'MuseoModerno';
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .main-container {
-    margin: 2rem;
+    /* margin: 1rem; */
     display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.interaction-container {
+    display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 2rem;
 }
@@ -34,22 +48,20 @@ select {
     font-family: 'MuseoModerno';
 }
 
-.balance-section {
+.header-section {
+    padding: 1.7rem;
     display: flex;
     /* border: 1px solid black; */
-    width: 90vw;
-    justify-content: flex-end;
-    position: fixed;
+    width: 100%;
+    justify-content: space-between;
     font-weight: bold;
-    margin: 2rem;
     gap: 1rem;
 }
 
-@media only screen and (max-width: 767px) {
-    .balance-section {
-        position: static;
-        margin: auto;
-    }
+
+
+.footer {
+    padding: 1rem;
 }
 
 
@@ -119,13 +131,12 @@ select {
 }
 
 .open-button:hover {
-    border: 2px solid orange;
-    background-color: greenyellow
+    border: 2px solid greenyellow;
+    background-color: greenyellow;
 }
 
 .report-button {
-    font-size: 1rem;
-    padding: 0.9rem;
+    padding: 0.8rem;
     min-height: 20px;
     min-width: 8rem;
     border-radius: 5%;
@@ -145,7 +156,7 @@ select {
     display: flex;
     flex-direction: column;
     /* gap: 0.5rem; */
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     width: 14rem;
     height: 20rem;
     margin: 2rem;
@@ -227,7 +238,7 @@ select {
     align-items: center;
     border: 5px solid rgb(0, 0, 0);
     background-image: url('../data/images/cs2dust2.jpg');
-    
+    padding: 1rem;
     background-position: center;
     background-size: cover;
     transition: scale 0.3s ease-in-out, border-radius 0.5s ease-in-out;

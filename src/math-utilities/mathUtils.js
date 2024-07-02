@@ -1,38 +1,45 @@
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-  function getRandomFloat(min, max) {
-    return (Math.random() * (max - min) + min).toFixed(4);
-  }
+function getRandomFloat(min, max) {
+  return (Math.random() * (max - min) + min).toFixed(4);
+}
 
-  function randomGenItem(array, distribution) {
-    const index = randomIndex(distribution);
-    return array[index];
-  }
+function randomGenItem(array, distribution) {
+  const index = randomIndex(distribution);
+  return array[index];
+}
   
-  function createDistribution(items, size, selectedCase) {
-    const distribution = [];
-    const weights = items.map(item => (item.odds / (selectedCase.caseRarityCounts[item.rarity] || 1) / 100));
-    console.log(weights);
+function createDistribution(items, size, selectedCase) {
+  const distribution = [];
+  const weights = calculateItemWeights(items, selectedCase);
+  console.log(weights);
   
-    const sum = weights.reduce((accum, currVal) => accum + currVal);
-    console.log(sum);
-    const quant = size / sum;
-    for (let i = 0; i < weights.length; ++i) {
-      const limit = quant * weights[i];
-      for (let j = 0; j < limit; ++j) {
-        distribution.push(i);
-      }
+  const sum = weights.reduce((accum, currVal) => accum + currVal);
+  console.log(sum);
+  const quant = size / sum;
+  for (let i = 0; i < weights.length; ++i) {
+    const limit = quant * weights[i];
+    for (let j = 0; j < limit; ++j) {
+      distribution.push(i);
     }
-    return distribution;
   }
+  return distribution;
+}
+
+function calculateItemWeights(items, selectedCase) {
+  const weights = items.map(
+    item => (item.odds / (selectedCase.caseRarityCounts[item.rarity] || 1) / 100)
+  );
+  return weights;
+}
   
-  function randomIndex(distribution) {
-    const index = Math.floor(distribution.length * Math.random()); // random index
-    return distribution[index];
-  }
+function randomIndex(distribution) {
+  const index = Math.floor(distribution.length * Math.random()); // random index
+  return distribution[index];
+}
 
 
-  export {getRandomInt, getRandomFloat, randomGenItem, createDistribution, randomIndex}
+export {getRandomInt, getRandomFloat, randomGenItem, createDistribution, randomIndex};
   

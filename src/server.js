@@ -12,7 +12,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
+  host: 'smtp.gmail.com',
   port: 587,
   secure: false, // Use `true` for port 465, `false` for all other ports
   auth: {
@@ -48,7 +48,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.use(cors());
-app.use(express.json())
+app.use(express.json());
 
 app.get('/data/price', (req, res) => {
 
@@ -83,7 +83,11 @@ app.get('/data/price', (req, res) => {
   const options = {
     method: 'GET',
     url: encodedUrl
+
+    // problematic
     // gloves: market_hash_name=★%20Driver%20Gloves%20%7C%20King%20Snake%20(Field-Tested)
+    // url https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=SSG%08%20|%20Slashed%20(Minimal%20Wear)&currency=3
+   
     // url: `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=SG%20553%20|%20Cyberforce%20(Factory%20New)&currency=3`
     // url: `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=SG%20553%20|%20Cyberforce%20(Factory%20New)&currency=3`
   };
@@ -119,18 +123,18 @@ app.post('/send-email', async (req, res) => {
 
   const mailOptions = {
     from: process.env.EMAIL_USER, // sender address
-    to: process.env.EMAIL_USER, // list of receivers
-    subject: "Feedback", // Subject line
+    to: process.env.EMAIL_USER, // list of receivers  
+    subject: 'Feedback', // Subject line
     text: `Name: ${name}\n ${email ? 'Email: ' + email : 'Email not provided'}\n\nReport:\n${text}`, // plain text body
     html: `<b>Incoming feedback from case opening simulator</b><p>Name: ${name}</p><p>${email ? 'Email: ' + email : 'Email not provided'}<p>Report: ${text}</p>`, // html body
   };
 
   try {
     const info = await transporter.sendMail(mailOptions);
-    console.log("Message sent: %s", info.messageId);
+    console.log('Message sent: %s', info.messageId);
     res.status(200).send('Email sent successfully');
   } catch (error) {
-    console.error("Error sending email: %s", error);
+    console.error('Error sending email: %s', error);
     res.status(500).send('Error sending email');
   }
 });
@@ -163,7 +167,7 @@ function convertToSkinObj(data) {
     lowest_price: data.lowest_price,
     volume: data.volume,
     median_price: data.median_price
-  }
+  };
 }
 
 

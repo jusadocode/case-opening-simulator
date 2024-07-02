@@ -6,15 +6,17 @@
 
 // Loading indicators
 // Writing text effect
+// Choose case field in obtained item screen
 
-import { getRandomInt, getRandomFloat, randomGenItem, createDistribution } from "./math-utilities/mathUtils";
-import { getRarityOdds, getRarityColor, getRandomWear } from "./crate-info-utilities/crateUtils";
-import reportButton from "./report-section"; // need to load report section, otherwise add in webpack entries
-
+import { getRandomInt, getRandomFloat, randomGenItem, createDistribution } from './math-utilities/mathUtils';
+import { getRarityOdds, getRarityColor, getRandomWear } from './crate-info-utilities/crateUtils';
+import reportButton from './report-section'; // need to load report section, otherwise add in webpack entries
+import { createLoadingIndicator, showLoadingIndicatorInElement, hideLoadingIndicatorInElement } from './style-utilities/styleUtils';
 
 const button = document.querySelector('.open-button');
 
-let newButton;
+let reopenButton;
+let backButton;
 
 let statusText = document.querySelector('#status');
 
@@ -23,13 +25,17 @@ const keyPrice = 2.34;
 
 let itemHolder = document.querySelector('.item-holder');
 
-const caseOpenWindow = document.querySelector('.case-open-window-holder');
+const caseOpenWindowHolder = document.querySelector('.case-open-window-holder');
 
 let caseImageSection = document.querySelector('.case-image-section');
 
 let caseSelect = document.querySelector('select');
 
 const itemMarker = document.querySelector('.case-open-marker');
+
+const caseLoadingIndicator = document.querySelector('.loadingIndicator');
+
+const interactionContainer = document.querySelector('.interaction-container');
 
 
 
@@ -58,283 +64,240 @@ let itemRarityCounts = {
 initializeCaseLoad(); // catch of an error might be good
 
 async function initializeCaseLoad() {
+  try {
+    cases = await fetchCaseData(); // add indicators while getting data
 
-  await fetchCaseData(); // add indicators while getting data
+    cases.map(async (crate, index) => {
+      let option = document.createElement('option');
+      option.value = index;
+      option.textContent = crate.name;
+      caseSelect.appendChild(option);
+    });
 
-  cases.map(async (crate, index) => {
-    let option = document.createElement('option');
-    option.value = index;
-    option.textContent = crate.name;
+    setSelectedCase(cases[caseSelect.value]);
 
-    caseSelect.appendChild(option);
-  });
+    caseOpenWindowHolder.disabled = true;
 
-  setSelectedCase(cases[caseSelect.value]);
+    
+    displayInitialItems();
+    initializeEventListeners();
+  }
+  catch {
+    console.log('Error loading cases');
+    interactionContainer.innerHTML = 'There was a problem getting cases, refresh the page or try again at a later time';
+  }
 
-  caseOpenWindow.disabled = true;
+}
 
+function handleOpenButtonClick() {
+  openCase();
+  instantiateMoneyAmount('red');
+}
 
-  const caseItemsList = selectedCase.contains;
+function handleBackButtonClick() {
+  const lastChild = caseOpenWindowHolder.lastChild;
+  console.log(lastChild);
+  if (lastChild && lastChild.classList.contains('obtainedItem')) {
+    caseOpenWindowHolder.removeChild(lastChild);
+  }
+}
 
+function initializeEventListeners() {
+  button.addEventListener('click', handleOpenButtonClick);
 
+  reopenButton = button.cloneNode(true);
 
-  // console.log(caseItemsList);
+  // keeping all other settings from other button
+  reopenButton.textContent = `Open another (-${keyPrice}€)`;
+  reopenButton.style.color = 'white';
 
+  reopenButton.addEventListener('click', handleOpenButtonClick);
+
+  backButton = button.cloneNode(true);
+
+  // keeping all other settings from other button
+  backButton.textContent = 'Back';
+  backButton.style.color = 'white';
+
+  backButton.addEventListener('click', handleBackButtonClick);
+
+  caseSelect.addEventListener('change', () => setSelectedCase(cases[caseSelect.value]));
+}
+
+function displayInitialItems() {
+
+  const caseItemsList = [...selectedCase.contains];
 
   for (let i = 0; i < 10; i++) {
     let randomItem = caseItemsList[getRandomInt(0, caseItemsList.length - 1)];
 
-    let newItem = document.createElement('div');
-    newItem.classList.add('item');
-
-    let img = document.createElement('img');
-
-    img.src = randomItem.image;
-
-
-    img.classList.add('image');
-    // newItem.textContent = randomItem.name;
-
-    const rarityColor = getRarityColor(randomItem);
-
-    newItem.style.backgroundImage = 'linear-gradient(white 40%, '
-            + rarityColor + ')';
-    let rarityBox = document.createElement('div');
-    rarityBox.classList.add('item-rarity-box');
-    rarityBox.style.backgroundColor = rarityColor;
-    newItem.appendChild(img);
-    newItem.appendChild(rarityBox);
-    itemHolder.appendChild(newItem);
-
+    let newItem = createItemElement(randomItem);
+    
     itemHolder.appendChild(newItem);
 
   }
 
+  console.log(itemHolder.childElementCount);
+}
 
-  button.addEventListener('click', () => openCase());
-  button.addEventListener('click', () => instantiateMoneyAmount('red'));
+function createItemElement(item) {
+  const newItem = document.createElement('div');
+  newItem.classList.add('item');
 
-  newButton = button.cloneNode(true);
+  const img = document.createElement('img');
+  if (item.image) {
+    // exceedingly_rare_item.png
+    if (item.category === 'Knives' || item.category === 'Gloves')
+      img.src = '../data/images/exceedingly_rare_item.png';
+    else
+      img.src = item.image;
+  }
+  else
+    img.src = '../data/images/xray.png';
 
-  newButton.style.width = '50%';
-  newButton.textContent = `Open another (-${keyPrice}€)`;
-  newButton.style.width = '50%';
-  newButton.style.color = 'white';
+  img.classList.add('image');
 
+  const rarityColor = getRarityColor(item);
+  newItem.style.backgroundImage = `linear-gradient(white 40%, ${rarityColor})`;
 
-  newButton.addEventListener('click', () => openCase());
-  newButton.addEventListener('click', () => instantiateMoneyAmount('red'));
+  const rarityBox = document.createElement('div');
+  rarityBox.classList.add('item-rarity-box');
+  rarityBox.style.backgroundColor = rarityColor;
 
+  newItem.appendChild(img);
+  newItem.appendChild(rarityBox);
 
-  caseSelect.addEventListener('change', () => setSelectedCase(cases[caseSelect.value]));
+  return newItem;
+}
 
+function initiateRollingProcess() {
+  return new Promise((resolve) => {
+    let translateX = getRandomInt(-5000, -6000);
+    caseOpenWindowHolder.style.setProperty('--random-translateXb', `${translateX}px`);
+    translateX -= 352; // roller is positioned 352px from the start
+    const itemNumber = Math.floor((translateX / 152) * -1);
+
+    button.classList.add('animated', 'bounceOut');
+    button.disabled = true;
+
+    caseOpenWindowHolder.classList.add('animated', 'flipInX');
+
+    setTimeout(() => {
+      button.disabled = false;
+      button.classList.remove('animated', 'bounceOut');
+      caseOpenWindowHolder.classList.remove('animated', 'flipInX');
+      resolve(itemNumber);
+    }, 6000);
+  });
+  
+}
+
+async function determineItemWon(items) {
+  for (let i = 0; i < rollItemCount; i++) {
+    const randomItem = randomGenItem(items, distribution);
+    rolledItems.push(randomItem);
+    const newItem = createItemElement(randomItem);
+    newItem.classList.add('animatedItem', 'moveLeft');
+    itemHolder.appendChild(newItem);
+  }
+  console.log(itemHolder.childElementCount);
+
+  const itemNumber = await initiateRollingProcess();
+
+  return rolledItems[itemNumber];
+}
+
+async function getItemInfo(itemWon, itemWear) {
+  let price;
+  try {
+    const data = await callApi(`data/price?&weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWear}&itemID=${itemWon.id}&category=${itemWon.category}`);
+    price = data.lowest_price;
+    const worth = parseFloat(price.replace(',', '.').slice(0, -1));
+    moneyStatus += worth;
+    instantiateMoneyAmount('green');
+    updateMoneyStatus();
+  } catch (error) {
+    console.error('Error fetching item price:', error);
+    price = 'Market price not available';
+  }
+
+  const float = getRandomFloat(itemWon.min_float, itemWon.max_float);
+  itemRarityCounts[itemWon.rarity]++;
+  return { name: itemWon.name, wear: itemWear, rarity: itemWon.rarity, price, float };
 }
 
 
-async function openCase() {
+async function displayWonItem(itemWon) {
+  const obtainedItem = document.createElement('div');
+  obtainedItem.classList.add('obtainedItem');
 
-  clearUpWindow();
+  const img = document.createElement('img');
+  img.src = itemWon.image || '../data/images/xray.png';
+  img.classList.add('obtained-image');
+  obtainedItem.appendChild(img);
 
-  moneyStatus -= keyPrice;
-  updateMoneyStatus();
-  //clearUpWindow();
-  // console.log(cases[caseSelect.value]);
-  let caseItemList = selectedCase.contains;
-  let knives = selectedCase.contains_rare;
+  const rarityColor = getRarityColor(itemWon);
+  const rarityBox = document.createElement('div');
+  rarityBox.classList.add('obtained-item-rarity-box');
+  rarityBox.style.backgroundColor = rarityColor;
 
-  // Adding a random knife from the case to the table
+  obtainedItem.classList.add('animated', 'fadeIn');
 
-  let randomKnife = knives[getRandomInt(0, 8)];
+  const itemWear = getRandomWear(itemWon);
+  const itemInfo = await getItemInfo(itemWon, itemWear);
 
-  randomKnife.odds = 0.26;
-
-  if (caseItemList.length < fixedItemCount)
-    caseItemList.push(randomKnife);
-
-  // console.log(caseItemList);
-
-  distribution = createDistribution(caseItemList, 100, selectedCase);
-
-  let translateX = getRandomInt(-5000, -6000);
-
-  caseOpenWindow.style.setProperty('--random-translateXb', `${translateX}px`);
-  translateX -= 352; // roller is positioned 352px from the start
-  const itemNumber = Math.floor((translateX / 152) * (-1));
-  // console.log(itemNumber);
-  button.classList.add('animated');
-  button.classList.add('bounceOut');
-  button.disabled = true;
-
-  itemHolder.innerHTML = '';
-  caseOpenWindow.classList.add('animated');
-  caseOpenWindow.classList.add('flipInX');
-
-
-  setTimeout(async () => {
-
-    button.disabled = false;
-    button.classList.remove('animated');
-    button.classList.remove('bounceOut');
-
-    caseOpenWindow.classList.remove('animated');
-    caseOpenWindow.classList.remove('flipInX');
-
-    let itemWon = rolledItems[itemNumber];
-    console.log('ITEM WON:', itemWon);
-
-    let obtainedItem = document.createElement('div');
-    obtainedItem.classList.add('obtainedItem');
-    let img = document.createElement('img');
-
-    if (itemWon.image)
-      img.src = itemWon.image;
-    else
-      img.src = '../data/images/xray.png';
-
-    img.classList.add('obtained-image');
-
-    obtainedItem.appendChild(img);
-
-    const rarityColor = getRarityColor(itemWon);
-
-    let rarityBox = document.createElement('div');
-    rarityBox.classList.add('obtained-item-rarity-box');
-    rarityBox.style.backgroundColor = rarityColor;
-
-
-    obtainedItem.classList.add('animated');
-    obtainedItem.classList.add('fadeIn');
-
-    let itemWear = getRandomWear(itemWon);
-    let infoObj = {};
-
-    const textParts = itemWon.name.split(' ');
-    // console.log(textParts);
-
-    let price = '';
-    let stattrack = '';
-
-    // Call to backend
-    await callApi(`data/price?&weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWear}&itemID=${itemWon.id}&category=${itemWon.category}`)
-      .then((data) => {
-          console.log(data);
-          let skinPriceText = data.lowest_price;
-          price = skinPriceText;
-          // Convert to summable number
-          skinPriceText = skinPriceText.replace(',', '.');
-          const worth = skinPriceText.slice(0, -1);
-          // console.log(moneyStatus);
-          moneyStatus += parseFloat(worth);
-          // console.log(moneyStatus);
-
-          instantiateMoneyAmount('green');
-      })
-      .catch((error) => {
-        console.log(error);
-        price = 'Market price not available';
-      });
-
-
-    let float = getRandomFloat(itemWon.min_float, itemWon.max_float);
-
-
-    itemRarityCounts[itemWon.rarity]++;
-
-    // console.log(itemRarityCounts);
-
-    infoObj = {
-      name: itemWon.name,
-      wear: itemWear,
-      rarity: itemWon.rarity,
-      price: price,
-      float: float
-    }
-
-
-
-    let obtainedText = document.createElement('div');
-    obtainedText.classList.add('obtainedItemInfo');
-
-    Object.entries(infoObj).forEach(([key, value]) => {
-
-        let par = document.createElement('p');
-        
-        par.textContent = `${key.toLocaleUpperCase()}: ${value}`;
-
-        if (key === 'rarity') {
-          par.style.textShadow = `4px 2px 4px ${rarityColor}`;
-        }
-        
-
-        obtainedText.appendChild(par);
-    });
-
-    // Create a wrapper for the info and the button
-    let bottomSection = document.createElement('div');
-    bottomSection.classList.add('bottomSection');
-    bottomSection.appendChild(obtainedText);
-
-    let buttonSection = document.createElement('div');
-    buttonSection.classList.add('buttonSection');
-    buttonSection.appendChild(newButton);
-
-    bottomSection.appendChild(buttonSection);
-
-    // Append the infoWrapper to the obtainedItem
-    obtainedItem.appendChild(bottomSection);
-
-    // Append the obtainedItem to the caseOpenWindow
-    caseOpenWindow.appendChild(obtainedItem);
-
-    setTimeout(() => {
-      obtainedItem.style.borderRadius = getBorderRadius()
-      obtainedItem.style.borderColor = rarityColor;
-    }, 500)
-    
-
-    updateMoneyStatus();
-
-  }, 2000);
-
-
-
-  for (let i = 0; i < rollItemCount; i++) {
-
-    let randomItem = randomGenItem(caseItemList, distribution);
-    rolledItems.push(randomItem);
-    let newItem = document.createElement('div');
-    newItem.classList.add('item');
-    newItem.classList.add('animatedItem');
-    newItem.classList.add('moveLeft');
-    let img = document.createElement('img');
-
-    if (randomItem.image) {
-      // exceedingly_rare_item.png
-      if (randomItem.category === 'Knives' || randomItem.category === 'Gloves')
-        img.src = '../data/images/exceedingly_rare_item.png';
-      else
-        img.src = randomItem.image;
-    }
-    else
-      img.src = '../data/images/xray.png';
-
-    img.classList.add('image');
-    // newItem.textContent = randomItem.name;
-
-    const rarityColor = getRarityColor(randomItem);
-
-    newItem.style.backgroundImage = 'linear-gradient(white 40%, '
-            + rarityColor + ')';
-    let rarityBox = document.createElement('div');
-    rarityBox.classList.add('item-rarity-box');
-    rarityBox.style.backgroundColor = rarityColor;
-
-    newItem.appendChild(img);
-    newItem.appendChild(rarityBox);
-    itemHolder.appendChild(newItem);
-
+  const obtainedText = document.createElement('div');
+  obtainedText.classList.add('obtainedItemInfo');
+  for (const [key, value] of Object.entries(itemInfo)) {
+    const par = document.createElement('p');
+    par.textContent = `${key.toUpperCase()}: ${value}`;
+    if (key === 'rarity') par.style.textShadow = `4px 2px 4px ${rarityColor}`;
+    obtainedText.appendChild(par);
   }
 
+  const bottomSection = document.createElement('div');
+  bottomSection.classList.add('bottomSection');
+  bottomSection.appendChild(obtainedText);
+
+  const buttonSection = document.createElement('div');
+  buttonSection.classList.add('buttonSection');
+  buttonSection.appendChild(reopenButton);
+  buttonSection.appendChild(backButton);
+
+  
+
+  bottomSection.appendChild(buttonSection);
+  obtainedItem.appendChild(bottomSection);
+  caseOpenWindowHolder.appendChild(obtainedItem);
+
+  setTimeout(() => {
+    obtainedItem.style.borderRadius = getBorderRadius();
+    obtainedItem.style.borderColor = rarityColor;
+  }, 500);
+}
+
+async function openCase() {
+  try {
+    clearUpWindow();
+    moneyStatus -= keyPrice;
+    updateMoneyStatus();
+
+    const caseItemList = [...selectedCase.contains];
+    const knives = [...selectedCase.contains_rare];
+    const randomKnife = knives[getRandomInt(0, 8)];
+    randomKnife.odds = 0.26;
+
+    if (caseItemList.length < fixedItemCount) 
+      caseItemList.push(randomKnife);
+
+    distribution = createDistribution(caseItemList, 100, selectedCase);
+    console.log(distribution.length);
+
+    const itemWon = await determineItemWon(caseItemList);
+    displayWonItem(itemWon);
+  } catch (error) {
+    console.error('Error opening case:', error);
+  }
 }
 
 function updateMoneyStatus() {
@@ -343,7 +306,12 @@ function updateMoneyStatus() {
 
 
 function clearUpWindow() {
-  caseOpenWindow.lastChild.remove();
+  itemHolder.innerHTML = '';
+  const obtainedItem = document.querySelector('.obtainedItem');
+  console.log(obtainedItem);
+  if (obtainedItem && obtainedItem.classList.contains('obtainedItem')) {
+    caseOpenWindowHolder.removeChild(obtainedItem);
+  }
   rolledItems = [];
 }
 
@@ -393,10 +361,10 @@ async function callApi(urlPostfix) {
   // Change this for production build (it wont be using localhost)
   let baseUrl = 'http:localhost:8080';
 
-// if(process.env.NODE_ENV === 'production') {
-//     baseUrl = window.location.href;
-//     baseUrl = baseUrl.slice(0, -1);
-// }
+  // if(process.env.NODE_ENV === 'production') {
+  //     baseUrl = window.location.href;
+  //     baseUrl = baseUrl.slice(0, -1);
+  // }
 
   let url = baseUrl + '/' + urlPostfix;
 
@@ -419,14 +387,13 @@ async function callApi(urlPostfix) {
 }
 
 async function fetchCaseData() {
-  await callApi('data/cases')
-    .then((data) => {
-      cases = data;
-      console.log(cases);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  try {
+    const data = await callApi('data/cases');
+    return data;
+  } catch (error) {
+    console.error('Error fetching case data:', error);
+    throw error; // Propagate the error further if needed
+  }
 }
 
 
@@ -443,8 +410,9 @@ function getBorderRadius() {
     '10% / 50%',
     '10px 100px / 120px',
     '50% 20% / 10% 40%'
-  ]
+  ];
 
   return borderRadiusInstructions[getRandomInt(0, borderRadiusInstructions.length-1)];
 
 }
+
