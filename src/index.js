@@ -174,8 +174,8 @@ function initiateRollingProcess() {
   return new Promise((resolve) => {
     let translateX = getRandomInt(-5000, -6000);
     caseOpenWindowHolder.style.setProperty('--random-translateXb', `${translateX}px`);
-    translateX -= 352; // roller is positioned 352px from the start
-    const itemNumber = Math.floor((translateX / 152) * -1);
+    translateX -= 350; // roller is positioned 352px from the start
+    const itemNumber = Math.floor((translateX / 150) * -1);
 
     button.classList.add('animated', 'bounceOut');
     button.disabled = true;
