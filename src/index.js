@@ -4,9 +4,11 @@
 
 // Divide the code into functions
 
+// correct fadeIn animations positionings\
+// when to use webkit
 // Loading indicators
 // Writing text effect
-// Choose case field in obtained item screen
+
 
 import { getRandomInt, getRandomFloat, randomGenItem, createDistribution } from './math-utilities/mathUtils';
 import { getRarityOdds, getRarityColor, getRandomWear } from './crate-info-utilities/crateUtils';
@@ -174,7 +176,8 @@ function initiateRollingProcess() {
   return new Promise((resolve) => {
     let translateX = getRandomInt(-5000, -6000);
     caseOpenWindowHolder.style.setProperty('--random-translateXb', `${translateX}px`);
-    translateX -= 350; // roller is positioned 352px from the start
+    console.log(caseOpenWindowHolder.offsetWidth);
+    translateX -= caseOpenWindowHolder.offsetWidth / 2; // position of marker
     const itemNumber = Math.floor((translateX / 150) * -1);
 
     button.classList.add('animated', 'bounceOut');

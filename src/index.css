@@ -78,7 +78,7 @@ select {
 .case-open-window {
     position: relative;
     border: 2px solid black;
-    max-width: 43.75rem;
+    width: 50vw;
     min-height: 6.25rem;
     display: flex;
     justify-content: center;
@@ -121,9 +121,9 @@ select {
 
 .open-button {
     font-size: 1rem;
-    padding: 0.9rem;
+    padding: 0.5rem;
     min-height: 20px;
-    min-width: 8rem;
+    min-width: 7rem;
     border-radius: 5%;
     transition: border 1s ease-in-out;
     transition: background-color 1s ease-in-out;
@@ -223,8 +223,8 @@ select {
 
 .obtainedItem {
     /* This is added as a child element to case window holder */
+    font-size: 1rem;
     position: absolute;
-
     transform: translate(-50%, -50%);
     /* transform: translateY(200px); */
     min-width: 20rem;
@@ -258,7 +258,7 @@ select {
 .obtained-image {
     margin: 0 auto;
     position: relative;
-    /* width: 120%; */
+    size: 50vw;
     z-index: 4;
     transition: scale 1s ease-in-out;
 }
@@ -272,6 +272,29 @@ select {
     transition: scale 1s ease-in-out;
 }
 
+@media only screen and (max-width: 600px) {
+    .obtainedItem {
+        min-width: 15rem;
+        padding: 0.5rem;
+        border-width: 3px;
+    }
+    .obtained-image {
+        width: 80vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .obtainedItem {
+        min-width: 18rem;
+        padding: 0.8rem;
+        border-width: 4px;
+    }
+    .obtained-image {
+        width: 60vw;
+    }
+}
+
 
 .bottomSection {
     display: flex;
@@ -282,7 +305,9 @@ select {
 }
 
 .buttonSection {
+    padding: 1rem;
     display: flex;
+    gap: 1rem;
     justify-content: center;
     width: 100%;
 }
