@@ -2,51 +2,38 @@
 // Dont use the word case in the code
 /////////////////////////////////
 
-// when to use webkit
-// Writing text effect
-
-
 import { getRandomInt, getRandomFloat, randomGenItem, createDistribution } from './math-utilities/mathUtils';
 import { getRarityOdds, getRarityColor, getRandomWear } from './crate-info-utilities/crateUtils';
 import reportButton from './report-section'; // need to load report section, otherwise add in webpack entries
-import { createLoadingIndicator, showLoadingIndicatorInElement, hideLoadingIndicatorInElement } from './style-utilities/styleUtils';
-
-const button = document.querySelector('.open-button');
-
-let reopenButton;
-let backButton;
+import { fetchCaseData, callApi } from './service-utilities/serviceUtils';
+import { getBorderRadius } from './style-utilities/styleUtils';
 
 let statusText = document.querySelector('#status');
-
 let moneyStatus = 4.35;
 const keyPrice = 2.34;
 
 let itemHolder = document.querySelector('.item-holder');
-
 const caseOpenWindowHolder = document.querySelector('.case-open-window-holder');
-
 let caseImageSection = document.querySelector('.case-image-section');
+
+const caseLoadingIndicator = document.querySelector('#caseLoadingIndicator');
+const interactionContainer = document.querySelector('.interaction-container');
 
 let caseSelect = document.querySelector('select');
 
-const itemMarker = document.querySelector('.case-open-marker');
 
-const caseLoadingIndicator = document.querySelector('#caseLoadingIndicator');
-
-const interactionContainer = document.querySelector('.interaction-container');
-
+const button = document.querySelector('.open-button');
+let reopenButton;
+let backButton;
 
 
-/////////////////////////////////
-// Case variables
-/////////////////////////////////
 let cases = [];
+let selectedCase = {};
+let fixedItemCount = 18;
+
 const rollItemCount = 150;
 let rolledItems = [];
 let distribution = [];
-
-let selectedCase = {};
-let fixedItemCount = 18;
 
 let itemRarityCounts = {
   Consumer: 0,
@@ -56,14 +43,14 @@ let itemRarityCounts = {
   Classified: 0,
   Covert: 0,
   Contraband: 0
-}; // could be used to track what color items user obtained
+}; 
 
 
-initializeCaseLoad(); // catch of an error might be good
+initializeCaseLoad();
 
 async function initializeCaseLoad() {
   try {
-    cases = await fetchCaseData(); // add indicators while getting data
+    cases = await fetchCaseData();
 
     cases.map(async (crate, index) => {
       let option = document.createElement('option');
@@ -109,7 +96,6 @@ function initializeEventListeners() {
 
   reopenButton = button.cloneNode(true);
 
-  // keeping all other settings from other button
   reopenButton.textContent = `Open another (-${keyPrice}€)`;
   reopenButton.style.color = 'white';
 
@@ -117,7 +103,6 @@ function initializeEventListeners() {
 
   backButton = button.cloneNode(true);
 
-  // keeping all other settings from other button
   backButton.textContent = 'Back';
   backButton.style.color = 'white';
 
@@ -148,7 +133,6 @@ function createItemElement(item) {
 
   const img = document.createElement('img');
   if (item.image) {
-    // exceedingly_rare_item.png
     if (item.category === 'Knives' || item.category === 'Gloves')
       img.src = '../data/images/exceedingly_rare_item.png';
     else
@@ -267,8 +251,6 @@ async function displayWonItem(itemWon) {
   buttonSection.appendChild(reopenButton);
   buttonSection.appendChild(backButton);
 
-  
-
   bottomSection.appendChild(buttonSection);
   obtainedItem.appendChild(bottomSection);
   caseOpenWindowHolder.appendChild(obtainedItem);
@@ -325,12 +307,6 @@ function clearUpWindow() {
 }
 
 
-
-
-/////////////////////////////////
-// function for updating the money text with any color
-/////////////////////////////////
-
 function instantiateMoneyAmount(color) {
 
   statusText.style.color = color;
@@ -342,11 +318,9 @@ function instantiateMoneyAmount(color) {
 }
 
 
-
 function setSelectedCase(crate) {
   selectedCase = crate;
   fixedItemCount = crate.contains.length + 1;
-  // console.log('Items: ' + selectedCase.contains.length);
   if (!selectedCase.caseRarityCounts) {
     selectedCase.caseRarityCounts = getRarityOdds(selectedCase);
   }
@@ -361,67 +335,7 @@ function setSelectedCase(crate) {
 
 }
 
-/////////////////////////////////
-// Functions for fetching data from server
-/////////////////////////////////
-
-async function callApi(urlPostfix) {
-
-  // Change this for production build (it wont be using localhost)
-  let baseUrl = 'http:localhost:8080';
-
-  // if(process.env.NODE_ENV === 'production') {
-  //     baseUrl = window.location.href;
-  //     baseUrl = baseUrl.slice(0, -1);
-  // }
-
-  let url = baseUrl + '/' + urlPostfix;
-
-  console.log(url);
-  return fetch(url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then((data) => {
-      return data;
-    })
-    .catch((err) => {
-      console.error(err);
-      return null; 
-    });
-}
-
-async function fetchCaseData() {
-  try {
-    const data = await callApi('data/cases');
-    console.log(data);
-    return data;
-  } catch (error) {
-    console.error('Error fetching case data:', error);
-    throw error; // Propagate the error further if needed
-  }
-}
 
 
-//////////////////
-// Styling functions
-//////////////////
 
-function getBorderRadius() {
-  
-  const borderRadiusInstructions = [
-    '10px 20px 30px 40px',
-    '25% 10%',
-    '10% 20% 40% 20%;',
-    '10% / 50%',
-    '10px 100px / 120px',
-    '50% 20% / 10% 40%'
-  ];
-
-  return borderRadiusInstructions[getRandomInt(0, borderRadiusInstructions.length-1)];
-
-}
 
