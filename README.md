@@ -7,7 +7,7 @@ A simulator created to imitate CS2 case opening system, to track how much money 
 
 Application checks the obtained item's value and accordingly updates the state of the money spent so you can see the tendency.
 
-Real item data price from steam market (price overview API) is used to provide accurate representation of real world scenario together with SteamWebApi to itegrate case price into the spendings.
+Real item data price from steam market (price overview API) is used to provide accurate representation of real world scenario together with SteamWebApi to integrate case price into the spendings.
 
 # Installation and Setup
 
