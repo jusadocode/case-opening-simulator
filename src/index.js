@@ -2,11 +2,9 @@
 // Dont use the word case in the code
 /////////////////////////////////
 
-// Divide the code into functions
-
-// correct fadeIn animations positionings\
-// when to use webkit
 // Loading indicators
+// correct fadeIn animations positionings
+// when to use webkit
 // Writing text effect
 
 
@@ -392,6 +390,7 @@ async function callApi(urlPostfix) {
 async function fetchCaseData() {
   try {
     const data = await callApi('data/cases');
+    console.log(data);
     return data;
   } catch (error) {
     console.error('Error fetching case data:', error);

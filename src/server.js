@@ -24,6 +24,7 @@ const transporter = nodemailer.createTransport({
 // should save requests
 
 let itemPriceMap = new Map();
+let casePriceMap = new Map();
 
 // map1.set('a', 1);
 // map1.set('b', 2);
@@ -98,8 +99,12 @@ app.get('/data/price', (req, res) => {
       const data = convertToSkinObj(response.data);
       console.log(data);
       res.json(data);
-      itemPriceMap.set(itemId, data);
-      console.log('Item added to map: ', itemId, queryParams.weapon, queryParams.skin);
+
+      if(data.lowest_price) {
+        itemPriceMap.set(itemId, data);
+        console.log('Item added to map: ', itemId, queryParams.weapon, queryParams.skin);
+      }
+      
     })
     .catch((error) => {
       console.log(error);
@@ -107,8 +112,17 @@ app.get('/data/price', (req, res) => {
     });
 });
 
-app.get('/data/cases', (req, res) => {
-  res.json(caseData);
+app.get('/data/cases', async (req, res) => {
+
+  fetchCasePrices()
+    .then((res) => {
+      console.log('successfully fetched prices');
+      res.json(caseData);
+    })
+    .catch((err) => {
+      console.log(`failed to get case prices ${err}, continuing`);
+      res.json(caseData);
+    });  
 });
 
 app.post('/send-email', async (req, res) => {
@@ -146,19 +160,29 @@ app.listen(PORT, () => {
 });
 
 
-function fetchCasePrices() {
-  caseData.map(async (crate, index) => {
-    if (index === 19)
+async function fetchCasePrices() {
+
+  let caseLink = `https://www.steamwebapi.com/steam/api/cs/containers?key=${process.env.KEYONE}&type=case`;
+  //let caseLink = `https://www.steamwebapi.com/steam/api/item?key=92P0U7QGTFIKNRDI&market_hash_name=Falchion%20case&game=csgo`
+  //let caseLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${crate.name}&currency=3`;
+  
+  try {
+    if(casePriceMap.size > 0)
       return;
-    let caseLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${crate.name}&currency=3`;
-    axios.request(caseLink)
-      .then((data) => {
-        crate.price = data.lowest_price;
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  });
+
+    const response = await axios.get(caseLink);
+  
+    response.data.forEach(fetchedCrate => {
+      casePriceMap.set(fetchedCrate.casename, fetchedCrate.pricelatest);
+    }); 
+
+    caseData.forEach(crate => {
+      crate.price = casePriceMap.get(crate.name);
+    });
+  }
+  catch(error) {
+    console.log(error);
+  }
 }
 
 function convertToSkinObj(data) {
