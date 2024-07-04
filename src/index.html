@@ -32,6 +32,11 @@
             <textarea id="report" name="report" ></textarea>
 
             <button id="submitButton" type="submit">Submit</button>
+
+            <div id="submitLoadingIndicator" class="lds-ellipsis" style="display:none">
+                <div></div><div></div><div></div><div></div>
+            </div>
+            
             <label id="statusLabel" for="name"></label>
         </form>
         <button class="exitButton">X</button>
@@ -44,7 +49,10 @@
             <p>Find out if the urge was worth pursuing</p>
         </div>
 
-        <div class="interaction-container">
+        <div id="caseLoadingIndicator" class="lds-ellipsis" style="display:block">
+            <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="interaction-container" style="display: none;">
             
             <div class="case-select-container">
                 <p>Select case:</p>

@@ -7,6 +7,7 @@
 
 const reportButton = document.querySelector('.report-button');
 const reportDialog = document.querySelector('#report-dialog');
+const submitloadingIndicator = document.querySelector('#submitLoadingIndicator');
 
 let nameInput = document.querySelector('#name');
 let emailInput = document.querySelector('#e-mail');
@@ -18,7 +19,7 @@ let statusLabel = document.querySelector('#statusLabel');
 reportButton.addEventListener('click', () => {
   // Show the dialog
   reportDialog.classList.add('animated');
-  reportDialog.classList.add('fadeIn');
+  reportDialog.classList.add('fadeInReport');
   reportDialog.showModal();
   initializeInputs();
   
@@ -46,7 +47,7 @@ async function handleSubmit(event) {
   if (!ideasVerification()) isValid = false;
 
   if (isValid) {
-    // submit information
+    
     const reportObj = {
       name: nameInput.value,
       email: emailInput.value,
@@ -56,7 +57,7 @@ async function handleSubmit(event) {
     let baseUrl = 'http:localhost:8080';
     try {
 
-      submitButton.disabled = true;
+      enableIndicator();
       
       const response = await fetch(`${baseUrl}/send-email`, {
         method: 'POST',
@@ -77,7 +78,7 @@ async function handleSubmit(event) {
       return;
     }
     finally {
-      submitButton.disabled = false;
+      disableIndicator();
     }
 
 
@@ -147,6 +148,17 @@ function resetInputs() {
   emailInput.value = '';
   ideasInput.value = '';
   statusLabel.textContent = '';
+}
+
+function enableIndicator() {
+  submitButton.disabled = true;
+  submitButton.style.display = 'none';
+  submitloadingIndicator.style.display = 'block';
+}
+function disableIndicator() {
+  submitButton.disabled = false;
+  submitButton.style.display = 'block';
+  submitloadingIndicator.style.display = 'none';
 }
 
 

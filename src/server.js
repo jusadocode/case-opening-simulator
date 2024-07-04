@@ -20,15 +20,9 @@ const transporter = nodemailer.createTransport({
     pass: process.env.EMAIL_PASS
   },
 });
-// hashMap for reoccuring item price requests
-// should save requests
 
 let itemPriceMap = new Map();
 let casePriceMap = new Map();
-
-// map1.set('a', 1);
-// map1.set('b', 2);
-// map1.set('c', 3);
 
 const app = express();
 
@@ -132,8 +126,6 @@ app.post('/send-email', async (req, res) => {
 
   console.log(req.body);
   const { name, email, text } = req.body;
-
-
 
   const mailOptions = {
     from: process.env.EMAIL_USER, // sender address

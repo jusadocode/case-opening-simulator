@@ -2,8 +2,6 @@
 // Dont use the word case in the code
 /////////////////////////////////
 
-// Loading indicators
-// correct fadeIn animations positionings
 // when to use webkit
 // Writing text effect
 
@@ -33,7 +31,7 @@ let caseSelect = document.querySelector('select');
 
 const itemMarker = document.querySelector('.case-open-marker');
 
-const caseLoadingIndicator = document.querySelector('.loadingIndicator');
+const caseLoadingIndicator = document.querySelector('#caseLoadingIndicator');
 
 const interactionContainer = document.querySelector('.interaction-container');
 
@@ -70,7 +68,7 @@ async function initializeCaseLoad() {
     cases.map(async (crate, index) => {
       let option = document.createElement('option');
       option.value = index;
-      option.textContent = crate.name;
+      option.textContent = crate.price ? `${crate.name} (${crate.price}€)` : crate.name;
       caseSelect.appendChild(option);
     });
 
@@ -85,6 +83,10 @@ async function initializeCaseLoad() {
   catch {
     console.log('Error loading cases');
     interactionContainer.innerHTML = 'There was a problem getting cases, refresh the page or try again at a later time';
+  }
+  finally {
+    caseLoadingIndicator.style.display = 'none';
+    interactionContainer.style.display = 'flex';
   }
 
 }
@@ -280,7 +282,13 @@ async function displayWonItem(itemWon) {
 async function openCase() {
   try {
     clearUpWindow();
-    moneyStatus -= keyPrice;
+
+    let casePrice = 0;
+    if(selectedCase.price) {
+      casePrice = parseFloat(selectedCase.price);
+    }
+    
+    moneyStatus -= keyPrice + casePrice;
     updateMoneyStatus();
 
     const caseItemList = [...selectedCase.contains];
@@ -382,8 +390,7 @@ async function callApi(urlPostfix) {
     })
     .catch((err) => {
       console.error(err);
-      // Return an error value or handle the error as needed
-      return null; // You can choose an appropriate error value here
+      return null; 
     });
 }
 
