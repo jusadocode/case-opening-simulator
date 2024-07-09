@@ -68,7 +68,6 @@ async function initializeCaseLoad() {
     initializeEventListeners();
   }
   catch {
-    console.log('Error loading cases');
     interactionContainer.innerHTML = 'There was a problem getting cases, refresh the page or try again at a later time';
   }
   finally {
@@ -85,7 +84,6 @@ function handleOpenButtonClick() {
 
 function handleBackButtonClick() {
   const lastChild = caseOpenWindowHolder.lastChild;
-  console.log(lastChild);
   if (lastChild && lastChild.classList.contains('obtainedItem')) {
     caseOpenWindowHolder.removeChild(lastChild);
   }
@@ -124,7 +122,6 @@ function displayInitialItems() {
 
   }
 
-  console.log(itemHolder.childElementCount);
 }
 
 function createItemElement(item) {
@@ -160,7 +157,6 @@ function initiateRollingProcess() {
   return new Promise((resolve) => {
     let translateX = getRandomInt(-5000, -6000);
     caseOpenWindowHolder.style.setProperty('--random-translateXb', `${translateX}px`);
-    console.log(caseOpenWindowHolder.offsetWidth);
     translateX -= caseOpenWindowHolder.offsetWidth / 2; // position of marker
     const itemNumber = Math.floor((translateX / 150) * -1);
 
@@ -187,7 +183,6 @@ async function determineItemWon(items) {
     newItem.classList.add('animatedItem', 'moveLeft');
     itemHolder.appendChild(newItem);
   }
-  console.log(itemHolder.childElementCount);
 
   const itemNumber = await initiateRollingProcess();
 
@@ -282,7 +277,6 @@ async function openCase() {
       caseItemList.push(randomKnife);
 
     distribution = createDistribution(caseItemList, 100, selectedCase);
-    console.log(distribution.length);
 
     const itemWon = await determineItemWon(caseItemList);
     await displayWonItem(itemWon);
@@ -299,7 +293,6 @@ function updateMoneyStatus() {
 function clearUpWindow() {
   itemHolder.innerHTML = '';
   const obtainedItem = document.querySelector('.obtainedItem');
-  console.log(obtainedItem);
   if (obtainedItem && obtainedItem.classList.contains('obtainedItem')) {
     caseOpenWindowHolder.removeChild(obtainedItem);
   }
