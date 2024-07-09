@@ -5,6 +5,8 @@
 import { getRandomInt, getRandomFloat, randomGenItem, createDistribution } from './math-utilities/mathUtils';
 import { getRarityOdds, getRarityColor, getRandomWear } from './crate-info-utilities/crateUtils';
 import reportButton from './report-section'; // need to load report section, otherwise add in webpack entries
+import './index.css';
+import './loadingIndicator.css';
 import { fetchCaseData, callApi } from './service-utilities/serviceUtils';
 import { getBorderRadius } from './style-utilities/styleUtils';
 
