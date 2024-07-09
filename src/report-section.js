@@ -54,7 +54,7 @@ async function handleSubmit(event) {
       text: ideasInput.value
     };
 
-    let baseUrl = 'http:localhost:8080';
+    let baseUrl = '';
   
     if(process.env.NODE_ENV === 'production') {
       

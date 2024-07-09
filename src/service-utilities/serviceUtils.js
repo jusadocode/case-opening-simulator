@@ -1,7 +1,7 @@
 async function callApi(urlPostfix) {
 
   // Change this for production build (it wont be using localhost)
-  let baseUrl = 'http:localhost:8080';
+  let baseUrl = '';
   
   if(process.env.NODE_ENV === 'production') {
     

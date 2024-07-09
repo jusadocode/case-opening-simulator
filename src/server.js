@@ -29,10 +29,10 @@ const app = express();
 
 
 caseData.sort((caseA, caseB) => (caseA.first_sale_date < caseB.first_sale_date ? 1 : -1));
-
+app.use(express.static(path.join(__dirname, '..', 'dist')));
 if (process.env.NODE_ENV === 'production') {
   PORT = process.env.PORT;
-  app.use(express.static(path.join(__dirname, '..', 'dist')));
+  
 }
 
 app.use(cors());

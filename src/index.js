@@ -323,12 +323,11 @@ function setSelectedCase(crate) {
 
   let caseImage = document.createElement('img');
 
-  caseImage.src = selectedCase.image;
-  if (caseImageSection.hasChildNodes()) {
-    caseImageSection.removeChild(caseImageSection.lastChild);
-    caseImageSection.appendChild(caseImage);
-  }
+  const caseImageSource = selectedCase.image;
+  caseImage.src = caseImageSource;
 
+  caseImageSection.innerHTML = '';
+  caseImageSection.appendChild(caseImage);
 }
 
 
