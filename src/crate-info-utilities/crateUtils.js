@@ -47,7 +47,10 @@ function getRarityColor(item) {
 
 
 function getRandomWear(item) {
-  return item.wears[getRandomInt(0, item.wears.length-1)];
+  if(item.wears) {
+    return item.wears[getRandomInt(0, item.wears.length-1)];
+  }
+  return '';
 }
 
 export {getRarityColor, getRarityOdds, getRandomWear};

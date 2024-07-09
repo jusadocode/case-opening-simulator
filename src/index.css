@@ -63,7 +63,38 @@ select {
 
 .footer {
     padding: 1rem;
+    border: 2px solid black;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+
+.main-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.coffee-link {
+}
+
+.coffee-link img{
+    width: 7rem; /* Adjust the size as needed */
+    height: auto;
+}
+
+
 
 
 .case-open-window-holder {

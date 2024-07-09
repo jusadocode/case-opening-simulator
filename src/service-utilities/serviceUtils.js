@@ -3,12 +3,14 @@ async function callApi(urlPostfix) {
   // Change this for production build (it wont be using localhost)
   let baseUrl = 'http:localhost:8080';
   
-  // if(process.env.NODE_ENV === 'production') {
-  //     baseUrl = window.location.href;
-  //     baseUrl = baseUrl.slice(0, -1);
-  // }
+  if(process.env.NODE_ENV === 'production') {
+    
+    //baseUrl = 'http:localhost:5500'; Local prod test
+    baseUrl = window.location.href;
+    baseUrl = baseUrl.slice(0, -1);
+  }
   
-  let url = baseUrl + '/' + urlPostfix;
+  let url = `${baseUrl}/${urlPostfix}`;
   
   console.log(url);
   return fetch(url)

@@ -285,7 +285,7 @@ async function openCase() {
     console.log(distribution.length);
 
     const itemWon = await determineItemWon(caseItemList);
-    displayWonItem(itemWon);
+    await displayWonItem(itemWon);
   } catch (error) {
     console.error('Error opening case:', error);
   }
