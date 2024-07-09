@@ -12,7 +12,6 @@ async function callApi(urlPostfix) {
   
   let url = `${baseUrl}/${urlPostfix}`;
   
-  console.log(url);
   return fetch(url)
     .then((response) => {
       if (!response.ok) {
@@ -32,7 +31,6 @@ async function callApi(urlPostfix) {
 async function fetchCaseData() {
   try {
     const data = await callApi('data/cases');
-    console.log(data);
     return data;
   } catch (error) {
     console.error('Error fetching case data:', error);

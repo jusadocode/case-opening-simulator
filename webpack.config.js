@@ -1,9 +1,10 @@
 const path = require('path');
 const dotenv = require('dotenv');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+const miniCssExtractPlugin = require('mini-css-extract-plugin');
 
 dotenv.config();
 
-const htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   // The entry point file described above
   entry: ['./src/index.js'],
@@ -16,7 +17,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [miniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
@@ -29,6 +30,9 @@ module.exports = {
     new htmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
-      inject: 'body'
+      favicon: './src/key.ico',
+    }),
+    new miniCssExtractPlugin({
+      filename: 'styles.css',
     }),
   ]};

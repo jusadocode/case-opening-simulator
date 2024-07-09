@@ -133,7 +133,8 @@ function createItemElement(item) {
   const img = document.createElement('img');
   if (item.image) {
     if (item.category === 'Knives' || item.category === 'Gloves')
-      img.src = '../data/images/exceedingly_rare_item.png';
+      img.classList.add('exceedinglyRare');
+      // webpack fix
     else
       img.src = item.image;
   }

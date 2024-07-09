@@ -5,6 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
 const caseData = require('../data/final_join.json');
+const path = require('path');
 
 const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');
@@ -31,11 +32,12 @@ caseData.sort((caseA, caseB) => (caseA.first_sale_date < caseB.first_sale_date ?
 
 if (process.env.NODE_ENV === 'production') {
   PORT = process.env.PORT;
-  app.use(express.static(__dirname));
+  app.use(express.static(path.join(__dirname, '..', 'dist')));
 }
 
 app.use(cors());
 app.use(express.json());
+
 
 app.get('/data/price', (req, res) => {
 
@@ -113,7 +115,6 @@ app.post('/send-email', async (req, res) => {
   // res is for responding to requests
   // req is the incoming request with parameters
 
-  console.log(req.body);
   const { name, email, text } = req.body;
 
   const mailOptions = {

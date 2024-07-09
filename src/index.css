@@ -280,6 +280,10 @@ select {
     /* font-weight: bold; */
 }
 
+.exceedinglyRare {
+    content:url('../data/images/exceedingly_rare_item.png');
+}
+
 .obtainedItem:hover {
     scale: 1.05;
 }

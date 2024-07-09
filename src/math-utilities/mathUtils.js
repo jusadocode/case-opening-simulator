@@ -14,10 +14,8 @@ function randomGenItem(array, distribution) {
 function createDistribution(items, size, selectedCase) {
   const distribution = [];
   const weights = calculateItemWeights(items, selectedCase);
-  console.log(weights);
   
   const sum = weights.reduce((accum, currVal) => accum + currVal);
-  console.log(sum);
   const quant = size / sum;
   for (let i = 0; i < weights.length; ++i) {
     const limit = quant * weights[i];
