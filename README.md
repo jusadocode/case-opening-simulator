@@ -9,6 +9,8 @@ Application checks the obtained item's value and accordingly updates the state o
 
 Real item data price from steam market (price overview API) is used to provide accurate representation of real world scenario together with SteamWebApi to integrate case price into the spendings.
 
+**You can try out the deployed application here:** http://www.shouldiopen.xyz/
+
 # Installation and Setup
 
 Coming soon
