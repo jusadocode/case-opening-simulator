@@ -24,7 +24,8 @@ Click the "Open" button to start the case opening process.
 
 The simulator will distribute each item's chances of being obtained based on its rarity in the container and publicly available data and tests on chances to open specific rarity items.
 
-After a rolling animation, a random item from the opening process will be provided.
+After the rolling animation, a random item from the opening process will be provided. 
+The total amount of money spent on a single open is calculated by taking into account the recent price of the unboxed item and the price of the item's collection container.
 
 # Backend
 To minimize API requests for skin prices and improve performance, the server utilizes caching (used API's highly limit the requests per minute).
