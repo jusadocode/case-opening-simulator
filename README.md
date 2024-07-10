@@ -3,7 +3,7 @@
 
 # Introduction
 
-A simulator created to imitate CS2 case opening system, to track how much money would have been spent if the person chose to proceed with buying keys to open cases.
+A simulator created to imitate CS2 case opening system, to track how much money would have been spent if the person chose to proceed with buying keys in game to open cases.
 
 Application checks the obtained item's value and accordingly updates the state of the money spent so you can see the tendency.
 
@@ -19,13 +19,16 @@ Once the application is set up and running, follow these steps to use it:
 Click the "Open" button to start the case opening process.
 
 (Projects UI is a work in progress)
+
 ![case-opener](https://github.com/jusadocode/case-opening-simulator/assets/77744027/40a8ee2a-2ea1-4666-8e01-ee22a5846ccd)
 
-
-The simulator will distribute each item's chances of being obtained based on its rarity in the container.
+The simulator will distribute each item's chances of being obtained based on its rarity in the container and publicly available data and tests on chances to open specific rarity items.
 
 After a rolling animation, a random item from the opening process will be provided.
 
+# Backend
+To minimize API requests for skin prices and improve performance, the server utilizes caching (used API's highly limit the requests per minute).
+Two steam market api services are used together to make the data fetching process as smooth as possible for varying user traffic.
 
-To minimize API requests and improve performance, the server utilizes caching (used API highly limits the requests per minute).
+
 
