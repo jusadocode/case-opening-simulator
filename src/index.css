@@ -319,6 +319,9 @@ select {
     .obtained-image {
         width: 80vw;
     }
+    .case-open-window {
+        width: 80vw;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -385,6 +388,8 @@ select {
 
 #status {
     transition: scale 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 
 .highlight-amount {
