@@ -29,6 +29,7 @@ The total amount of money spent on a single open is calculated by taking into ac
 
 # Backend
 To minimize API requests for skin prices and improve performance, the server utilizes caching (used API's highly limit the requests per minute).
+
 Two steam market api services are used together to make the data fetching process as smooth as possible for varying user traffic.
 
 
