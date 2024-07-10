@@ -19,7 +19,8 @@ Once the application is set up and running, follow these steps to use it:
 Click the "Open" button to start the case opening process.
 
 (Projects UI is a work in progress)
-![caseOpeningSim](https://github.com/jusadocode/case-opening-simulator/assets/77744027/8553541f-069b-4d45-8a50-d55f5c8c71ee)
+![case-opener](https://github.com/jusadocode/case-opening-simulator/assets/77744027/40a8ee2a-2ea1-4666-8e01-ee22a5846ccd)
+
 
 The simulator will distribute each item's chances of being obtained based on its rarity in the container.
 
