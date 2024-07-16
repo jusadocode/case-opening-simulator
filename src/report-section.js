@@ -65,6 +65,7 @@ async function handleSubmit(event) {
     try {
 
       enableIndicator();
+      disableButton();
       
       const response = await fetch(`${baseUrl}/send-email`, {
         method: 'POST',
@@ -79,10 +80,11 @@ async function handleSubmit(event) {
         statusLabel.textContent = 'Thank you for your feedback!';
       } else {
         statusLabel.textContent = 'Failed to send feedback';
+        enableButton();
       }
     } catch (error) {
       statusLabel.textContent = `Error: ${error.message}`;
-      return;
+      enableButton();
     }
     finally {
       disableIndicator();
@@ -155,17 +157,23 @@ function resetInputs() {
   emailInput.value = '';
   ideasInput.value = '';
   statusLabel.textContent = '';
+  enableButton();
 }
 
 function enableIndicator() {
-  submitButton.disabled = true;
-  submitButton.style.display = 'none';
   submitloadingIndicator.style.display = 'block';
 }
 function disableIndicator() {
+  submitloadingIndicator.style.display = 'none';
+}
+
+function disableButton() {
+  submitButton.disabled = true;
+  submitButton.style.display = 'none';
+}
+function enableButton() {
   submitButton.disabled = false;
   submitButton.style.display = 'block';
-  submitloadingIndicator.style.display = 'none';
 }
 
 
