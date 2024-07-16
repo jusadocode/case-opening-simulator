@@ -1,6 +1,6 @@
 
-const cases = []
-const allSkins = []
+const cases = [];
+const allSkins = [];
 
 
 // cases.forEach(caseItem => {
@@ -57,16 +57,16 @@ let joinedInfo = [];
 // });
 
 cases.forEach(crate => {
-    let caseKnives = crate.contains_rare; // Get the knives within the case
-    caseKnives.forEach((caseKnife, index) => { // Loop through each skin in the case
-        allSkins.forEach(skin => {
-            if (caseKnife.id === skin.id) {
-                caseKnives[index] = skin;
-                caseKnives[index].odds = 0.26;
-            } // Update the specific skin in the caseSkins array
-        });
+  let caseKnives = crate.contains_rare; // Get the knives within the case
+  caseKnives.forEach((caseKnife, index) => { // Loop through each skin in the case
+    allSkins.forEach(skin => {
+      if (caseKnife.id === skin.id) {
+        caseKnives[index] = skin;
+        caseKnives[index].odds = 0.26;
+      } // Update the specific skin in the caseSkins array
     });
-    joinedInfo.push(crate); // Push the updated case to the joinedInfo array
+  });
+  joinedInfo.push(crate); // Push the updated case to the joinedInfo array
 });
 
 

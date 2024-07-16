@@ -1,16 +1,17 @@
 async function callApi(urlPostfix) {
 
   // Change this for production build (it wont be using localhost)
-  let baseUrl = 'http:localhost:8080';
+  let baseUrl = '';
   
-  // if(process.env.NODE_ENV === 'production') {
-  //     baseUrl = window.location.href;
-  //     baseUrl = baseUrl.slice(0, -1);
-  // }
+  if(process.env.NODE_ENV === 'production') {
+    
+    //baseUrl = 'http:localhost:5500'; Local prod test
+    baseUrl = window.location.href;
+    baseUrl = baseUrl.slice(0, -1);
+  }
   
-  let url = baseUrl + '/' + urlPostfix;
+  let url = `${baseUrl}/${urlPostfix}`;
   
-  console.log(url);
   return fetch(url)
     .then((response) => {
       if (!response.ok) {
@@ -30,7 +31,6 @@ async function callApi(urlPostfix) {
 async function fetchCaseData() {
   try {
     const data = await callApi('data/cases');
-    console.log(data);
     return data;
   } catch (error) {
     console.error('Error fetching case data:', error);

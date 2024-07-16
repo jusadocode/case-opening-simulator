@@ -2,11 +2,13 @@
 // Dont use the word case in the code
 /////////////////////////////////
 
-import { getRandomInt, getRandomFloat, randomGenItem, createDistribution } from './math-utilities/mathUtils';
-import { getRarityOdds, getRarityColor, getRandomWear } from './crate-info-utilities/crateUtils';
+import { getRandomInt, getRandomFloat, randomGenItem, createDistribution } from './utilities/mathUtils';
+import { getRarityOdds, getRarityColor, getRandomWear } from './utilities/crateUtils';
 import reportButton from './report-section'; // need to load report section, otherwise add in webpack entries
-import { fetchCaseData, callApi } from './service-utilities/serviceUtils';
-import { getBorderRadius } from './style-utilities/styleUtils';
+import './index.css';
+import './loadingIndicator.css';
+import { fetchCaseData, callApi } from './services/services';
+import { getBorderRadius } from './utilities/styleUtils';
 
 let statusText = document.querySelector('#status');
 let moneyStatus = 4.35;
@@ -68,7 +70,6 @@ async function initializeCaseLoad() {
     initializeEventListeners();
   }
   catch {
-    console.log('Error loading cases');
     interactionContainer.innerHTML = 'There was a problem getting cases, refresh the page or try again at a later time';
   }
   finally {
@@ -85,7 +86,6 @@ function handleOpenButtonClick() {
 
 function handleBackButtonClick() {
   const lastChild = caseOpenWindowHolder.lastChild;
-  console.log(lastChild);
   if (lastChild && lastChild.classList.contains('obtainedItem')) {
     caseOpenWindowHolder.removeChild(lastChild);
   }
@@ -124,7 +124,6 @@ function displayInitialItems() {
 
   }
 
-  console.log(itemHolder.childElementCount);
 }
 
 function createItemElement(item) {
@@ -134,12 +133,13 @@ function createItemElement(item) {
   const img = document.createElement('img');
   if (item.image) {
     if (item.category === 'Knives' || item.category === 'Gloves')
-      img.src = '../data/images/exceedingly_rare_item.png';
+      img.classList.add('exceedinglyRare');
+      // webpack fix
     else
       img.src = item.image;
   }
   else
-    img.src = '../data/images/xray.png';
+    img.src = './assets/images/xray.png';
 
   img.classList.add('image');
 
@@ -160,7 +160,6 @@ function initiateRollingProcess() {
   return new Promise((resolve) => {
     let translateX = getRandomInt(-5000, -6000);
     caseOpenWindowHolder.style.setProperty('--random-translateXb', `${translateX}px`);
-    console.log(caseOpenWindowHolder.offsetWidth);
     translateX -= caseOpenWindowHolder.offsetWidth / 2; // position of marker
     const itemNumber = Math.floor((translateX / 150) * -1);
 
@@ -187,7 +186,6 @@ async function determineItemWon(items) {
     newItem.classList.add('animatedItem', 'moveLeft');
     itemHolder.appendChild(newItem);
   }
-  console.log(itemHolder.childElementCount);
 
   const itemNumber = await initiateRollingProcess();
 
@@ -219,7 +217,7 @@ async function displayWonItem(itemWon) {
   obtainedItem.classList.add('obtainedItem');
 
   const img = document.createElement('img');
-  img.src = itemWon.image || '../data/images/xray.png';
+  img.src = itemWon.image || './assets/images/xray.png';
   img.classList.add('obtained-image');
   obtainedItem.appendChild(img);
 
@@ -282,10 +280,9 @@ async function openCase() {
       caseItemList.push(randomKnife);
 
     distribution = createDistribution(caseItemList, 100, selectedCase);
-    console.log(distribution.length);
 
     const itemWon = await determineItemWon(caseItemList);
-    displayWonItem(itemWon);
+    await displayWonItem(itemWon);
   } catch (error) {
     console.error('Error opening case:', error);
   }
@@ -299,7 +296,6 @@ function updateMoneyStatus() {
 function clearUpWindow() {
   itemHolder.innerHTML = '';
   const obtainedItem = document.querySelector('.obtainedItem');
-  console.log(obtainedItem);
   if (obtainedItem && obtainedItem.classList.contains('obtainedItem')) {
     caseOpenWindowHolder.removeChild(obtainedItem);
   }
@@ -327,12 +323,11 @@ function setSelectedCase(crate) {
 
   let caseImage = document.createElement('img');
 
-  caseImage.src = selectedCase.image;
-  if (caseImageSection.hasChildNodes()) {
-    caseImageSection.removeChild(caseImageSection.lastChild);
-    caseImageSection.appendChild(caseImage);
-  }
+  const caseImageSource = selectedCase.image;
+  caseImage.src = caseImageSource;
 
+  caseImageSection.innerHTML = '';
+  caseImageSection.appendChild(caseImage);
 }
 
 

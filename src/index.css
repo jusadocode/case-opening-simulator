@@ -57,13 +57,45 @@ select {
     justify-content: space-between;
     font-weight: bold;
     gap: 1rem;
+    
 }
 
 
 
 .footer {
     padding: 1rem;
+    border: 2px solid black;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+
+.main-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.coffee-link {
+}
+
+.coffee-link img{
+    width: 7rem; /* Adjust the size as needed */
+    height: auto;
+}
+
+
 
 
 .case-open-window-holder {
@@ -194,6 +226,11 @@ select {
     width: 12rem;
 }
 
+#reportForm #statusLabel
+{
+    margin: 1rem;
+}
+
 #reportForm>textarea
 {
     min-height: 5rem;
@@ -239,13 +276,17 @@ select {
     justify-content: center;
     align-items: center;
     border: 5px solid rgb(0, 0, 0);
-    background-image: url('../data/images/cs2dust2.jpg');
+    background-image: url('./assets/images/cs2dust2.jpg');
     padding: 1rem;
     background-position: center;
     background-size: cover;
     transition: scale 0.3s ease-in-out, border-radius 0.5s ease-in-out;
 
     /* font-weight: bold; */
+}
+
+.exceedinglyRare {
+    content:url('./assets/images/exceedingly_rare_item.png');
 }
 
 .obtainedItem:hover {
@@ -281,6 +322,9 @@ select {
         border-width: 3px;
     }
     .obtained-image {
+        width: 80vw;
+    }
+    .case-open-window {
         width: 80vw;
     }
 }
@@ -349,6 +393,8 @@ select {
 
 #status {
     transition: scale 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 
 .highlight-amount {

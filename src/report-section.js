@@ -1,5 +1,3 @@
-// Add functionality to send email from form with env variables
-
 
 //// CAUTION RELATED TO CUSTOM VALIDATION 
 // Mixing default html validation with custom provides difficult results
@@ -54,10 +52,18 @@ async function handleSubmit(event) {
       text: ideasInput.value
     };
 
-    let baseUrl = 'http:localhost:8080';
+    let baseUrl = '';
+  
+    if(process.env.NODE_ENV === 'production') {
+      
+      //baseUrl = 'http:localhost:5500'; Local prod test
+      baseUrl = window.location.href;
+      baseUrl = baseUrl.slice(0, -1);
+    }
     try {
 
       enableIndicator();
+      disableButton();
       
       const response = await fetch(`${baseUrl}/send-email`, {
         method: 'POST',
@@ -72,9 +78,12 @@ async function handleSubmit(event) {
         statusLabel.textContent = 'Thank you for your feedback!';
       } else {
         statusLabel.textContent = 'Failed to send feedback';
+        enableButton();
+        return;
       }
     } catch (error) {
       statusLabel.textContent = `Error: ${error.message}`;
+      enableButton();
       return;
     }
     finally {
@@ -108,7 +117,6 @@ function emailVerification() {
 
   // If chosen to write email - write it properly
   if (emailInput.value.trim() === '') {
-    //emailInput.setCustomValidity('Email cannot be empty');
     return true;
   }
   else if (emailInput.validity.typeMismatch) {
@@ -148,17 +156,23 @@ function resetInputs() {
   emailInput.value = '';
   ideasInput.value = '';
   statusLabel.textContent = '';
+  enableButton();
 }
 
 function enableIndicator() {
-  submitButton.disabled = true;
-  submitButton.style.display = 'none';
   submitloadingIndicator.style.display = 'block';
 }
 function disableIndicator() {
+  submitloadingIndicator.style.display = 'none';
+}
+
+function disableButton() {
+  submitButton.disabled = true;
+  submitButton.style.display = 'none';
+}
+function enableButton() {
   submitButton.disabled = false;
   submitButton.style.display = 'block';
-  submitloadingIndicator.style.display = 'none';
 }
 
 
