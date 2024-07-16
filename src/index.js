@@ -2,13 +2,13 @@
 // Dont use the word case in the code
 /////////////////////////////////
 
-import { getRandomInt, getRandomFloat, randomGenItem, createDistribution } from './math-utilities/mathUtils';
-import { getRarityOdds, getRarityColor, getRandomWear } from './crate-info-utilities/crateUtils';
+import { getRandomInt, getRandomFloat, randomGenItem, createDistribution } from './utilities/mathUtils';
+import { getRarityOdds, getRarityColor, getRandomWear } from './utilities/crateUtils';
 import reportButton from './report-section'; // need to load report section, otherwise add in webpack entries
 import './index.css';
 import './loadingIndicator.css';
-import { fetchCaseData, callApi } from './service-utilities/serviceUtils';
-import { getBorderRadius } from './style-utilities/styleUtils';
+import { fetchCaseData, callApi } from './services/services';
+import { getBorderRadius } from './utilities/styleUtils';
 
 let statusText = document.querySelector('#status');
 let moneyStatus = 4.35;
@@ -139,7 +139,7 @@ function createItemElement(item) {
       img.src = item.image;
   }
   else
-    img.src = '../data/images/xray.png';
+    img.src = './assets/images/xray.png';
 
   img.classList.add('image');
 
@@ -217,7 +217,7 @@ async function displayWonItem(itemWon) {
   obtainedItem.classList.add('obtainedItem');
 
   const img = document.createElement('img');
-  img.src = itemWon.image || '../data/images/xray.png';
+  img.src = itemWon.image || './assets/images/xray.png';
   img.classList.add('obtained-image');
   obtainedItem.appendChild(img);
 

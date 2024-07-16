@@ -1,5 +1,3 @@
-// Add functionality to send email from form with env variables
-
 
 //// CAUTION RELATED TO CUSTOM VALIDATION 
 // Mixing default html validation with custom provides difficult results
@@ -119,7 +117,6 @@ function emailVerification() {
 
   // If chosen to write email - write it properly
   if (emailInput.value.trim() === '') {
-    //emailInput.setCustomValidity('Email cannot be empty');
     return true;
   }
   else if (emailInput.validity.typeMismatch) {

@@ -276,7 +276,7 @@ select {
     justify-content: center;
     align-items: center;
     border: 5px solid rgb(0, 0, 0);
-    background-image: url('../data/images/cs2dust2.jpg');
+    background-image: url('./assets/images/cs2dust2.jpg');
     padding: 1rem;
     background-position: center;
     background-size: cover;
@@ -286,7 +286,7 @@ select {
 }
 
 .exceedinglyRare {
-    content:url('../data/images/exceedingly_rare_item.png');
+    content:url('./assets/images/exceedingly_rare_item.png');
 }
 
 .obtainedItem:hover {

@@ -1,4 +1,4 @@
-import { getRandomInt } from '../math-utilities/mathUtils';
+import { getRandomInt } from './mathUtils';
 
 function getRarityOdds(crate) {
   const caseRarityCounts = {

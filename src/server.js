@@ -1,4 +1,3 @@
-// for front end testing, open the file instead of live server
 
 let PORT = 8080;
 const express = require('express');
@@ -58,23 +57,13 @@ app.get('/data/price', (req, res) => {
   if(queryParams.category === 'Knives' || queryParams.category === 'Gloves')
     weaponName = '★ ' + weaponName;
 
-  let skinLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${weaponName} | ${queryParams.skin} (${queryParams.wear})&currency=3`;
-  let caseLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${queryParams.case}&currency=3`;
-
-  let url = queryParams.case ? caseLink : skinLink; // ??
+  let url = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${weaponName} | ${queryParams.skin} (${queryParams.wear})&currency=3`;
 
   const encodedUrl = url.replace(/ /g, '%20');
-
 
   const options = {
     method: 'GET',
     url: encodedUrl
-
-    // problematic
-    // gloves: market_hash_name=★%20Driver%20Gloves%20%7C%20King%20Snake%20(Field-Tested)
-    // url https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=SSG%08%20|%20Slashed%20(Minimal%20Wear)&currency=3
-   
-    // url: `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=SG%20553%20|%20Cyberforce%20(Factory%20New)&currency=3`
   };
 
   axios
@@ -147,7 +136,6 @@ app.listen(PORT, () => {
 async function fetchCasePrices() {
 
   let caseLink = `https://www.steamwebapi.com/steam/api/cs/containers?key=${process.env.KEYONE}&type=case`;
-  //let caseLink = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${crate.name}&currency=3`;
   
   try {
     if(casePriceMap.size > 0)
