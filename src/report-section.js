@@ -81,10 +81,12 @@ async function handleSubmit(event) {
       } else {
         statusLabel.textContent = 'Failed to send feedback';
         enableButton();
+        return;
       }
     } catch (error) {
       statusLabel.textContent = `Error: ${error.message}`;
       enableButton();
+      return;
     }
     finally {
       disableIndicator();

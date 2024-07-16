@@ -226,6 +226,11 @@ select {
     width: 12rem;
 }
 
+#reportForm #statusLabel
+{
+    margin: 1rem;
+}
+
 #reportForm>textarea
 {
     min-height: 5rem;
