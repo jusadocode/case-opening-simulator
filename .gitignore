@@ -1,8 +1,11 @@
-# Node build artifacts
-node_modules/
-npm-debug.log
-notes.txt
-dist/
-helper-tools/
-.vscode
-.env
+# Ignore everything
+*
+
+# Unignore the data folder
+!data/
+
+# Unignore the dist folder
+!dist/
+
+# Unignore the src/server directory and its contents
+!src/server.js
