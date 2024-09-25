@@ -1,493 +1,467 @@
 @import url(https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap);
 
 * {
-    font-family: 'MuseoModerno';
-    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+  font-family: "MuseoModerno";
+  box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
 }
 :root {
-    --random-translateXa: -2500px;
-    --random-translateXb: 0;
+  --random-translateXa: -2500px;
+  --random-translateXb: 0;
 }
 
 body {
-    font-family: 'MuseoModerno';
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: "MuseoModerno";
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .main-container {
-    /* margin: 1rem; */
-    display: flex;
-    align-items: center;
-    flex: 1;
-    flex-direction: column;
-    gap: 2rem;
+  /* margin: 1rem; */
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .interaction-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 h1,
 p {
-    text-align: center;
+  text-align: center;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 select {
-    height: 2rem;
-    margin: 0.625rem;
-    font-family: 'MuseoModerno';
+  height: 2rem;
+  margin: 0.625rem;
+  font-family: "MuseoModerno";
 }
 
 .header-section {
-    padding: 1.7rem;
-    display: flex;
-    /* border: 1px solid black; */
-    width: 100%;
-    justify-content: space-between;
-    font-weight: bold;
-    gap: 1rem;
-    
+  padding: 1.7rem;
+  display: flex;
+  /* border: 1px solid black; */
+  width: 100%;
+  justify-content: space-between;
+  font-weight: bold;
+  gap: 1rem;
 }
 
-
-
 .footer {
-    padding: 1rem;
-    border: 2px solid black;
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
+  padding: 1rem;
+  border: 2px solid black;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 600px) {
-    .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-
 .main-content {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .coffee-link {
 }
 
-.coffee-link img{
-    width: 7rem; /* Adjust the size as needed */
-    height: auto;
+.coffee-link img {
+  width: 7rem; /* Adjust the size as needed */
+  height: auto;
 }
 
-
-
-
 .case-open-window-holder {
+  position: relative;
+  /* margin: 5.25rem; */
 
-    position: relative;
-    /* margin: 5.25rem; */
-
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
 .case-open-window {
-    position: relative;
-    border: 2px solid black;
-    width: 50vw;
-    min-height: 6.25rem;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  border: 2px solid black;
+  width: 50vw;
+  min-height: 6.25rem;
+  display: flex;
+  justify-content: center;
 }
 
 .case-select-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .case-image-section {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.case-image-section>img {
-    width: 7rem;
-    transition: scale 0.3s ease-in-out;
-    scale: 1;
+.case-image-section > img {
+  width: 7rem;
+  transition: scale 0.3s ease-in-out;
+  scale: 1;
 }
 
-.case-image-section>img:hover {
-    scale: 1.1;
+.case-image-section > img:hover {
+  scale: 1.1;
 }
 
 .case-open-marker {
-    position: absolute;
-    background-color: rgba(212, 176, 13, 0.801);
-    height: 6.25rem;
-    width: 2px;
-    z-index: 2;
+  position: absolute;
+  background-color: rgba(212, 176, 13, 0.801);
+  height: 6.25rem;
+  width: 2px;
+  z-index: 2;
 }
 
 .button-section {
-    margin: 6.25rem;
-    justify-content: center;
-    display: flex;
+  margin: 6.25rem;
+  justify-content: center;
+  display: flex;
 }
 
 .open-button {
-    font-size: 1rem;
-    padding: 0.5rem;
-    min-height: 20px;
-    min-width: 7rem;
-    border-radius: 5%;
-    transition: border 1s ease-in-out;
-    transition: background-color 1s ease-in-out;
-    background-color: inherit;
+  font-size: 1rem;
+  padding: 0.5rem;
+  min-height: 20px;
+  min-width: 7rem;
+  border-radius: 5%;
+  transition: border 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+  background-color: inherit;
 }
 
 .open-button:hover {
-    border: 2px solid greenyellow;
-    background-color: greenyellow;
+  border: 2px solid greenyellow;
+  background-color: greenyellow;
 }
 
 .report-button {
-    padding: 0.8rem;
-    min-height: 20px;
-    min-width: 8rem;
-    border-radius: 5%;
-    transition: border 1s ease-in-out;
-    transition: background-color 1s ease-in-out;
-    background-color: inherit;
+  padding: 0.8rem;
+  min-height: 20px;
+  min-width: 8rem;
+  border-radius: 5%;
+  transition: border 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+  background-color: inherit;
 }
 
-
 .report-button:hover {
-    border: 2px solid orange;
-    background-color: orange;
+  border: 2px solid orange;
+  background-color: orange;
 }
 
 #reportForm {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* gap: 0.5rem; */
-    backdrop-filter: blur(10px);
-    width: 14rem;
-    height: 20rem;
-    margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 0.5rem; */
+  backdrop-filter: blur(10px);
+  width: 14rem;
+  height: 20rem;
+  margin: 2rem;
 }
 
-#reportForm>button {
-    font-size: 1rem;
-    padding: 0.5rem;
-    margin-top: 1rem;
-    border-radius: 5%;
-    transition: border 1s ease-in-out;
-    transition: background-color 1s ease-in-out;
-    background-color: inherit;
-    width: 12rem;
+#reportForm > button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 5%;
+  transition: border 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+  background-color: inherit;
+  width: 12rem;
 }
 
 #report-dialog .exitButton {
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: inherit;
-    border: none;
-
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: inherit;
+  border: none;
 }
 
-
-#reportForm>input,
-#reportForm>textarea,
-#reportForm>label
-{
-    line-height: 1.5rem;
-    width: 12rem;
+#reportForm > input,
+#reportForm > textarea,
+#reportForm > label {
+  line-height: 1.5rem;
+  width: 12rem;
 }
 
-#reportForm #statusLabel
-{
-    margin: 1rem;
+#reportForm #statusLabel {
+  margin: 1rem;
 }
 
-#reportForm>textarea
-{
-    min-height: 5rem;
-    min-width: 12rem;
-    max-width: 12rem;
+#reportForm > textarea {
+  min-height: 5rem;
+  min-width: 12rem;
+  max-width: 12rem;
 }
 
 .item-holder {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    border: 1px solid black;
-    display: flex;
-    z-index: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  z-index: 0;
 }
 
 .item {
-    position: relative;
-    /* width: 10vw; */
-    /* font-size: 10px; */
-    justify-content: center;
+  position: relative;
+  /* width: 10vw; */
+  /* font-size: 10px; */
+  justify-content: center;
 
-    border: 1px solid rgb(158, 158, 158);
-    min-width: 150px;
-    display: block;
-    z-index: 1;
+  border: 1px solid rgb(158, 158, 158);
+  min-width: 150px;
+  display: block;
+  z-index: 1;
 }
 
 .obtainedItem {
-    /* This is added as a child element to case window holder */
-    font-size: 1rem;
-    position: absolute;
-    /* transform: translate(-50%, -50%); */
-    /* transform: translateY(200px); */
-    min-width: 20rem;
-    /* max-height: 40vh; */
-    border-radius: 10px 20px 30px 40px;
-    /* background-color: black; */
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgb(0, 0, 0);
-    background-image: url('./assets/images/cs2dust2.jpg');
-    padding: 1rem;
-    background-position: center;
-    background-size: cover;
-    transition: scale 0.3s ease-in-out, border-radius 0.5s ease-in-out;
+  /* This is added as a child element to case window holder */
+  font-size: 1rem;
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
+  /* transform: translateY(200px); */
+  min-width: 20rem;
+  /* max-height: 40vh; */
+  border-radius: 10px 20px 30px 40px;
+  /* background-color: black; */
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(0, 0, 0);
+  background-image: url("./assets/images/cs2dust2.jpg");
+  padding: 1rem;
+  background-position: center;
+  background-size: cover;
+  transition: scale 0.3s ease-in-out, border-radius 0.5s ease-in-out;
 
-    /* font-weight: bold; */
+  /* font-weight: bold; */
 }
 
 .exceedinglyRare {
-    content:url('./assets/images/exceedingly_rare_item.png');
+  content: url("./assets/images/exceedingly_rare_item.png");
 }
 
 .obtainedItem:hover {
-    scale: 1.05;
+  scale: 1.05;
 }
 
 .obtainedItem:hover img,
 .obtainedItem:hover .obtainedItemInfo {
-    scale: 1.05;
+  scale: 1.05;
 }
 
 .obtained-image {
-    margin: 0 auto;
-    position: relative;
-    size: 50vw;
-    z-index: 4;
-    transition: scale 1s ease-in-out;
+  margin: 0 auto;
+  position: relative;
+  size: 50vw;
+  z-index: 4;
+  transition: scale 1s ease-in-out;
 }
 
 .obtainedItemInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 1rem;
-    color: white;
-    transition: scale 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+  color: white;
+  transition: scale 1s ease-in-out;
 }
 
 @media only screen and (max-width: 600px) {
-    .obtainedItem {
-        min-width: 15rem;
-        padding: 0.5rem;
-        border-width: 3px;
-    }
-    .obtained-image {
-        width: 80vw;
-    }
-    .case-open-window {
-        width: 80vw;
-    }
+  .obtainedItem {
+    min-width: 15rem;
+    padding: 0.5rem;
+    border-width: 3px;
+  }
+  .obtained-image {
+    width: 80vw;
+  }
+  .case-open-window {
+    width: 80vw;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    .obtainedItem {
-        min-width: 18rem;
-        padding: 0.8rem;
-        border-width: 4px;
-    }
-    .obtained-image {
-        width: 60vw;
-    }
+  .obtainedItem {
+    min-width: 18rem;
+    padding: 0.8rem;
+    border-width: 4px;
+  }
+  .obtained-image {
+    width: 60vw;
+  }
 }
 
-
 .bottomSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
 }
 
 .buttonSection {
-    padding: 1rem;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    width: 100%;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
 }
 
-
 .image {
-
-    max-width: 6.25em;
-    max-height: 6.25em;
+  max-width: 6.25em;
+  max-height: 6.25em;
 }
 
 .item-rarity-box {
-    position: relative;
-    width: 100%;
-    min-height: 20px;
+  position: relative;
+  width: 100%;
+  min-height: 20px;
 }
 
 .obtained-item-rarity-box {
-    align-self: center;
-    position: relative;
-    width: 50%;
-    height: 5%;
+  align-self: center;
+  position: relative;
+  width: 50%;
+  height: 5%;
 }
 
 .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .animatedItem {
-    animation-duration: 6s;
-    animation-fill-mode: both;
+  animation-duration: 6s;
+  animation-fill-mode: both;
 }
 
-
 #status {
-    transition: scale 0.5s ease-in-out;
-    display: flex;
-    align-items: center;
+  transition: scale 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .highlight-amount {
-    scale: 1.3;
+  scale: 1.3;
 }
 
 @keyframes fadeIn {
-    0% {
-        transform: scale(0.3);
-    }
+  0% {
+    transform: scale(0.3);
+  }
 
-
-    100% {
-        transform: scale(1);
-        transform: translateY(-200px);
-    }
+  100% {
+    transform: scale(1);
+    transform: translateY(-200px);
+  }
 }
 
 @keyframes fadeInReport {
-    0% {
-        transform: scale(0.3);
-    }
+  0% {
+    transform: scale(0.3);
+  }
 
-
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
-
 @keyframes bounceOut {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    25% {
-        transform: scale(.95);
-    }
+  25% {
+    transform: scale(0.95);
+  }
 
-    50% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 
-    100% {
-        opacity: 0;
-        transform: scale(.3);
-    }
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
 }
 
 @keyframes moveLeft {
-    0% {
-        transform: translateX(0)
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(var(--random-translateXb));
-    }
+  100% {
+    transform: translateX(var(--random-translateXb));
+  }
 }
 
 @keyframes flipInX {
-    0% {
-        transform: perspective(400px) rotateX(90deg);
-        opacity: 0;
-    }
+  0% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
 
-    100% {
-        transform: perspective(400px) rotateX(0deg);
-        opacity: 1;
-    }
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
 }
 
 .fadeIn {
-    animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 .fadeInReport {
-    animation-name: fadeInReport;
+  animation-name: fadeInReport;
 }
 
 .flipInX {
-    backface-visibility: visible !important;
-    animation-name: flipInX;
+  backface-visibility: visible !important;
+  animation-name: flipInX;
 }
 
 .bounceOut {
-    -webkit-animation-name: bounceOut;
-    animation-name: bounceOut;
+  -webkit-animation-name: bounceOut;
+  animation-name: bounceOut;
 }
 
 .moveLeft {
-    -webkit-animation-name: moveLeft;
-    animation-name: moveLeft;
+  -webkit-animation-name: moveLeft;
+  animation-name: moveLeft;
 }
-
-

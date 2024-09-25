@@ -21,15 +21,15 @@ let caseImageSection = document.querySelector('.case-image-section');
 const caseLoadingIndicator = document.querySelector('#caseLoadingIndicator');
 const interactionContainer = document.querySelector('.interaction-container');
 
-let caseSelect = document.querySelector('select');
+let containerSelect = document.querySelector('#case');
 
+const containerTypeSelect = document.querySelector('#container-type');
 
 const button = document.querySelector('.open-button');
 let reopenButton;
 let backButton;
 
-
-let cases = [];
+let containers = [];
 let selectedCase = {};
 let fixedItemCount = 18;
 
@@ -37,46 +37,76 @@ const rollItemCount = 150;
 let rolledItems = [];
 let distribution = [];
 
-let itemRarityCounts = {
-  Consumer: 0,
-  Industrial: 0,
+const itemRarityCounts = {
+  'Consumer Grade': 0,
+  'Industrial Grade': 0,
   'Mil-Spec Grade': 0,
   Restricted: 0,
   Classified: 0,
   Covert: 0,
-  Contraband: 0
-}; 
+  Contraband: 0,
+  'High Grade': 0,
+  Remarkable: 0,
+  Exotic: 0,
+  Extraordinary: 0
+};
 
 
-initializeCaseLoad();
+initializeContainerLoad();
 
-async function initializeCaseLoad() {
+// Change the name to something more general like initializeContainerLoad
+async function initializeContainerLoad(containerType = 'cases') {
   try {
-    cases = await fetchCaseData();
+    
+    // Fetch data based on container type
+    switch(containerType) {
+      case 'cases':
+        containers = await callApi('data/cases');
+        break;
+      case 'capsules':
+        containers = await callApi('data/capsules');
+        break;
+      case 'souvenirs':
+        containers = await callApi('data/souvenirs');
+        break;
+      case 'autograph_capsules':
+        containers = await callApi('data/autograph_capsules');
+        break;
+      case 'graffitis':
+        containers = await callApi('data/graffitis');
+        break;
+      case 'pins':
+        containers = await callApi('data/pins');
+        break;
+      default:
+        containers = [];
+        break;
+    }
 
-    cases.map(async (crate, index) => {
+    // Clear the select options first
+    containerSelect.innerHTML = '';
+
+    // Populate the container dropdown with the fetched containers
+    containers.map((container, index) => {
       let option = document.createElement('option');
       option.value = index;
-      option.textContent = crate.price ? `${crate.name} (${crate.price}€)` : crate.name;
-      caseSelect.appendChild(option);
+      option.textContent = container.price ? `${container.name} (${container.price}€)` : container.name;
+      containerSelect.appendChild(option);
     });
 
-    setSelectedCase(cases[caseSelect.value]);
-
+    // Set the selected container to the first one in the list
+    setSelectedContainer(containers[containerSelect.value]);
     caseOpenWindowHolder.disabled = true;
 
-    
     displayInitialItems();
     initializeEventListeners();
-  }
-  catch {
-    interactionContainer.innerHTML = 'There was a problem getting cases, refresh the page or try again at a later time';
-  }
-  finally {
+  } catch (error) {
+    console.error('Error loading containers:', error);
+    interactionContainer.innerHTML = 'There was a problem loading containers, refresh the page or try again later.';
+  } finally {
     caseLoadingIndicator.style.display = 'none';
     interactionContainer.style.display = 'flex';
   }
-
 }
 
 function handleOpenButtonClick() {
@@ -108,8 +138,16 @@ function initializeEventListeners() {
 
   backButton.addEventListener('click', handleBackButtonClick);
 
-  caseSelect.addEventListener('change', () => setSelectedCase(cases[caseSelect.value]));
+  containerSelect.addEventListener('change', () => setSelectedContainer(containers[containerSelect.value]));
+
+  containerTypeSelect.addEventListener('change', () => {
+    const selectedType = containerTypeSelect.value;
+    initializeContainerLoad(selectedType); // Load containers based on selected type
+  });
+
 }
+
+
 
 function displayInitialItems() {
 
@@ -132,11 +170,14 @@ function createItemElement(item) {
 
   const img = document.createElement('img');
   if (item.image) {
-    if (item.category === 'Knives' || item.category === 'Gloves')
-      img.classList.add('exceedinglyRare');
-      // webpack fix
-    else
-      img.src = item.image;
+    if(item.category) {
+      if (item.category.name === 'Knives' || item.category.name === 'Gloves')
+        img.classList.add('exceedinglyRare');
+        // webpack fix
+      else
+        img.src = item.image;
+    }
+    
   }
   else
     img.src = './assets/images/xray.png';
@@ -144,6 +185,7 @@ function createItemElement(item) {
   img.classList.add('image');
 
   const rarityColor = getRarityColor(item);
+
   newItem.style.backgroundImage = `linear-gradient(white 40%, ${rarityColor})`;
 
   const rarityBox = document.createElement('div');
@@ -195,7 +237,10 @@ async function determineItemWon(items) {
 async function getItemInfo(itemWon, itemWear) {
   let price;
   try {
-    const data = await callApi(`data/price?&weapon=${itemWon.weapon}&skin=${itemWon.pattern}&wear=${itemWear}&itemID=${itemWon.id}&category=${itemWon.category}`);
+    console.log(itemWon)
+    const category = itemWon.category ? itemWon.category.name : '';
+    // update for stickers and other items
+    const data = await callApi(`data/price?&caseType=${selectedCase.type}&item=${itemWon.name}&&wear=${itemWear || ''}&itemID=${itemWon.id}&category=${category}`);
     price = data.lowest_price;
     const worth = parseFloat(price.replace(',', '.').slice(0, -1));
     moneyStatus += worth;
@@ -208,7 +253,7 @@ async function getItemInfo(itemWon, itemWear) {
 
   const float = getRandomFloat(itemWon.min_float, itemWon.max_float);
   itemRarityCounts[itemWon.rarity]++;
-  return { name: itemWon.name, wear: itemWear, rarity: itemWon.rarity, price, float };
+  return { name: itemWon.name, wear: itemWear, rarity: itemWon.rarity.name, price, float };
 }
 
 
@@ -272,12 +317,14 @@ async function openCase() {
     updateMoneyStatus();
 
     const caseItemList = [...selectedCase.contains];
-    const knives = [...selectedCase.contains_rare];
-    const randomKnife = knives[getRandomInt(0, 8)];
-    randomKnife.odds = 0.26;
-
-    if (caseItemList.length < fixedItemCount) 
-      caseItemList.push(randomKnife);
+    if(selectedCase.contains_rare.length > 0) {
+      const knives = [...selectedCase.contains_rare];
+      let randomKnife = {...knives[getRandomInt(0, 8)], odds: 0.26};
+  
+      if (caseItemList.length < fixedItemCount) 
+        caseItemList.push(randomKnife);
+    }
+    
 
     distribution = createDistribution(caseItemList, 100, selectedCase);
 
@@ -314,15 +361,14 @@ function instantiateMoneyAmount(color) {
 }
 
 
-function setSelectedCase(crate) {
-  selectedCase = crate;
-  fixedItemCount = crate.contains.length + 1;
+function setSelectedContainer(container) {
+  selectedCase = {...container};
+  fixedItemCount = container.contains.length + 1;
   if (!selectedCase.caseRarityCounts) {
     selectedCase.caseRarityCounts = getRarityOdds(selectedCase);
   }
 
   let caseImage = document.createElement('img');
-
   const caseImageSource = selectedCase.image;
   caseImage.src = caseImageSource;
 

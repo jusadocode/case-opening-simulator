@@ -28,7 +28,7 @@ function createDistribution(items, size, selectedCase) {
 
 function calculateItemWeights(items, selectedCase) {
   const weights = items.map(
-    item => (item.odds / (selectedCase.caseRarityCounts[item.rarity] || 1) / 100)
+    item => (item.odds / (selectedCase.caseRarityCounts[item.rarity.name] || 1) / 100)
   );
   return weights;
 }

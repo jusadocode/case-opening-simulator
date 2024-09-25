@@ -3,7 +3,7 @@ let PORT = 8080;
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
-const caseData = require('../data/final_join.json');
+const caseData = require('../data/Output.json');
 const path = require('path');
 
 const nodemailer = require('nodemailer');
@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
 });
 
 let itemPriceMap = new Map();
-let casePriceMap = new Map();
+let cratePriceMap = new Map();
 
 const app = express();
 
@@ -37,14 +37,20 @@ if (process.env.NODE_ENV === 'production') {
 app.use(cors());
 app.use(express.json());
 
+let casesArray = [];
+let capsulesArray = [];
+let souvenirsArray = [];
+let graffitisArray = [];
+let autographsArray = [];
+let pinsArray = [];
 
 app.get('/data/price', (req, res) => {
 
-  const queryParams = req.query;
+  let { caseType, item, skin, wear, itemID, category } = req.query;
 
-  const itemId = queryParams.itemID + queryParams.wear;
+  itemID = itemID + wear;
 
-  const mapItem = itemPriceMap.get(itemId);
+  const mapItem = itemPriceMap.get(itemID);
 
   if (mapItem) {
     console.log('Item found in map');
@@ -52,18 +58,41 @@ app.get('/data/price', (req, res) => {
     return;
   }
 
-  let weaponName = queryParams.weapon;
+  if(category === 'Knives' || category === 'Gloves')
+    item = '★ ' + item;
 
-  if(queryParams.category === 'Knives' || queryParams.category === 'Gloves')
-    weaponName = '★ ' + weaponName;
+  let marketHashName;
 
-  let url = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${weaponName} | ${queryParams.skin} (${queryParams.wear})&currency=3`;
+  // Construct the market hash name based on case type
+  switch (caseType) {
+    case 'Pins':
+      marketHashName = `${item}`;
+      break;
+    case 'Sticker Capsule':
+      marketHashName = `Sticker | ${item}`; // Assuming 'item' is the sticker name
+      break;
+    case 'Autograph Capsule':
+      marketHashName = `Sticker | ${item}`; // Assuming 'item' is the sticker name
+      break;
+    case 'Graffiti':
+      marketHashName = `${item}`; // Assuming 'item' is the graffiti name
+      break;
+    case 'Souvenir':
+      marketHashName = `Souvenir ${item} (${wear})`; // Assuming 'item' is the souvenir item name
+      break;
+    case 'Case':
+      marketHashName = `${item} (${wear})`; // Assuming 'item' is the weapon name (e.g., AWP | Redline)
+      break;
+    default:
+      throw new Error('Unknown case type');
+  }
 
-  const encodedUrl = url.replace(/ /g, '%20');
+// Construct the full URL
+let url = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${encodeURIComponent(marketHashName)}&currency=3`;
 
   const options = {
     method: 'GET',
-    url: encodedUrl
+    url: url
   };
 
   axios
@@ -73,13 +102,13 @@ app.get('/data/price', (req, res) => {
       res.json(data);
 
       if(data.lowest_price) {
-        itemPriceMap.set(itemId, data);
-        console.log('Item added to map: ', itemId, queryParams.weapon, queryParams.skin);
+        itemPriceMap.set(itemID, data);
+        console.log('Item added to map: ', itemID, item, skin);
       }
       
     })
     .catch((error) => {
-      console.log('Item being processed: ', itemId, queryParams.weapon, queryParams.skin);
+      console.log('Item being processed: ', itemID, item, skin);
       console.log(error);
       res.status(500).json({ error: error.message });
     });
@@ -90,13 +119,35 @@ app.get('/data/cases', async (req, res) => {
   fetchCasePrices()
     .then((res) => {
       console.log('successfully fetched prices');
-      res.json(caseData);
+      res.json(casesArray);
     })
     .catch((err) => {
       console.log(`failed to get case prices ${err}, continuing`);
-      res.json(caseData);
+      res.json(casesArray);
     });  
+
 });
+
+app.get('/data/capsules', (req, res) => {
+  res.json(capsulesArray);
+});
+
+app.get('/data/souvenirs', (req, res) => {
+  res.json(souvenirsArray);
+});
+
+app.get('/data/autograph_capsules', (req, res) => {
+  res.json(autographsArray);
+});
+
+app.get('/data/graffitis', (req, res) => {
+  res.json(graffitisArray);
+});
+
+app.get('/data/pins', (req, res) => {
+  res.json(pinsArray);
+});
+
 
 app.post('/send-email', async (req, res) => {
 
@@ -128,6 +179,7 @@ app.post('/send-email', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
   console.log(`Running in ${process.env.NODE_ENV}`);
+  prepareData();
   
 });
 
@@ -137,17 +189,17 @@ async function fetchCasePrices() {
   let caseLink = `https://www.steamwebapi.com/steam/api/cs/containers?key=${process.env.KEYONE}&type=all`;
   
   try {
-    if(casePriceMap.size > 0)
+    if(cratePriceMap.size > 0)
       return;
 
     const response = await axios.get(caseLink);
   
     response.data.forEach(fetchedCrate => {
-      casePriceMap.set(fetchedCrate.casename, fetchedCrate.pricelatest);
+      cratePriceMap.set(fetchedCrate.casename, fetchedCrate.pricelatest);
     }); 
 
     caseData.forEach(crate => {
-      crate.price = casePriceMap.get(crate.name);
+      crate.price = cratePriceMap.get(crate.name);
     });
   }
   catch(error) {
@@ -162,6 +214,16 @@ function convertToSkinObj(data) {
     volume: data.volume,
     median_price: data.median_price
   };
+}
+
+function prepareData() {
+  casesArray = caseData.filter(crate => crate.type === 'Case');
+  capsulesArray = caseData.filter(crate => crate.type === 'Sticker Capsule');
+  souvenirsArray = caseData.filter(crate => crate.type === 'Souvenir');
+  autographsArray = caseData.filter(crate => crate.type === 'Autograph Capsule');
+  pinsArray = caseData.filter(crate => crate.type === 'Pins'); 
+  graffitisArray = caseData.filter(crate => crate.type === 'Graffiti'); 
+  console.log(`Prepared ${casesArray.length} cases, ${capsulesArray.length} capsules, ${souvenirsArray.length} souvenirs, and other items.`);
 }
 
 

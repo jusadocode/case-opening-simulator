@@ -31,6 +31,7 @@ async function callApi(urlPostfix) {
 async function fetchCaseData() {
   try {
     const data = await callApi('data/cases');
+    console.log(data);
     return data;
   } catch (error) {
     console.error('Error fetching case data:', error);
@@ -38,4 +39,67 @@ async function fetchCaseData() {
   }
 }
 
-export {callApi, fetchCaseData};
+async function fetchCapsuleData() {
+  try {
+    const data = await callApi('data/capsules');
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error('Error fetching capsule data:', error);
+    throw error;
+  }
+}
+
+async function fetchSouvenirData() {
+  try {
+    const data = await callApi('data/souvenirs');
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error('Error fetching souvenir data:', error);
+    throw error;
+  }
+}
+
+async function fetchAutographCapsuleData() {
+  try {
+    const data = await callApi('data/autograph_capsules');
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error('Error fetching autograph capsule data:', error);
+    throw error;
+  }
+}
+
+async function fetchGraffitiData() {
+  try {
+    const data = await callApi('data/graffitis');
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error('Error fetching graffiti data:', error);
+    throw error;
+  }
+}
+
+async function fetchPinData() {
+  try {
+    const data = await callApi('data/pins');
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error('Error fetching pin data:', error);
+    throw error;
+  }
+}
+
+export { 
+  callApi, 
+  fetchCaseData, 
+  fetchCapsuleData, 
+  fetchSouvenirData, 
+  fetchAutographCapsuleData, 
+  fetchGraffitiData, 
+  fetchPinData 
+};
