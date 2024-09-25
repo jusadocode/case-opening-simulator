@@ -5,92 +5,111 @@ const fs = require('fs');
 const allSkins = require('./skins.json');
 
 // Skin chances
-// cases.forEach(caseItem => {
-//     let items = caseItem.contains;
-//     items.forEach((item) => {
+cases.forEach(crate => {
+    let items = crate.contains;
+    if(crate.type === 'Case')
+    items.forEach((item) => {
 
-//         switch (item.rarity.name) {
-//             case ("Mil-Spec Grade"):
-//                 item.odds = 79.92;
-//                 break;
-//             case ("Restricted"):
-//                 item.odds = 15.98;
-//                 break;
-//             case ("Classified"):
-//                 item.odds = 3.2;
-//                 break;
-//             case ("Covert"):
-//                 if (item.category === "Knives")
-//                     item.odds = 0.26;
-//                 else
-//                     item.odds = 0.64;
-//                 break;
-//             default:
-//                 item.odds = 0;
-//         };
+        switch (item.rarity.name) {
+            case ("Mil-Spec Grade"):
+                item.odds = 79.92;
+                break;
+            case ("Restricted"):
+                item.odds = 15.98;
+                break;
+            case ("Classified"):
+                item.odds = 3.2;
+                break;
+            case ("Covert"):
+                if (item.category === "Knives")
+                    item.odds = 0.26;
+                else
+                    item.odds = 0.64;
+                break;
+            default:
+                item.odds = 0;
+        };
 
-//     })
-// });
-// let joinedInfo = [...cases];
+    })
+});
 
 // Sticker chances
 
-// cases.forEach(caseItem => {
-//   let items = caseItem.contains;
-//   items.forEach((item) => {
-//       switch (item.rarity.name) {
-//           case ("High Grade"):
-//               item.odds = 80.00;
-//               break;
-//           case ("Remarkable"):
-//               item.odds = 16.00;
-//               break;
-//           case ("Exotic"):
-//               item.odds = 3.2;
-//               break;
-//           case ("Extraordinary"):
-//               item.odds = 0.64;
-//               break;
-//           default:
-//               item.odds = 0;
-//       };
-
-//   })
-// });
-// let joinedInfo = [...cases];
-
-// Souvenir chances
+cases.forEach(crate => {
+    if(crate.type === 'Sticker Capsule' || crate.type === 'Autograph Capsule' || crate.type === 'Pins') {
+        let items = crate.contains;
+        items.forEach((item) => {
+            switch (item.rarity.name) {
+                case ("High Grade"):
+                    item.odds = 80.00;
+                    break;
+                case ("Remarkable"):
+                    item.odds = 16.00;
+                    break;
+                case ("Exotic"):
+                    item.odds = 3.2;
+                    break;
+                case ("Extraordinary"):
+                    item.odds = 0.64;
+                    break;
+                default:
+                    item.odds = 0;
+            };
+        })
+    }
+});
 
 
-// change based on types
 
-cases.forEach(caseItem => {
-  let items = caseItem.contains;
-  items.forEach((item) => {
-      switch (item.rarity.name) {
-          case ("Consumer Grade"):
-              item.odds = 80.00;
-              break;
-          case ("Industrial Grade"):
-              item.odds = 16.00;
-              break;
-          case ("Mil-Spec"):
-              item.odds = 3.2;
-              break;
-          case ("Restricted"):
-              item.odds = 0.64;
-              break;
-          case ("Classified"):
-              item.odds = 0.128;
-              break;
-          case ("Covert"):
-              item.odds = 0.025;
-              break;
-          default:
-              item.odds = 0;
-      };
+cases.forEach(crate => {
+    if(crate.type === 'Souvenir') {
+        let items = crate.contains;
+        items.forEach((item) => {
+            switch (item.rarity.name) {
+                case ("Consumer Grade"):
+                    item.odds = 80.00;
+                    break;
+                case ("Industrial Grade"):
+                    item.odds = 16.00;
+                    break;
+                case ("Mil-Spec"):
+                    item.odds = 3.2;
+                    break;
+                case ("Restricted"):
+                    item.odds = 0.64;
+                    break;
+                case ("Classified"):
+                    item.odds = 0.128;
+                    break;
+                case ("Covert"):
+                    item.odds = 0.025;
+                    break;
+                default:
+                    item.odds = 0;
+            };
+        })
+    }
+});
 
-  })
+cases.forEach(crate => {
+    if(crate.type === 'Graffiti') {
+        let items = crate.contains;
+        items.forEach((item) => {
+            switch (item.rarity.name) {
+                case ("High Grade"):
+                    item.odds = 80.00;
+                    break;
+                case ("Remarkable"):
+                    item.odds = 16.00;
+                    break;
+                case ("Exotic"):
+                    item.odds = 4.00;
+                    break;
+                default:
+                    item.odds = 0;
+            };
+        })
+    }
 });
 let joinedInfo = [...cases];
 

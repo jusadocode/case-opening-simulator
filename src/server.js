@@ -70,7 +70,6 @@ app.get('/data/price', (req, res) => {
     .request(options)
     .then((response) => {
       const data = convertToSkinObj(response.data);
-      console.log(data);
       res.json(data);
 
       if(data.lowest_price) {
@@ -135,7 +134,7 @@ app.listen(PORT, () => {
 
 async function fetchCasePrices() {
 
-  let caseLink = `https://www.steamwebapi.com/steam/api/cs/containers?key=${process.env.KEYONE}&type=case`;
+  let caseLink = `https://www.steamwebapi.com/steam/api/cs/containers?key=${process.env.KEYONE}&type=all`;
   
   try {
     if(casePriceMap.size > 0)
