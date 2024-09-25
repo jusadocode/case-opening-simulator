@@ -1,11 +1,14 @@
 # Ignore everything
 *
 
-# Unignore the data folder
+# Unignore the data folder and its contents
 !data/
+!data/**
 
-# Unignore the dist folder
+# Unignore the dist folder and its contents
 !dist/
+!dist/**
 
-# Unignore the src/server directory and its contents
+# Unignore the src directory and allow server.js
+!src/
 !src/server.js
