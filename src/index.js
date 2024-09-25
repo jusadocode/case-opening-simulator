@@ -54,11 +54,9 @@ const itemRarityCounts = {
 
 initializeContainerLoad();
 
-// Change the name to something more general like initializeContainerLoad
 async function initializeContainerLoad(containerType = 'cases') {
   try {
     
-    // Fetch data based on container type
     switch(containerType) {
       case 'cases':
         containers = await callApi('data/cases');
@@ -83,18 +81,15 @@ async function initializeContainerLoad(containerType = 'cases') {
         break;
     }
 
-    // Clear the select options first
     containerSelect.innerHTML = '';
 
-    // Populate the container dropdown with the fetched containers
     containers.map((container, index) => {
       let option = document.createElement('option');
       option.value = index;
-      option.textContent = container.price ? `${container.name} (${container.price}€)` : container.name;
+      option.textContent = container.price ? `${container.name} (${container.price}$)` : container.name;
       containerSelect.appendChild(option);
     });
 
-    // Set the selected container to the first one in the list
     setSelectedContainer(containers[containerSelect.value]);
     caseOpenWindowHolder.disabled = true;
 
@@ -126,7 +121,7 @@ function initializeEventListeners() {
 
   reopenButton = button.cloneNode(true);
 
-  reopenButton.textContent = `Open another (-${keyPrice}€)`;
+  reopenButton.textContent = `Open another (-${keyPrice}$)`;
   reopenButton.style.color = 'white';
 
   reopenButton.addEventListener('click', handleOpenButtonClick);
@@ -174,10 +169,9 @@ function createItemElement(item) {
       if (item.category.name === 'Knives' || item.category.name === 'Gloves')
         img.classList.add('exceedinglyRare');
         // webpack fix
-      else
-        img.src = item.image;
     }
-    
+
+    img.src = item.image;
   }
   else
     img.src = './assets/images/xray.png';
@@ -239,10 +233,9 @@ async function getItemInfo(itemWon, itemWear) {
   try {
     console.log(itemWon)
     const category = itemWon.category ? itemWon.category.name : '';
-    // update for stickers and other items
     const data = await callApi(`data/price?&caseType=${selectedCase.type}&item=${itemWon.name}&&wear=${itemWear || ''}&itemID=${itemWon.id}&category=${category}`);
     price = data.lowest_price;
-    const worth = parseFloat(price.replace(',', '.').slice(0, -1));
+    const worth = parseFloat(price.slice(1));
     moneyStatus += worth;
     instantiateMoneyAmount('green');
     updateMoneyStatus();
@@ -250,10 +243,22 @@ async function getItemInfo(itemWon, itemWear) {
     console.error('Error fetching item price:', error);
     price = 'Market price not available';
   }
+  let itemInfo = { name: itemWon.name, wear: itemWear, rarity: itemWon.rarity.name, price};
 
-  const float = getRandomFloat(itemWon.min_float, itemWon.max_float);
+  const minFloat = itemWon.min_float; 
+  const maxFloat = itemWon.max_float; 
+  
+  const float = (minFloat !== undefined && maxFloat !== undefined) 
+      ? getRandomFloat(minFloat, maxFloat) 
+      : undefined; 
+
   itemRarityCounts[itemWon.rarity]++;
-  return { name: itemWon.name, wear: itemWear, rarity: itemWon.rarity.name, price, float };
+
+  if (float)
+    itemInfo.float = float;
+  
+
+  return itemInfo;
 }
 
 
@@ -336,7 +341,7 @@ async function openCase() {
 }
 
 function updateMoneyStatus() {
-  statusText.textContent = 'State: ' + moneyStatus.toFixed(2) + '€';
+  statusText.textContent = 'State: ' + moneyStatus.toFixed(2) + '$';
 }
 
 

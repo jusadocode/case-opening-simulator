@@ -63,32 +63,31 @@ app.get('/data/price', (req, res) => {
 
   let marketHashName;
 
-  // Construct the market hash name based on case type
   switch (caseType) {
     case 'Pins':
       marketHashName = `${item}`;
       break;
     case 'Sticker Capsule':
-      marketHashName = `Sticker | ${item}`; // Assuming 'item' is the sticker name
+      marketHashName = `Sticker | ${item}`; 
       break;
     case 'Autograph Capsule':
-      marketHashName = `Sticker | ${item}`; // Assuming 'item' is the sticker name
+      marketHashName = `Sticker | ${item}`; 
       break;
     case 'Graffiti':
-      marketHashName = `${item}`; // Assuming 'item' is the graffiti name
+      marketHashName = `Sealed Graffiti | ${item}`; 
       break;
     case 'Souvenir':
-      marketHashName = `Souvenir ${item} (${wear})`; // Assuming 'item' is the souvenir item name
+      marketHashName = `Souvenir ${item} (${wear})`; 
       break;
     case 'Case':
-      marketHashName = `${item} (${wear})`; // Assuming 'item' is the weapon name (e.g., AWP | Redline)
+      marketHashName = `${item} (${wear})`; 
       break;
     default:
       throw new Error('Unknown case type');
   }
 
 // Construct the full URL
-let url = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${encodeURIComponent(marketHashName)}&currency=3`;
+let url = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${encodeURIComponent(marketHashName)}&currency=1`;
 
   const options = {
     method: 'GET',
