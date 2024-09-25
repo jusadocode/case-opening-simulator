@@ -122,13 +122,13 @@ const allSkins = require('./skins.json');
 //     })
 // });
 
-let joinedInfo = [];
+// let joinedInfo = [];
 
 
-cases.forEach(crate => {
-    if(crate.type == 'Souvenir')
-        joinedInfo.push(crate);
-});
+// cases.forEach(crate => {
+//     if(crate.type == 'Souvenir')
+//         joinedInfo.push(crate);
+// });
 
 
 

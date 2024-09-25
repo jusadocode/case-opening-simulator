@@ -86,7 +86,6 @@ app.get('/data/price', (req, res) => {
       throw new Error('Unknown case type');
   }
 
-// Construct the full URL
 let url = `https://steamcommunity.com/market/priceoverview/?appid=730&market_hash_name=${encodeURIComponent(marketHashName)}&currency=1`;
 
   const options = {
