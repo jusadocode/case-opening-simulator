@@ -242,7 +242,7 @@ async function getItemInfo(itemWon, itemWear) {
     console.error('Error fetching item price:', error);
     price = 'Market price not available';
   }
-  let itemInfo = { name: itemWon.name, wear: itemWear, rarity: itemWon.rarity.name, price};
+  let itemInfo = { name: itemWon.name, rarity: itemWon.rarity.name, price};
 
   const minFloat = itemWon.min_float; 
   const maxFloat = itemWon.max_float; 
@@ -256,6 +256,8 @@ async function getItemInfo(itemWon, itemWear) {
   if (float)
     itemInfo.float = float;
   
+  if (itemWear)
+    itemInfo.wear = itemWear;
 
   return itemInfo;
 }
