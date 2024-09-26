@@ -10,7 +10,7 @@
 !dist/**
 
 # Unignore the src directory and allow server.js
-!src/
+
 !src/server.js
 
 !package.json
