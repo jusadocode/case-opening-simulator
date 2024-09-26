@@ -231,7 +231,6 @@ async function determineItemWon(items) {
 async function getItemInfo(itemWon, itemWear) {
   let price;
   try {
-    console.log(itemWon)
     const category = itemWon.category ? itemWon.category.name : '';
     const data = await callApi(`data/price?&caseType=${selectedCase.type}&item=${itemWon.name}&&wear=${itemWear || ''}&itemID=${itemWon.id}&category=${category}`);
     price = data.lowest_price;
