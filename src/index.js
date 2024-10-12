@@ -106,7 +106,6 @@ async function initializeContainerLoad(containerType = 'cases') {
 
 function handleOpenButtonClick() {
   openCase();
-  instantiateMoneyAmount('red');
 }
 
 function handleBackButtonClick() {
@@ -121,7 +120,16 @@ function initializeEventListeners() {
 
   reopenButton = button.cloneNode(true);
 
-  reopenButton.textContent = `Open another (-${keyPrice}$)`;
+  let reopenCost = selectedCase.price ? parseFloat(selectedCase.price) : 0;
+  
+  if(selectedCase.type === 'Case')
+    reopenCost += keyPrice
+  
+  if(selectedCase.price)
+    reopenButton.textContent = `Open another (-${reopenCost.toFixed(2)}$)`;
+  else
+    reopenButton.textContent = `Open another`;
+  
   reopenButton.style.color = 'white';
 
   reopenButton.addEventListener('click', handleOpenButtonClick);
@@ -133,11 +141,13 @@ function initializeEventListeners() {
 
   backButton.addEventListener('click', handleBackButtonClick);
 
-  containerSelect.addEventListener('change', () => setSelectedContainer(containers[containerSelect.value]));
+  containerSelect.addEventListener('change', () => {
+      setSelectedContainer(containers[containerSelect.value])
+  });
 
   containerTypeSelect.addEventListener('change', () => {
-    const selectedType = containerTypeSelect.value;
-    initializeContainerLoad(selectedType); // Load containers based on selected type
+      const selectedType = containerTypeSelect.value;
+      initializeContainerLoad(selectedType); // Load containers based on selected type
   });
 
 }
@@ -205,6 +215,7 @@ function initiateRollingProcess() {
     caseOpenWindowHolder.classList.add('animated', 'flipInX');
 
     setTimeout(() => {
+      enableSelectFields();
       button.disabled = false;
       button.classList.remove('animated', 'bounceOut');
       caseOpenWindowHolder.classList.remove('animated', 'flipInX');
@@ -235,9 +246,9 @@ async function getItemInfo(itemWon, itemWear) {
     const data = await callApi(`data/price?&caseType=${selectedCase.type}&item=${itemWon.name}&&wear=${itemWear || ''}&itemID=${itemWon.id}&category=${category}`);
     price = data.lowest_price;
     const worth = parseFloat(price.slice(1));
-    moneyStatus += worth;
-    instantiateMoneyAmount('green');
-    updateMoneyStatus();
+
+    addObtainedItemPrice(worth);
+
   } catch (error) {
     console.error('Error fetching item price:', error);
     price = 'Market price not available';
@@ -260,6 +271,22 @@ async function getItemInfo(itemWon, itemWear) {
     itemInfo.wear = itemWear;
 
   return itemInfo;
+}
+
+function addObtainedItemPrice(worth) {
+  if(selectedCase.price) {
+    moneyStatus += worth;
+    updateMoneyStatus();
+    instantiateMoneyAmount('green');
+  }
+}
+
+function SubractOpeningPrice(worth) {
+  if(selectedCase.price) {
+    moneyStatus -= worth;
+    updateMoneyStatus();
+    instantiateMoneyAmount('red');
+  }
 }
 
 
@@ -291,6 +318,13 @@ async function displayWonItem(itemWon) {
     obtainedText.appendChild(par);
   }
 
+  if(!selectedCase.price) {
+    const par = document.createElement('p');
+    par.textContent = 'Case price not found, this opening will not be calculated'
+    par.classList.add('warning-info');
+    obtainedText.appendChild(par);
+  }
+
   const bottomSection = document.createElement('div');
   bottomSection.classList.add('bottomSection');
   bottomSection.appendChild(obtainedText);
@@ -298,6 +332,18 @@ async function displayWonItem(itemWon) {
   const buttonSection = document.createElement('div');
   buttonSection.classList.add('buttonSection');
   buttonSection.appendChild(reopenButton);
+
+  let reopenCost = selectedCase.price ? parseFloat(selectedCase.price) : 0;
+  
+  if(selectedCase.type === 'Case')
+    reopenCost += keyPrice
+
+  if(selectedCase.price)
+    reopenButton.textContent = `Open another (-${reopenCost.toFixed(2)}$)`;
+  else
+    reopenButton.textContent = `Open another`;
+  
+
   buttonSection.appendChild(backButton);
 
   bottomSection.appendChild(buttonSection);
@@ -314,14 +360,19 @@ async function openCase() {
   try {
     clearUpWindow();
 
+    disableSelectFields();
+
     let casePrice = 0;
+
     if(selectedCase.price) {
       casePrice = parseFloat(selectedCase.price);
-    }
     
-    moneyStatus -= keyPrice + casePrice;
-    updateMoneyStatus();
-
+      if(selectedCase.type === 'Case')
+        SubractOpeningPrice(keyPrice + casePrice);
+      else
+        SubractOpeningPrice(casePrice);
+    }
+      
     const caseItemList = [...selectedCase.contains];
     if(selectedCase.contains_rare.length > 0) {
       const knives = [...selectedCase.contains_rare];
@@ -380,6 +431,16 @@ function setSelectedContainer(container) {
 
   caseImageSection.innerHTML = '';
   caseImageSection.appendChild(caseImage);
+}
+
+function enableSelectFields() {
+  containerSelect.disabled = false;
+  containerTypeSelect.disabled = false;
+}
+
+function disableSelectFields() {
+  containerSelect.disabled = true;
+  containerTypeSelect.disabled = true;
 }
 
 
