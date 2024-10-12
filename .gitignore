@@ -1,5 +1,6 @@
 # Ignore everything
 *
+src/index.js
 
 # Unignore the data folder and its contents
 !data/
