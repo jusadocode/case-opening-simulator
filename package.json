@@ -2,7 +2,7 @@
   "name": "case-opening-sim",
   "description": "project_description",
   "scripts": {
-    "start": "npx webpack && node src/server.js",
+    "start": "node src/server.js",
     "backend": "node src/server.js"
   },
   "dependencies": {
