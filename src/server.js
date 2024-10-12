@@ -199,7 +199,7 @@ async function fetchCasePrices() {
     }); 
 
     caseData.forEach(crate => {
-      crate.price = cratePriceMap.get(crate.name);
+      crate.price = cratePriceMap.get(crate.market_hash_name);
     });
   }
   catch(error) {
